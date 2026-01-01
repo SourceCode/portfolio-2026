@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Executive portfolio of Ryan Rentfro - Product & Platform Architect, Engineer, and Creative. specializing in scalable systems, 3D web experiences, and leadership." />
+    <meta name="theme-color" content="#000000" />
+    <title>Ryan Rentfro | Portfolio</title>
+    
+    <!-- Performance Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://esm.sh">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                dark: '#000000',    /* Pitch Black for Max Contrast */
+                mint: '#00FFA3',    /* High Vis Mint */
+                teal: '#00E1FF',    /* Electric Teal */
+                slate: '#1A1A1A',   /* Dark Slate/Grey for cards */
+                white: '#FFFFFF',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        /* background-color: #050505; Removed to let shader show */
+        color: #ffffff;
+        margin: 0;
+        overflow-x: hidden;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #000000;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(0, 255, 163, 0.2); /* Mint thumb */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 255, 163, 0.4);
+      }
+      
+      /* Accessibility Focus Styles */
+      :focus-visible {
+        outline: 2px solid #00FFA3;
+        outline-offset: 2px;
+      }
+      
+      /* Screen Reader Only Utility */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "three": "https://esm.sh/three@^0.182.0",
+    "three/addons/": "https://esm.sh/three@^0.182.0/examples/jsm/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
+    "react-redux": "https://esm.sh/react-redux@^9.2.0",
+    "@reduxjs/toolkit": "https://esm.sh/@reduxjs/toolkit@^2.11.2",
+    "three/": "https://esm.sh/three@^0.182.0/",
+    "react-google-recaptcha": "https://esm.sh/react-google-recaptcha@^3.1.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
