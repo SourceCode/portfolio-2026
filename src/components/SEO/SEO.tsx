@@ -1,16 +1,15 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-import { config } from '../../config';
+import { config } from '@/config';
 
 interface SEOProps {
-    title: string;
-    description: string;
     canonical?: string;
-    type?: 'website' | 'article';
-    name?: string;
+    description: string;
     image?: string;
-    schema?: Record<string, any>;
+    schema?: Record<string, unknown>;
+    title: string;
+    type?: 'article' | 'website';
 }
 
 /**
@@ -23,13 +22,12 @@ interface SEOProps {
  * - JSON-LD Structured Data
  */
 const SEO: React.FC<SEOProps> = ({
-    title,
-    description,
     canonical,
-    type = 'website',
-    name = 'Ryan Rentfro',
+    description,
     image = '/og-default.jpg', // Ensure you have a default OG image
-    schema
+    schema,
+    title,
+    type = 'website'
 }) => {
     const { siteUrl } = config;
     const fullTitle = `${title} | Ryan Rentfro`;

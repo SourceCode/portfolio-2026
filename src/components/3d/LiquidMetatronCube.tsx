@@ -37,10 +37,10 @@ const LiquidMetatronNetwork: React.FC = () => {
         containerRef.current.clientWidth,
         containerRef.current.clientHeight,
         {
-            type: THREE.HalfFloatType,
-            format: THREE.RGBAFormat,
             colorSpace: THREE.SRGBColorSpace,
-            samples: 4
+            format: THREE.RGBAFormat,
+            samples: 4,
+            type: THREE.HalfFloatType
         }
     );
 
@@ -80,11 +80,11 @@ const LiquidMetatronNetwork: React.FC = () => {
     const LINK_RADIUS = 0.025;
 
     // Generate Nodes (Positions)
-    const nodes: { pos: THREE.Vector3, id: number }[] = [];
+    const nodes: { id: number; pos: THREE.Vector3, }[] = [];
     let nodeIdCounter = 0;
 
     // Center Node
-    nodes.push({ pos: new THREE.Vector3(0, 0, 0), id: nodeIdCounter++ });
+    nodes.push({ id: nodeIdCounter++, pos: new THREE.Vector3(0, 0, 0) });
 
     // Rings
     for (let r = 1; r <= RINGS; r++) {
@@ -96,7 +96,7 @@ const LiquidMetatronNetwork: React.FC = () => {
             const y = Math.sin(angle) * radius;
             // Add subtle 3D offset
             const z = (Math.random() - 0.5) * 0.8; 
-            nodes.push({ pos: new THREE.Vector3(x, y, z), id: nodeIdCounter++ });
+            nodes.push({ id: nodeIdCounter++, pos: new THREE.Vector3(x, y, z) });
         }
     }
 
@@ -105,7 +105,7 @@ const LiquidMetatronNetwork: React.FC = () => {
          const angle = Math.random() * Math.PI * 2;
          const radius = 3.5 + Math.random() * 1.0;
          const z = (Math.random() - 0.5) * 1.5;
-         nodes.push({ pos: new THREE.Vector3(Math.cos(angle)*radius, Math.sin(angle)*radius, z), id: nodeIdCounter++ });
+         nodes.push({ id: nodeIdCounter++, pos: new THREE.Vector3(Math.cos(angle)*radius, Math.sin(angle)*radius, z) });
     }
 
     // Generate Node Meshes (Merged)
@@ -160,7 +160,7 @@ const LiquidMetatronNetwork: React.FC = () => {
     nodes.forEach((n1) => {
         // Connect to neighbors within distance
         const neighbors = nodes
-            .map(n2 => ({ n: n2, dist: n1.pos.distanceTo(n2.pos) }))
+            .map(n2 => ({ dist: n1.pos.distanceTo(n2.pos), n: n2 }))
             .filter(item => item.dist > 0.01 && item.dist < 2.2) // Max link length
             .sort((a, b) => a.dist - b.dist)
             .slice(0, 3); // Max 3 nearest connections per node to keep it clean
@@ -178,11 +178,11 @@ const LiquidMetatronNetwork: React.FC = () => {
     // --- 3. Unified Liquid Gold Shader ---
 
     const commonUniforms = {
-        uTime: { value: 0 },
-        uRevealNodes: { value: 0 },   // 0-1
-        uRevealLinks: { value: 0 },   // 0-1
-        uDissolve: { value: 0 },      // 0-1
         uColor: { value: new THREE.Color('#FFD700') }, // Gold
+        uDissolve: { value: 0 },      // 0-1
+        uRevealLinks: { value: 0 },   // 0-1
+        uRevealNodes: { value: 0 },   // 0-1
+        uTime: { value: 0 },
     };
 
     // Shared Shader Code
@@ -214,32 +214,6 @@ const LiquidMetatronNetwork: React.FC = () => {
 
     // --- Node Material ---
     const nodeMaterial = new THREE.ShaderMaterial({
-        uniforms: {
-            ...commonUniforms,
-            uTotalNodes: { value: nodes.length }
-        },
-        transparent: true,
-        vertexShader: `
-            varying vec2 vUv;
-            varying vec3 vPos;
-            varying vec3 vNormal;
-            varying float vRandom;
-            attribute float aNodeId;
-            attribute float aRandom;
-            varying float vId;
-
-            void main() {
-                vUv = uv;
-                vNormal = normal;
-                vRandom = aRandom;
-                vId = aNodeId;
-                
-                // Position logic is handled standardly here, transform handled in JS or via group
-                vec4 worldPosition = modelMatrix * vec4(position, 1.0);
-                vPos = worldPosition.xyz;
-                gl_Position = projectionMatrix * viewMatrix * worldPosition;
-            }
-        `,
         fragmentShader: `
             uniform float uTime;
             uniform float uRevealNodes;
@@ -302,22 +276,18 @@ const LiquidMetatronNetwork: React.FC = () => {
 
                 gl_FragColor = vec4(finalColor, 1.0);
             }
-        `
-    });
-
-    // --- Link Material ---
-    const linkMaterial = new THREE.ShaderMaterial({
+        `,
+        transparent: true,
         uniforms: {
             ...commonUniforms,
-            uTotalLinks: { value: linkCount }
+            uTotalNodes: { value: nodes.length }
         },
-        transparent: true,
         vertexShader: `
             varying vec2 vUv;
             varying vec3 vPos;
             varying vec3 vNormal;
             varying float vRandom;
-            attribute float aLinkId;
+            attribute float aNodeId;
             attribute float aRandom;
             varying float vId;
 
@@ -325,13 +295,18 @@ const LiquidMetatronNetwork: React.FC = () => {
                 vUv = uv;
                 vNormal = normal;
                 vRandom = aRandom;
-                vId = aLinkId;
+                vId = aNodeId;
                 
+                // Position logic is handled standardly here, transform handled in JS or via group
                 vec4 worldPosition = modelMatrix * vec4(position, 1.0);
                 vPos = worldPosition.xyz;
                 gl_Position = projectionMatrix * viewMatrix * worldPosition;
             }
-        `,
+        `
+    });
+
+    // --- Link Material ---
+    const linkMaterial = new THREE.ShaderMaterial({
         fragmentShader: `
             uniform float uTime;
             uniform float uRevealLinks;
@@ -388,6 +363,31 @@ const LiquidMetatronNetwork: React.FC = () => {
                 finalColor += vec3(3.0, 0.5, 0.0) * isEdge * 5.0; // Burn
 
                 gl_FragColor = vec4(finalColor, 1.0);
+            }
+        `,
+        transparent: true,
+        uniforms: {
+            ...commonUniforms,
+            uTotalLinks: { value: linkCount }
+        },
+        vertexShader: `
+            varying vec2 vUv;
+            varying vec3 vPos;
+            varying vec3 vNormal;
+            varying float vRandom;
+            attribute float aLinkId;
+            attribute float aRandom;
+            varying float vId;
+
+            void main() {
+                vUv = uv;
+                vNormal = normal;
+                vRandom = aRandom;
+                vId = aLinkId;
+                
+                vec4 worldPosition = modelMatrix * vec4(position, 1.0);
+                vPos = worldPosition.xyz;
+                gl_Position = projectionMatrix * viewMatrix * worldPosition;
             }
         `
     });

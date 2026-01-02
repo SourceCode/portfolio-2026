@@ -1,9 +1,10 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { RootState } from '../store/store';
-import GlassCard from '../components/UI/GlassCard';
+
 import SEO from '../components/SEO/SEO';
+import GlassCard from '../components/UI/GlassCard';
+import { RootState } from '../store/store';
 
 /**
  * Blog Page
@@ -18,16 +19,16 @@ const Blog: React.FC = () => {
         description="Thoughts on engineering, leadership, and the future of tech."
         canonical="https://rentfro.net/blog"
         schema={{
-          "@context": "https://schema.org",
-          "@type": "Blog",
-          "name": "Ryan Rentfro's Insights",
-          "blogPost": blogPosts.map(post => ({
-            "@type": "BlogPosting",
-            "headline": post.title,
-            "description": post.excerpt,
-            "datePublished": post.date,
-            "url": `https://rentfro.net/blog/${post.slug}`
-          }))
+          '@context': 'https://schema.org',
+          '@type': 'Blog',
+          'blogPost': blogPosts.map(post => ({
+            '@type': 'BlogPosting',
+            'datePublished': post.date,
+            'description': post.excerpt,
+            'headline': post.title,
+            'url': `https://rentfro.net/blog/${post.slug}`
+          })),
+          'name': 'Ryan Rentfro\'s Insights'
         }}
       />
       <div className="max-w-3xl mx-auto space-y-12 animate-fade-in">

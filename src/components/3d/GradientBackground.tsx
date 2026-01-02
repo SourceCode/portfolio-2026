@@ -20,9 +20,9 @@ const GradientBackground: React.FC = () => {
     const renderer = new THREE.WebGLRenderer({ 
         alpha: true, 
         antialias: false, // Disable AA for background noise, saves performance
+        depth: false,
         powerPreference: 'default', // Don't force high-performance for background
-        stencil: false,
-        depth: false
+        stencil: false
     });
     
     // Cap pixel ratio at 1.5 for background to ensure smooth UI over top on 4k/Retina screens
@@ -37,21 +37,13 @@ const GradientBackground: React.FC = () => {
     
     const bgPlane = new THREE.PlaneGeometry(2, 2);
     const bgUniforms = {
-      u_time: { value: 0.0 },
       u_resolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) },
+      u_time: { value: 0.0 },
     };
     
     const bgMaterial = new THREE.ShaderMaterial({
-      uniforms: bgUniforms,
-      depthWrite: false,
       depthTest: false,
-      vertexShader: `
-        varying vec2 vUv;
-        void main() {
-          vUv = uv;
-          gl_Position = vec4(position, 1.0);
-        }
-      `,
+      depthWrite: false,
       fragmentShader: `
         uniform float u_time;
         uniform vec2 u_resolution;
@@ -100,6 +92,14 @@ const GradientBackground: React.FC = () => {
           color *= smoothstep(1.2, 0.2, dist);
 
           gl_FragColor = vec4(color, 1.0);
+        }
+      `,
+      uniforms: bgUniforms,
+      vertexShader: `
+        varying vec2 vUv;
+        void main() {
+          vUv = uv;
+          gl_Position = vec4(position, 1.0);
         }
       `
     });

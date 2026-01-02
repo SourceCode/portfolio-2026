@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { RootState } from '../store/store';
-import GlassCard from '../components/UI/GlassCard';
+
 import SEO from '../components/SEO/SEO';
+import GlassCard from '../components/UI/GlassCard';
+import { RootState } from '../store/store';
 
 /**
  * Projects Page
@@ -26,17 +27,17 @@ const Projects: React.FC = () => {
         description="Explore a collection of technical projects, from 3D visualizations to enterprise platforms."
         canonical="https://rentfro.net/projects"
         schema={{
-          "@context": "https://schema.org",
-          "@type": "ItemList",
-          "itemListElement": projects.map((p, index) => ({
-            "@type": "ListItem",
-            "position": index + 1,
-            "item": {
-              "@type": "SoftwareSourceCode",
-              "name": p.title,
-              "description": p.summary,
-              "url": `https://rentfro.net/projects/${p.slug}`
-            }
+          '@context': 'https://schema.org',
+          '@type': 'ItemList',
+          'itemListElement': projects.map((p, index) => ({
+            '@type': 'ListItem',
+            'item': {
+              '@type': 'SoftwareSourceCode',
+              'description': p.summary,
+              'name': p.title,
+              'url': `https://rentfro.net/projects/${p.slug}`
+            },
+            'position': index + 1
           }))
         }}
       />

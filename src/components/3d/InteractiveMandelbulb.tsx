@@ -47,10 +47,10 @@ const InteractiveMandelbulb: React.FC = () => {
 
     // Shader Uniforms
     const uniforms = {
-      u_time: { value: 0.0 },
-      u_resolution: { value: new THREE.Vector2() },
       u_cameraPos: { value: camera.position },
-      u_pulse: { value: 0.0 }
+      u_pulse: { value: 0.0 },
+      u_resolution: { value: new THREE.Vector2() },
+      u_time: { value: 0.0 }
     };
 
     // Vertex Shader (Standard Sphere)
@@ -166,11 +166,11 @@ const InteractiveMandelbulb: React.FC = () => {
     // Geometry: Sphere to bound the fractal
     const geometry = new THREE.SphereGeometry(1.6, 64, 64);
     const material = new THREE.ShaderMaterial({
-      uniforms,
-      vertexShader,
       fragmentShader,
+      side: THREE.DoubleSide,
       transparent: true,
-      side: THREE.DoubleSide
+      uniforms,
+      vertexShader
     });
     const mesh = new THREE.Mesh(geometry, material);
     scene.add(mesh);

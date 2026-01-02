@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import ReCAPTCHA from "react-google-recaptcha";
-import GlassCard from '../components/UI/GlassCard';
-import { config } from '../config';
+import ReCAPTCHA from 'react-google-recaptcha';
+
 import SEO from '../components/SEO/SEO';
+import GlassCard from '../components/UI/GlassCard';
+import { config } from '@/config';
 
 /**
  * Contact Page
  */
 const Contact: React.FC = () => {
-  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const [captchaToken, setCaptchaToken] = useState<null | string>(null);
 
-  const handleCaptchaChange = (token: string | null) => {
+  const handleCaptchaChange = (token: null | string) => {
     setCaptchaToken(token);
-    console.log("Captcha token:", token);
   };
 
   return (
@@ -22,13 +22,13 @@ const Contact: React.FC = () => {
         description="Get in touch for consultations, speaking engagements, or just to say hello."
         canonical="https://rentfro.net/contact"
         schema={{
-          "@context": "https://schema.org",
-          "@type": "ContactPage",
-          "mainEntity": {
-            "@type": "Person",
-            "name": "Ryan Rentfro",
-            "email": config.contact.email,
-            "url": "https://rentfro.net"
+          '@context': 'https://schema.org',
+          '@type': 'ContactPage',
+          'mainEntity': {
+            '@type': 'Person',
+            'email': config.contact.email,
+            'name': 'Ryan Rentfro',
+            'url': 'https://rentfro.net'
           }
         }}
       />

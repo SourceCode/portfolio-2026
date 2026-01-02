@@ -1,7 +1,8 @@
 import React, { Suspense } from 'react';
 import { Link } from 'react-router-dom';
-import GlassCard from '../components/UI/GlassCard';
+
 import SEO from '../components/SEO/SEO';
+import GlassCard from '../components/UI/GlassCard';
 
 // Lazy load the heavy 3D component
 const ReflectiveSphereRings = React.lazy(() => import('../components/3d/ReflectiveSphereRings'));
@@ -17,16 +18,16 @@ const Home: React.FC = () => {
         description="Ryan Rentfro - CTO, Product & Platform Architect, and Executive Leader specializing in scalable systems and enterprise transformation."
         canonical="https://rentfro.net/"
         schema={{
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Ryan Rentfro",
-          "url": "https://ryanrentfro.com",
-          "jobTitle": "Chief Technology Officer",
-          "sameAs": [
-            "https://linkedin.com/in/ryanrentfro",
-            "https://github.com/ryanrentfro"
+          '@context': 'https://schema.org',
+          '@type': 'Person',
+          'jobTitle': 'Chief Technology Officer',
+          'knowsAbout': ['Executive Leadership', 'Enterprise Architecture', 'Product Strategy', 'Scalable Systems', 'Digital Transformation'],
+          'name': 'Ryan Rentfro',
+          'sameAs': [
+            'https://linkedin.com/in/ryanrentfro',
+            'https://github.com/ryanrentfro'
           ],
-          "knowsAbout": ["Executive Leadership", "Enterprise Architecture", "Product Strategy", "Scalable Systems", "Digital Transformation"]
+          'url': 'https://ryanrentfro.com'
         }}
       />
       <div className="min-h-[80vh] flex flex-col justify-center animate-fade-in-up">
@@ -74,7 +75,7 @@ const Home: React.FC = () => {
         {/* Feature Cards */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-20" aria-label="Core Competencies">
           <GlassCard hoverEffect>
-            <h3 className="text-xl font-semibold mb-2 text-brand-teal">Strategic Leadership</h3>
+            <h3 className="text-xl font-semibold mb-2 text-brand-mint">Strategic Leadership</h3>
             <p className="text-white/70 text-sm">Aligning technical strategy with business goals to drive enterprise transformation and sustainable growth.</p>
           </GlassCard>
           <GlassCard hoverEffect>
@@ -82,7 +83,7 @@ const Home: React.FC = () => {
             <p className="text-white/70 text-sm">Designing robust, scalable ecosystems that ensure security, reliability, and rapid product velocity.</p>
           </GlassCard>
           <GlassCard hoverEffect>
-            <h3 className="text-xl font-semibold mb-2 text-white">Product Engineering</h3>
+            <h3 className="text-xl font-semibold mb-2 text-mint">Product Engineering</h3>
             <p className="text-white/70 text-sm">Unifying engineering, design, and product vision to deliver exceptional, user-centric digital experiences.</p>
           </GlassCard>
         </section>

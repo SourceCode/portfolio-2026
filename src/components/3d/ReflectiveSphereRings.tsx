@@ -79,11 +79,11 @@ const ReflectiveSphereRings: React.FC = () => {
 
         const sphereGeo = new THREE.SphereGeometry(0.85, 64, 64);
         const sphereMat = new THREE.MeshStandardMaterial({
-            map: moonMap,
             bumpMap: moonMap, // Reuse texture for bump
             bumpScale: 0.015,
-            roughness: 0.9,
+            map: moonMap,
             metalness: 0.1,
+            roughness: 0.9,
         });
         const sphere = new THREE.Mesh(sphereGeo, sphereMat);
         earthGroup.add(sphere);
@@ -93,24 +93,15 @@ const ReflectiveSphereRings: React.FC = () => {
 
         const scanUniforms = {
             uScanCenters: { value: [new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3()] },
-            uScanStartColors: { value: [new THREE.Color(), new THREE.Color(), new THREE.Color()] },
             uScanEndColors: { value: [new THREE.Color(), new THREE.Color(), new THREE.Color()] },
+            uScanOpacities: { value: [0, 0, 0] },
             uScanRadii: { value: [0, 0, 0] },
-            uScanOpacities: { value: [0, 0, 0] }
+            uScanStartColors: { value: [new THREE.Color(), new THREE.Color(), new THREE.Color()] }
         };
 
         const scanMat = new THREE.ShaderMaterial({
-            uniforms: scanUniforms,
-            transparent: true,
-            depthWrite: false,
             blending: THREE.AdditiveBlending,
-            vertexShader: `
-            varying vec3 vPos;
-            void main() {
-                vPos = normalize(position); 
-                gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
-            }
-        `,
+            depthWrite: false,
             fragmentShader: `
             uniform vec3 uScanCenters[3];
             uniform vec3 uScanStartColors[3];
@@ -139,6 +130,15 @@ const ReflectiveSphereRings: React.FC = () => {
                 if(colorAccum.a < 0.01) discard;
                 gl_FragColor = colorAccum;
             }
+        `,
+            transparent: true,
+            uniforms: scanUniforms,
+            vertexShader: `
+            varying vec3 vPos;
+            void main() {
+                vPos = normalize(position); 
+                gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+            }
         `
         });
 
@@ -154,17 +154,17 @@ const ReflectiveSphereRings: React.FC = () => {
 
         // Minimal RingState needed for animation loop
         type RingState = {
-            group: THREE.Group;
-            drone: THREE.Mesh;
-            laser: THREE.Line;
-            index: number;
-            timeOffset: number;
-            state: 'IDLE' | 'AIMING' | 'SCANNING' | 'FADING';
-            targetLocal: THREE.Vector3;
-            timer: number;
-            scanRadius: number;
             currentOpacity: number;
+            drone: THREE.Mesh;
             flash: number;
+            group: THREE.Group;
+            index: number;
+            laser: THREE.Line;
+            scanRadius: number;
+            state: 'AIMING' | 'FADING' | 'IDLE' | 'SCANNING';
+            targetLocal: THREE.Vector3;
+            timeOffset: number;
+            timer: number;
         };
 
         const ringsData: RingState[] = [];
@@ -173,7 +173,7 @@ const ReflectiveSphereRings: React.FC = () => {
         const sharedDroneGeo = new THREE.SphereGeometry(0.035, 16, 16);
         // Dynamic buffer geo for lines
         const sharedLineMat = new THREE.LineBasicMaterial({
-            transparent: true, opacity: 0.8, linewidth: 2, blending: THREE.AdditiveBlending
+            blending: THREE.AdditiveBlending, linewidth: 2, opacity: 0.8, transparent: true
         });
 
         ringConfig.forEach((config, i) => {
@@ -197,14 +197,14 @@ const ReflectiveSphereRings: React.FC = () => {
             scanUniforms.uScanOpacities.value[i] = 0.0;
 
             ringsData.push({
-                group, drone, laser, index: i,
-                timeOffset: Math.random() * 1000,
+                currentOpacity: 0, drone, flash: 0, group,
+                index: i,
+                laser,
+                scanRadius: 0,
                 state: 'IDLE',
                 targetLocal: new THREE.Vector3(),
-                timer: 0,
-                scanRadius: 0,
-                currentOpacity: 0,
-                flash: 0
+                timeOffset: Math.random() * 1000,
+                timer: 0
             });
         });
 

@@ -1,9 +1,10 @@
 import React from 'react';
-import { useParams, Navigate, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { RootState } from '../store/store';
-import GlassCard from '../components/UI/GlassCard';
+import { Link, Navigate, useParams } from 'react-router-dom';
+
 import SEO from '../components/SEO/SEO';
+import GlassCard from '../components/UI/GlassCard';
+import { RootState } from '../store/store';
 
 /**
  * SimpleMarkdownRenderer
@@ -67,16 +68,16 @@ const BlogDetail: React.FC = () => {
           description={post.excerpt}
           type="article"
           schema={{
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            "headline": post.title,
-            "description": post.excerpt,
-            "author": {
-              "@type": "Person",
-              "name": "Ryan Rentfro"
+            '@context': 'https://schema.org',
+            '@type': 'BlogPosting',
+            'articleBody': post.content,
+            'author': {
+              '@type': 'Person',
+              'name': 'Ryan Rentfro'
             },
-            "datePublished": post.date,
-            "articleBody": post.content
+            'datePublished': post.date,
+            'description': post.excerpt,
+            'headline': post.title
           }}
         />
       )}

@@ -1,7 +1,8 @@
 import React from 'react';
-import Navbar from './Navbar';
+
 import GradientBackground from '../3d/GradientBackground';
 import RouteAnnouncer from '../UI/RouteAnnouncer';
+import Navbar from './Navbar';
 
 interface LayoutProps {
   children: React.ReactNode;

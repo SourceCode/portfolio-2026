@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { Route, HashRouter as Router, Routes } from 'react-router-dom';
+
 import Layout from './components/Layout/Layout';
 import LoadingScreen from './components/UI/LoadingScreen';
 

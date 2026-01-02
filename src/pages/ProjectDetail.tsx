@@ -1,9 +1,10 @@
 import React from 'react';
-import { useParams, Navigate, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { RootState } from '../store/store';
-import GlassCard from '../components/UI/GlassCard';
+import { Link, Navigate, useParams } from 'react-router-dom';
+
 import SEO from '../components/SEO/SEO';
+import GlassCard from '../components/UI/GlassCard';
+import { RootState } from '../store/store';
 
 /**
  * ProjectDetail Page
@@ -31,15 +32,15 @@ const ProjectDetail: React.FC = () => {
           type="article"
           name="Ryan Rentfro"
           schema={{
-            "@context": "https://schema.org",
-            "@type": "SoftwareSourceCode",
-            "name": project.title,
-            "description": project.description,
-            "programmingLanguage": project.tags,
-            "author": {
-              "@type": "Person",
-              "name": "Ryan Rentfro"
-            }
+            '@context': 'https://schema.org',
+            '@type': 'SoftwareSourceCode',
+            'author': {
+              '@type': 'Person',
+              'name': 'Ryan Rentfro'
+            },
+            'description': project.description,
+            'name': project.title,
+            'programmingLanguage': project.tags
           }}
         />
       )}

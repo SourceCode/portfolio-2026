@@ -1,14 +1,15 @@
 import React from 'react';
-import GlassCard from '../components/UI/GlassCard';
 import { useSelector } from 'react-redux';
-import { RootState } from '../store/store';
+
 import SEO from '../components/SEO/SEO';
+import GlassCard from '../components/UI/GlassCard';
+import { RootState } from '../store/store';
 
 /**
  * About Page
  */
 const About: React.FC = () => {
-  const { career, aboutContent } = useSelector((state: RootState) => state.content);
+  const { aboutContent, career } = useSelector((state: RootState) => state.content);
 
   return (
     <>
@@ -17,13 +18,13 @@ const About: React.FC = () => {
         description="Biography, leadership philosophy, and career history of Ryan Rentfro."
         canonical="https://rentfro.net/about"
         schema={{
-          "@context": "https://schema.org",
-          "@type": "ProfilePage",
-          "mainEntity": {
-            "@type": "Person",
-            "name": "Ryan Rentfro",
-            "jobTitle": "Chief Technology Officer",
-            "description": aboutContent.executiveSummary
+          '@context': 'https://schema.org',
+          '@type': 'ProfilePage',
+          'mainEntity': {
+            '@type': 'Person',
+            'description': aboutContent.executiveSummary,
+            'jobTitle': 'Chief Technology Officer',
+            'name': 'Ryan Rentfro'
           }
         }}
       />
