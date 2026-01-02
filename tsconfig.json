@@ -1,29 +1,140 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
-    "experimentalDecorators": true,
-    "useDefineForClassFields": false,
-    "module": "ESNext",
     "lib": [
-      "ES2022",
-      "DOM",
-      "DOM.Iterable"
+      "dom",
+      "dom.iterable",
+      "esnext"
     ],
-    "skipLibCheck": true,
-    "types": [
-      "node"
-    ],
-    "moduleResolution": "bundler",
-    "isolatedModules": true,
-    "moduleDetection": "force",
+    "baseUrl": ".",
     "allowJs": true,
-    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "allowImportingTsExtensions": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false,
+    "types": [
+      "vite/client"
+    ],
     "paths": {
-      "@/*": [
-        "./src/*"
+      "@/apis/*": [
+        "src/apis/*"
+      ],
+      "@/app/*": [
+        "src/app/*"
+      ],
+      "@/components/*": [
+        "src/components/*"
+      ],
+      "@/contexts/*": [
+        "src/contexts/*"
+      ],
+      "@/hooks/*": [
+        "src/hooks/*"
+      ],
+      "@/classes/*": [
+        "src/lib/classes/*"
+      ],
+      "@/consts/*": [
+        "src/lib/consts/*"
+      ],
+      "@/enums/*": [
+        "src/lib/enums/*"
+      ],
+      "@/interfaces/*": [
+        "src/lib/interfaces/*"
+      ],
+      "@/types": [
+        "src/lib/types/index.ts"
+      ],
+      "@/types/*": [
+        "src/lib/types/*"
+      ],
+      "@/utils/*": [
+        "src/utils/*",
+        "src/lib/utils/*"
+      ],
+      "@/lib/utils/*": [
+        "src/lib/utils/*"
+      ],
+      "@/lib/utils": [
+        "src/lib/utils/index.ts"
+      ],
+      "@/lib/client/*": [
+        "src/lib/client/*"
+      ],
+      "@/lib/errors": [
+        "src/lib/errors/index.ts"
+      ],
+      "@/lib/errors/*": [
+        "src/lib/errors/*"
+      ],
+      "@/lib/schemas": [
+        "src/lib/schemas/index.ts"
+      ],
+      "@/lib/schemas/*": [
+        "src/lib/schemas/*"
+      ],
+      "@/lib/common/*": [
+        "src/lib/common/*"
+      ],
+      "@/lib/server/*": [
+        "src/lib/server/*"
+      ],
+      "@/lib/workflow/*": [
+        "src/lib/workflow/*"
+      ],
+      "@/store/*": [
+        "src/store/*"
+      ],
+      "@/store": [
+        "src/store/index.ts"
+      ],
+      "@/os/*": [
+        "src/os/*"
+      ],
+      "@/apps/*": [
+        "src/apps/*"
+      ],
+      "@/system/*": [
+        "src/system/*"
+      ],
+      "@/services/*": [
+        "src/services/*"
+      ],
+      "@/db/*": [
+        "src/db/*"
+      ],
+      "lightbox.js-react": [
+        "./node_modules/lightbox.js-react/dist/index.d.ts"
       ]
     },
-    "allowImportingTsExtensions": true,
-    "noEmit": true
-  }
+    "target": "ES2022"
+  },
+  "include": [
+    "src/*",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/awsConfig.js",
+    "custom.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
