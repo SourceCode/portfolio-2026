@@ -1,7 +1,8 @@
+import { waitFor } from '@testing-library/react';
 import React from 'react';
+
 import { renderWithProviders } from '../../test/utils';
 import SEO from './SEO';
-import { waitFor } from '@testing-library/react';
 
 describe('SEO Component', () => {
     it('sets default titles and meta tags', async () => {

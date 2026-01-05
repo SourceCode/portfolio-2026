@@ -1,5 +1,6 @@
-import React from 'react';
 import { screen, waitFor } from '@testing-library/react';
+import React from 'react';
+
 import { renderWithProviders } from '../test/utils';
 import Home from './Home';
 

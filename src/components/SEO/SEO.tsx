@@ -1,7 +1,6 @@
+import { config } from '@/config';
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-
-import { config } from '@/config';
 
 interface SEOProps {
     canonical?: string;

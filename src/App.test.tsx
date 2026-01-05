@@ -1,8 +1,9 @@
-import { render, screen, waitFor, act } from '@testing-library/react';
+import { act, render, screen, waitFor } from '@testing-library/react';
 import React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router-dom';
+
 import App from './App';
 import { store } from './store/store';
 
@@ -18,17 +19,17 @@ jest.mock('./components/3d/GradientBackground', () => () => <div data-testid="mo
 
 // Mock matchMedia
 Object.defineProperty(window, 'matchMedia', {
-    writable: true,
     value: jest.fn().mockImplementation(query => ({
+        addEventListener: jest.fn(),
+        addListener: jest.fn(),
+        dispatchEvent: jest.fn(),
         matches: false,
         media: query,
         onchange: null,
-        addListener: jest.fn(),
-        removeListener: jest.fn(),
-        addEventListener: jest.fn(),
         removeEventListener: jest.fn(),
-        dispatchEvent: jest.fn(),
+        removeListener: jest.fn(),
     })),
+    writable: true,
 });
 
 describe('App Integration', () => {
@@ -65,8 +66,8 @@ describe('App Integration', () => {
         });
     });
 
-    it('renders Blog page', async () => {
-        renderApp('/blog');
+    it('renders Insights page', async () => {
+        renderApp('/insights');
         await waitFor(() => {
             expect(screen.getByRole('heading', { name: /Insights/i })).toBeInTheDocument();
         });
@@ -87,8 +88,8 @@ describe('App Integration', () => {
         });
     });
 
-    it('renders Blog Detail page', async () => {
-        renderApp('/blog/systems-thinking');
+    it('renders Insights Detail page', async () => {
+        renderApp('/insights/systems-thinking');
         await waitFor(() => {
             // Wait for the blog post content.
             expect(screen.getByText(/The Art of Systems Thinking/i)).toBeInTheDocument();

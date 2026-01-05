@@ -1,5 +1,6 @@
-import React from 'react';
 import { screen, waitFor } from '@testing-library/react';
+import React from 'react';
+
 import { renderWithProviders } from '../../test/utils';
 import Layout from './Layout';
 import Navbar from './Navbar';
@@ -78,7 +79,7 @@ describe('Navbar Component', () => {
         expect(nav.className).toContain('bg-transparent');
 
         // Simulate scroll
-        Object.defineProperty(window, 'scrollY', { value: 100, configurable: true });
+        Object.defineProperty(window, 'scrollY', { configurable: true, value: 100 });
         window.dispatchEvent(new Event('scroll'));
 
         await waitFor(() => {

@@ -46,9 +46,9 @@ const SimpleMarkdownRenderer: React.FC<{ content: string }> = ({ content }) => {
 };
 
 /**
- * BlogDetail Page
+ * InsightsDetail Page
  */
-const BlogDetail: React.FC = () => {
+const InsightsDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const { blogPosts } = useSelector((state: RootState) => state.content);
 
@@ -57,7 +57,7 @@ const BlogDetail: React.FC = () => {
   // useSEO removed
 
   if (!post) {
-    return <Navigate to="/blog" />;
+    return <Navigate to="/insights" />;
   }
 
   return (
@@ -83,7 +83,7 @@ const BlogDetail: React.FC = () => {
       )}
       {/* Navigation */}
       <nav aria-label="Breadcrumb">
-        <Link to="/blog" className="inline-flex items-center text-white/50 hover:text-brand-mint transition-colors group focus:outline-none focus:ring-2 focus:ring-brand-mint rounded px-2 py-1">
+        <Link to="/insights" className="inline-flex items-center text-white/50 hover:text-brand-mint transition-colors group focus:outline-none focus:ring-2 focus:ring-brand-mint rounded px-2 py-1">
           <svg className="w-4 h-4 mr-2 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
           Back to Insights
         </Link>
@@ -132,4 +132,4 @@ const BlogDetail: React.FC = () => {
   );
 };
 
-export default BlogDetail;
+export default InsightsDetail;

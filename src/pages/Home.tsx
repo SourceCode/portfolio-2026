@@ -46,7 +46,7 @@ const Home: React.FC = () => {
               CTO • Product & Platform Architect • Leader
             </p>
             <p className="text-lg text-white/80 max-w-2xl mb-12 font-light">
-              Driving business transformation through technical vision and architectural excellence. I build scalable platforms and high-performance engineering cultures that turn complex challenges into market-leading products.
+              Driving business transformation through technical vision and architectural excellence. With executive leadership experience scaling platforms at New Western, Anywhere Real Estate, and Zillow Group, I build high-performance engineering cultures that turn complex challenges into market-leading products.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -74,18 +74,35 @@ const Home: React.FC = () => {
 
         {/* Feature Cards */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-20" aria-label="Core Competencies">
-          <GlassCard hoverEffect>
-            <h3 className="text-xl font-semibold mb-2 text-brand-mint">Strategic Leadership</h3>
-            <p className="text-white/70 text-sm">Aligning technical strategy with business goals to drive enterprise transformation and sustainable growth.</p>
-          </GlassCard>
-          <GlassCard hoverEffect>
-            <h3 className="text-xl font-semibold mb-2 text-brand-mint">Platform Architecture</h3>
-            <p className="text-white/70 text-sm">Designing robust, scalable ecosystems that ensure security, reliability, and rapid product velocity.</p>
-          </GlassCard>
-          <GlassCard hoverEffect>
-            <h3 className="text-xl font-semibold mb-2 text-mint">Product Engineering</h3>
-            <p className="text-white/70 text-sm">Unifying engineering, design, and product vision to deliver exceptional, user-centric digital experiences.</p>
-          </GlassCard>
+          <Link to="/expertise/strategic-leadership" className="block h-full group">
+            <GlassCard hoverEffect className="h-full border-transparent group-hover:border-brand-mint/30 transition-colors">
+              <div className="flex justify-between items-start mb-2">
+                <h3 className="text-xl font-semibold text-brand-mint group-hover:text-white transition-colors">Strategic Leadership</h3>
+                <svg className="w-5 h-5 text-brand-mint opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+              </div>
+              <p className="text-white/70 text-sm">Aligning technical strategy with business goals to drive enterprise transformation and sustainable growth.</p>
+            </GlassCard>
+          </Link>
+
+          <Link to="/expertise/platform-architecture" className="block h-full group">
+            <GlassCard hoverEffect className="h-full border-transparent group-hover:border-brand-teal/30 transition-colors">
+              <div className="flex justify-between items-start mb-2">
+                <h3 className="text-xl font-semibold text-brand-mint group-hover:text-white transition-colors">Platform Architecture</h3>
+                <svg className="w-5 h-5 text-brand-mint opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+              </div>
+              <p className="text-white/70 text-sm">Designing robust, scalable ecosystems that ensure security, reliability, and rapid product velocity.</p>
+            </GlassCard>
+          </Link>
+
+          <Link to="/expertise/product-engineering" className="block h-full group">
+            <GlassCard hoverEffect className="h-full border-transparent group-hover:border-white/30 transition-colors">
+              <div className="flex justify-between items-start mb-2">
+                <h3 className="text-xl font-semibold text-brand-mint group-hover:text-white transition-colors">Product Engineering</h3>
+                <svg className="w-5 h-5 text-brand-mint opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+              </div>
+              <p className="text-white/70 text-sm">Unifying engineering, design, and product vision to deliver exceptional, user-centric digital experiences.</p>
+            </GlassCard>
+          </Link>
         </section>
       </div>
     </>

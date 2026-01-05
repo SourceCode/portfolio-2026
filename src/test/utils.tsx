@@ -1,9 +1,10 @@
-import React, { PropsWithChildren } from 'react';
-import { render, RenderOptions } from '@testing-library/react';
-import { Provider } from 'react-redux';
-import { HelmetProvider } from 'react-helmet-async';
-import { MemoryRouter } from 'react-router-dom';
 import { configureStore, Store } from '@reduxjs/toolkit';
+import { render, RenderOptions } from '@testing-library/react';
+import React, { PropsWithChildren } from 'react';
+import { HelmetProvider } from 'react-helmet-async';
+import { Provider } from 'react-redux';
+import { MemoryRouter } from 'react-router-dom';
+
 import contentReducer from '../store/contentSlice';
 import { ContentState } from '../types';
 
@@ -24,16 +25,13 @@ export function renderWithProviders(
     {
         preloadedState = {},
         route = '/',
-        store = configureStore({
-            reducer: {
-                content: contentReducer,
-            },
-            preloadedState: preloadedState as any,
-        }),
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        store = configureStore({ preloadedState: preloadedState as any, reducer: { content: contentReducer } as any }),
         ...renderOptions
     }: ExtendedRenderOptions = {}
 ) {
-    function Wrapper({ children }: PropsWithChildren<{}>): JSX.Element {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    function Wrapper({ children }: PropsWithChildren<any>): React.ReactNode {
         return (
             <Provider store={store}>
                 <HelmetProvider>

@@ -1,11 +1,12 @@
-import React from 'react';
 import { screen } from '@testing-library/react';
-import { renderWithProviders } from '../test/utils';
-import Blog from './Blog';
+import React from 'react';
 
-describe('Blog Page', () => {
+import { renderWithProviders } from '../test/utils';
+import Insights from './Insights';
+
+describe('Insights Page', () => {
     it('renders blog list', () => {
-        renderWithProviders(<Blog />);
+        renderWithProviders(<Insights />);
 
         expect(screen.getByRole('heading', { name: /Insights/i })).toBeInTheDocument();
     });

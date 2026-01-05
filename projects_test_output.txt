@@ -1,0 +1,1730 @@
+
+> ryan-rentfro-portfolio@0.0.0 test
+> jest src/pages/Projects.test.tsx
+
+FAIL src/pages/Projects.test.tsx
+  Projects Page
+    ✕ renders projects list (78 ms)
+    ✕ filters projects when a tag is clicked (2106 ms)
+
+  ● Projects Page › renders projects list
+
+    TestingLibraryElementError: Unable to find an element with the text: /Projects/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"space-y-10 animate-fade-in"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"flex flex-col md:flex-row md:items-center justify-between gap-6"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<h1[39m
+                [33mclass[39m=[32m"text-4xl md:text-5xl font-bold mb-2"[39m
+              [36m>[39m
+                [0mSelected Works[0m
+              [36m</h1>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"text-white/60"[39m
+              [36m>[39m
+                [0mArchitectural feats and product launches.[0m
+              [36m</p>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"space-y-16"[39m
+          [36m>[39m
+            [36m<section[39m
+              [33mclass[39m=[32m"space-y-8"[39m
+            [36m>[39m
+              [36m<h2[39m
+                [33mclass[39m=[32m"text-2xl font-bold text-white/90 border-b border-white/10 pb-4"[39m
+              [36m>[39m
+                [0mCurrent & Executive[0m
+              [36m</h2>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"[39m
+              [36m>[39m
+                [36m<a[39m
+                  [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+                  [33mdata-discover[39m=[32m"true"[39m
+                  [33mhref[39m=[32m"/projects/new-western-tech"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"relative overflow-hidden bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-lg transition-all duration-300 text-left w-full hover:bg-white/10 hover:border-white/20 hover:scale-[1.01] hover:shadow-2xl h-full flex flex-col group"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33maria-hidden[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"absolute inset-0 opacity-[0.03] pointer-events-none mix-blend-overlay"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"relative z-10 p-6 sm:p-8"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"mb-4 overflow-hidden rounded-lg relative aspect-video"[39m
+                      [36m>[39m
+                        [36m<img[39m
+                          [33malt[39m=[32m""[39m
+                          [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+                          [33mloading[39m=[32m"lazy"[39m
+                          [33msrc[39m=[32m"public/images/projects/nw-tech-platform.jpeg"[39m
+                        [36m/>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"absolute inset-0 bg-brand-dark/20 group-hover:bg-brand-dark/0 transition-colors"[39m
+                        [36m/>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"flex-grow"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"flex justify-between items-start mb-2"[39m
+                        [36m>[39m
+                          [36m<span[39m
+                            [33mclass[39m=[32m"text-xs font-mono text-brand-teal"[39m
+                          [36m>[39m
+                            [0mPresent[0m
+                          [36m</span>[39m
+                        [36m</div>[39m
+                        [36m<h3[39m
+                          [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+                        [36m>[39m
+                          [0mNew Western Technology Platform[0m
+                        [36m</h3>[39m
+                        [36m<p[39m
+                          [33mclass[39m=[32m"text-white/60 text-sm leading-relaxed mb-4"[39m
+                        [36m>[39m
+                          [0mExecutive leadership for the nation’s largest private real estate marketplace ($17B+ Volume).[0m
+                        [36m</p>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"flex flex-wrap gap-2 mt-4 pt-4 border-t border-white/5"[39m
+                      [36m>[39m
+                        [36m<span[39m
+                          [33mclass[39m=[32m"text-xs text-white/40 bg-white/5 px-2 py-1 rounded"[39m
+                        [36m>[39m
+                          [0mExecutive[0m
+                        [36m</span>[39m
+                        [36m<span[39m
+                          [33mclass[39m=[32m"text-xs text-white/40 bg-white/5 px-2 py-1 rounded"[39m
+                        [36m>[39m
+                          [0mPlatform[0m
+                        [36m</span>[39m
+                        [36m<span[39m
+                          [33mclass[39m=[32m"text-xs text-white/40 bg-white/5 px-2 py-1 rounded"[39m
+                        [36m>[39m
+                          [0mReal Estate[0m
+                        [36m</span>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</a>[39m
+                [36m<a[39m
+                  [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+                  [33mdata-discover[39m=[32m"true"[39m
+                  [33mhref[39m=[32m"/projects/anywhere-global-core"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"relative overflow-hidden bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-lg transition-all duration-300 text-left w-full hover:bg-white/10 hover:border-white/20 hover:scale-[1.01] hover:shadow-2xl h-full flex flex-col group"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33maria-hidden[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"absolute inset-0 opacity-[0.03] pointer-events-none mix-blend-overlay"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"relative z-10 p-6 sm:p-8"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"mb-4 overflow-hidden rounded-lg relative aspect-video"[39m
+                      [36m>[39m
+                        [36m<img[39m
+                          [33malt[39m=[32m""[39m
+                          [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+                          [33mloading[39m=[32m"lazy"[39m
+                          [33msrc[39m=[32m"public/images/projects/global-core-services.jpeg"[39m
+                        [36m/>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"absolute inset-0 bg-brand-dark/20 group-hover:bg...
+
+       9 |         renderWithProviders(<Projects />);
+      10 |
+    > 11 |         expect(screen.getByText(/Projects/i)).toBeInTheDocument();
+         |                       ^
+      12 |         // Since projects are from initial state in slice, we expect some to be rendered
+      13 |         // You might need to check if the mocked store has initial data
+      14 |     });
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+      at Object.<anonymous> (src/pages/Projects.test.tsx:11:23)
+
+  ● Projects Page › filters projects when a tag is clicked
+
+    TestingLibraryElementError: Unable to find an accessible element with the role "button" and name `/Executive/i`
+
+    Here are the accessible roles:
+
+      heading:
+
+      Name "Selected Works":
+      [36m<h1[39m
+        [33mclass[39m=[32m"text-4xl md:text-5xl font-bold mb-2"[39m
+      [36m/>[39m
+
+      Name "Current & Executive":
+      [36m<h2[39m
+        [33mclass[39m=[32m"text-2xl font-bold text-white/90 border-b border-white/10 pb-4"[39m
+      [36m/>[39m
+
+      Name "New Western Technology Platform":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Global Core Services Platform":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Enterprise Compliance & Platform Architecture":
+      [36m<h2[39m
+        [33mclass[39m=[32m"text-2xl font-bold text-white/90 border-b border-white/10 pb-4"[39m
+      [36m/>[39m
+
+      Name "Enterprise Compliance Systems":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Core Platform Observability":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Core API & Integration Standards":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Serverless & Low-Ops Initiative":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Distributed Caching Framework":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Data Strategy & Analytics":
+      [36m<h2[39m
+        [33mclass[39m=[32m"text-2xl font-bold text-white/90 border-b border-white/10 pb-4"[39m
+      [36m/>[39m
+
+      Name "Real-Time Search & Indexing":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Agent Analytics & BI Platform":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Platform & Product":
+      [36m<h2[39m
+        [33mclass[39m=[32m"text-2xl font-bold text-white/90 border-b border-white/10 pb-4"[39m
+      [36m/>[39m
+
+      Name "Everprep - EdTech Platform":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Spacwatch - Fintech Platform":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Audience Journey Team":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Premiere Agent Platform":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Real-Time Communications":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Engineering Foundations & Tooling":
+      [36m<h2[39m
+        [33mclass[39m=[32m"text-2xl font-bold text-white/90 border-b border-white/10 pb-4"[39m
+      [36m/>[39m
+
+      Name "Tachikoma Automation Platform":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Core Service Templates":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "CI/CD & Deployment Automation":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Arcadia UI":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Creative & Innovation":
+      [36m<h2[39m
+        [33mclass[39m=[32m"text-2xl font-bold text-white/90 border-b border-white/10 pb-4"[39m
+      [36m/>[39m
+
+      Name "Demo Engine IDE":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Surreal Roguelike":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Demo Engine":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Metal Shader Explorer":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Shooter In Space":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Fist to Flame":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Winner: Hackweek 15 - Spherez":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Winner: Hackweek 14 - Project Alien":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Winner: Hackweek 12 - ZLeaderboard":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Custom Hardware Experiments":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Design & Visual Systems":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Music Production":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Custom Audio Tools":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Web Applications, OSS & Foundational":
+      [36m<h2[39m
+        [33mclass[39m=[32m"text-2xl font-bold text-white/90 border-b border-white/10 pb-4"[39m
+      [36m/>[39m
+
+      Name "School Scheduler":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Live Scheduler":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Cronos Web Socket Server":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Shop Order System":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Voice Config - Alexa Skill Builder":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Sports Afield Trophy Properties":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "CaseAware Legal Platform":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Wash-U K12 Program":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Accent International Extranet":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Project Starfish":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "RSS Button Generator":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Early Career & Systems Work":
+      [36m<h2[39m
+        [33mclass[39m=[32m"text-2xl font-bold text-white/90 border-b border-white/10 pb-4"[39m
+      [36m/>[39m
+
+      Name "DevOps Modernization":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Custom CMS Migrations":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Enterprise Network Systems":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "AT&T Network Infrastructure":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Past Web Development & Design":
+      [36m<h2[39m
+        [33mclass[39m=[32m"text-2xl font-bold text-white/90 border-b border-white/10 pb-4"[39m
+      [36m/>[39m
+
+      Name "WyoTech":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Everest College":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Heald College":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Aspiring Firefighters":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Parsons Blewett":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Acapulco Screen Printing":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Prime Fabrication":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "UMSL Sports":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "JCRC":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Humane Society of Missouri":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Camp for All Kids":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Longmeadow Rescue Ranch":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "CAM St. Louis":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Camp Lakewood":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Desire Street Ministries":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "CORO":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Boys Hope Girls Hope":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      Name "Intl Order of the Golden Rule":
+      [36m<h3[39m
+        [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      link:
+
+      Name "Present New Western Technology Platform Executive leadership for the nation’s largest private real estate marketplace ($17B+ Volume). Executive Platform Real Estate":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/new-western-tech"[39m
+      [36m/>[39m
+
+      Name "2021-2023 Global Core Services Platform Global distributed platform powering 311,000+ agents across 119 countries for Century 21®, Coldwell Banker®, and Sotheby’s. Enterprise Platform Global":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/anywhere-global-core"[39m
+      [36m/>[39m
+
+      Name "2021–2023 Enterprise Compliance Systems Global privacy and consent engine enforcing GDPR/CCPA/CPRA across 119 countries. Enterprise Compliance Global":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/enterprise-compliance-systems"[39m
+      [36m/>[39m
+
+      Name "2021–2023 Core Platform Observability Full-stack observability suite (DataDog/OpenTelemetry) for 500+ microservices. Platform Enterprise Reliability":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/core-platform-observability"[39m
+      [36m/>[39m
+
+      Name "2021–2023 Core API & Integration Standards API governance, versioning protocols, and contract testing for global developer velocity. Platform API Enterprise":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/api-integration-standards"[39m
+      [36m/>[39m
+
+      Name "2021–2023 Serverless & Low-Ops Initiative Strategic migration to AWS Native Serverless architecture reducing costs by 40%. Serverless Cloud AWS":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/serverless-infrastructure"[39m
+      [36m/>[39m
+
+      Name "2021–2023 Distributed Caching Framework Multi-layer caching and policy injection engine for multi-tenant brand customization. Platform Global Enterprise":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/distributed-caching-framework"[39m
+      [36m/>[39m
+
+      Name "2019-2020 Real-Time Search & Indexing Real-time property search engine ingesting global MLS data via ElasticSearch. Platform Search ElasticSearch":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/anywhere-realtime-search"[39m
+      [36m/>[39m
+
+      Name "2016–2018 Agent Analytics & BI Platform High-throughput analytics pipeline powering real-time ROI dashboards for agents. Analytics BI Enterprise":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/agent-analytics-bi"[39m
+      [36m/>[39m
+
+      Name "2020-Present Everprep - EdTech Platform Technical strategy and platform architecture for EdTech startup. Startup EdTech Strategy":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/everprep-edtech"[39m
+      [36m/>[39m
+
+      Name "2020-Present Spacwatch - Fintech Platform Fintech platform architecture for financial data and payments. Startup Fintech Strategy":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/spacwatch-fintech"[39m
+      [36m/>[39m
+
+      Name "2018-2019 Audience Journey Team Engineering leadership for 120M+ annual visitor platform driving SEO and user acquisition. Consumer Growth SEO":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/leafly-audience-journey"[39m
+      [36m/>[39m
+
+      Name "2016-2018 Premiere Agent Platform Microservices architecture for $760M/year revenue platform (Premier Agent). Microservices Analytics Real-time":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/zillow-premiere-agent"[39m
+      [36m/>[39m
+
+      Name "2016–2018 Real-Time Communications Enterprise-scale Twilio integration for dynamic call routing and lead connection. Real-time Communications Cloud":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/realtime-communications-platform"[39m
+      [36m/>[39m
+
+      Name "2025 Tachikoma Automation Platform Full-featured automation platform orchestrating workflows across files, Docker, and systems with a React UI. TypeScript Node.js React":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/tachikoma-automation"[39m
+      [36m/>[39m
+
+      Name "2019–2023 Core Service Templates Internal Developer Platform (IDP) templates reducing service bootstrap time by 95%. Tooling Platform Developer Experience":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/service-templates-tooling"[39m
+      [36m/>[39m
+
+      Name "2016–2023 CI/CD & Deployment Automation Enterprise CI/CD pipelines with automated security scanning and canary deployments. DevOps Automation Cloud":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/cicd-automation"[39m
+      [36m/>[39m
+
+      Name "2016 Arcadia UI Official UI framework for OHM Logic Inc. built on Semantic UI and Node.js. UI Framework Design System Node.js":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/arcadia-ui"[39m
+      [36m/>[39m
+
+      Name "2025 Demo Engine IDE Native macOS Demoscene IDE & Real-Time VFX Production Platform. C++20 Metal 3 Real-Time VFX":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/demo-engine-ide"[39m
+      [36m/>[39m
+
+      Name "2025 Surreal Roguelike Procedural turn-based roguelike engine with history-driven worlds and three interconnected realms. C++20 Metal Procedural Generation":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/surreal-roguelike"[39m
+      [36m/>[39m
+
+      Name "2024 Demo Engine Professional real-time graphics framework for macOS production, broadcast, and VJ performance. C++20 Metal 3 OpenGL":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/demo-engine"[39m
+      [36m/>[39m
+
+      Name "2024 Metal Shader Explorer Native macOS Real-Time Procedural Shader Playground (Metal + C++20). C++20 Metal Shaders":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/metal-shader-explorer"[39m
+      [36m/>[39m
+
+      Name "2024 Shooter In Space C# 2D space shooter with complex bullet patterns, URP lighting, and wave-based progression. Unity C# Game Development":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/shooter-in-space"[39m
+      [36m/>[39m
+
+      Name "2022 Fist to Flame Grid-based, turn-driven dungeon crawler prototype with procedural generation and tactical combat. Unity C# Game Development":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/fist-to-flame"[39m
+      [36m/>[39m
+
+      Name "2018 Winner: Hackweek 15 - Spherez Non-intrusive IoT notification system winning Judges Choice at Hackweek 15. Innovation IoT Hardware":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/hackweek-spherez"[39m
+      [36m/>[39m
+
+      Name "2017 Winner: Hackweek 14 - Project Alien Custom-fabricated organizational arcade cabinet winning 1st Place at Hackweek 14. Innovation Hardware Arduino":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/hackweek-project-alien"[39m
+      [36m/>[39m
+
+      Name "2016 Winner: Hackweek 12 - ZLeaderboard Corporate gamification and leaderboard platform winning Judges Choice at Hackweek 12. Innovation Gamification Node.js":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/hackweek-zleaderboard"[39m
+      [36m/>[39m
+
+      Name "2016–2018 Custom Hardware Experiments Embedded systems lab: Custom MIDI controllers, IoT, and kinetic art. Hardware Innovation Embedded":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/custom-hardware-embedded"[39m
+      [36m/>[39m
+
+      Name "Ongoing Design & Visual Systems Professional UI/UX, 3D motion graphics, and brand identity systems. Design UI/UX Branding":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/design-visual-systems"[39m
+      [36m/>[39m
+
+      Name "Ongoing Music Production Algorithmic electronic music production and audio engineering. Creative Music Audio":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/music-production"[39m
+      [36m/>[39m
+
+      Name "Ongoing Custom Audio Tools Synthesizers, sound design tools, and production workflows. Creative Audio Tooling":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/custom-audio-tools"[39m
+      [36m/>[39m
+
+      Name "2024 School Scheduler Web-based school scheduling platform with GraphQL API, payment integration, and AWS infrastructure. PHP GraphQL AWS":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/school-scheduler"[39m
+      [36m/>[39m
+
+      Name "2024 Live Scheduler React single-page app for live production scheduling with swimlanes and real-time syncing. React Redux Scheduling":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/live-scheduler"[39m
+      [36m/>[39m
+
+      Name "2024 Cronos Web Socket Server Node.js WebSocket service powering real-time sync for manufacturing scheduling systems. Node.js Socket.IO Backend":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/cronos-ws"[39m
+      [36m/>[39m
+
+      Name "2023 Shop Order System ERP and automation platform tailored for manufacturing operations with scheduling and inventory modules. PHP ERP Manufacturing":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/shop-order-system"[39m
+      [36m/>[39m
+
+      Name "2018 Voice Config - Alexa Skill Builder React SPA for building Alexa Skills with Redux state management and template generation. React Redux Alexa Skills":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/voice-config-alexa"[39m
+      [36m/>[39m
+
+      Name "2016 Sports Afield Trophy Properties Full-stack MLS platform for recreational real estate with custom MVC core and syndication engines. PHP MVC Real Estate":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/sports-afield-trophy-properties"[39m
+      [36m/>[39m
+
+      Name "Legacy CaseAware Legal Platform Mission-critical legal case management integrations for enterprise finance/law. Web App Enterprise Legal Tech":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/caseaware-platform"[39m
+      [36m/>[39m
+
+      Name "Legacy Wash-U K12 Program FERPA-compliant educational data platform for Washington University. Web App Education Security":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/washu-k12"[39m
+      [36m/>[39m
+
+      Name "Legacy Accent International Extranet B2B supply chain extranet optimizing international logistics workflows. Web App Enterprise B2B":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/accent-extranet"[39m
+      [36m/>[39m
+
+      Name "Legacy Project Starfish Custom Object-Oriented MVC Framework (Pre-Laravel era innovation). Open Source Framework PHP":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/project-starfish"[39m
+      [36m/>[39m
+
+      Name "Legacy RSS Button Generator High-traffic open source XML/RSS utility tool. Open Source Tooling Legacy":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/rss-generator"[39m
+      [36m/>[39m
+
+      Name "2014–2016 DevOps Modernization Led enterprise DevOps modernization and Agile transformation initiatives. Operations Transformation Leadership":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/gdr-devops"[39m
+      [36m/>[39m
+
+      Name "2002–2010 Custom CMS Migrations Legacy system refactoring and migration to modern OOP architectures. Legacy Web Dev Frameworks":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/cms-mvc-migrations"[39m
+      [36m/>[39m
+
+      Name "1999–2001 Enterprise Network Systems ISO 9001-certified IT operations and infrastructure management. Infrastructure Systems Networking":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/enterprise-network-systems"[39m
+      [36m/>[39m
+
+      Name "Early Career AT&T Network Infrastructure Carrier-grade network migration operations and tooling (AT&T). Infrastructure Networking Legacy":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/att-network-migration"[39m
+      [36m/>[39m
+
+      Name "Legacy WyoTech Enterprise web architecture for multi-campus technical institution. Web Dev Design Education":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/wyotech"[39m
+      [36m/>[39m
+
+      Name "Legacy Everest College Brand standardization and responsive design for North American college network. Web Dev Design Education":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/everest-college"[39m
+      [36m/>[39m
+
+      Name "Legacy Heald College UX/UI modernization driving online enrollment generation. Web Dev Design Education":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/heald-college"[39m
+      [36m/>[39m
+
+      Name "Legacy Aspiring Firefighters Career development platform for public safety professionals. Web Dev Niche Professional":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/aspiring-firefighters"[39m
+      [36m/>[39m
+
+      Name "Legacy Parsons Blewett Digital archive and presence for historic cultural philanthropy. Web Dev Non-Profit Culture":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/parsons-blewett"[39m
+      [36m/>[39m
+
+      Name "Legacy Acapulco Screen Printing B2B digital portfolio and lead generation for local manufacturing. Web Dev Small Business Manufacturing":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/acapulco-printing"[39m
+      [36m/>[39m
+
+      Name "Legacy Prime Fabrication Industrial B2B web presence for specialized fabrication services. Web Dev Manufacturing B2B":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/prime-fabrication"[39m
+      [36m/>[39m
+
+      Name "Legacy UMSL Sports University athletics portal with roster and schedule database integration. Web Dev Education Sports":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/umsl-sports"[39m
+      [36m/>[39m
+
+      Name "Legacy JCRC Civic advocacy and community resource portal. Web Dev Non-Profit Community":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/jcrc"[39m
+      [36m/>[39m
+
+      Name "Legacy Humane Society of Missouri Donor engagement and adoption platform for major animal welfare NGO. Web Dev Non-Profit Philanthropy":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/humane-society"[39m
+      [36m/>[39m
+
+      Name "Legacy Camp for All Kids Information portal for diversity-focused youth outreach. Web Dev Non-Profit Youth":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/camp-for-all-kids"[39m
+      [36m/>[39m
+
+      Name "Legacy Longmeadow Rescue Ranch Fundraising and awareness platform for animal rehabilitation. Web Dev Non-Profit Fundraising":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/longmeadow-ranch"[39m
+      [36m/>[39m
+
+      Name "Legacy CAM St. Louis Digital gallery extension for Contemporary Art Museum. Web Dev Arts Culture":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/cam-st-louis"[39m
+      [36m/>[39m
+
+      Name "Legacy Camp Lakewood Recreational facility portal for YMCA camp operations. Web Dev Non-Profit Recreation":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/camp-lakewood"[39m
+      [36m/>[39m
+
+      Name "Legacy Desire Street Ministries Community development outreach platform. Web Dev Non-Profit Community":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/desire-street"[39m
+      [36m/>[39m
+
+      Name "Legacy CORO Leadership training resource library and alumni network. Web Dev Non-Profit Leadership":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/coro-leadership"[39m
+      [36m/>[39m
+
+      Name "Legacy Boys Hope Girls Hope Scholarship application and mentorship platform. Web Dev Non-Profit Education":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/boys-hope"[39m
+      [36m/>[39m
+
+      Name "Legacy Intl Order of the Golden Rule Professional association portal with member directory services. Web Dev Association B2B":
+      [36m<a[39m
+        [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+        [33mdata-discover[39m=[32m"true"[39m
+        [33mhref[39m=[32m"/projects/ogr"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      img:
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/nw-tech-platform.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/global-core-services.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/enterprise-compliance-systems.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/core-platform-observability.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/core-api-integration.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/serverless-low-ops.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/distributed-caching.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/real-time-search-and-indexing.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/agent-analytics-and-bi.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/everprep.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/spacwatch.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/audience-journey-team.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/premiere-agent.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/real-time-communications.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/tachikoma.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/core-service-templates.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/ci-cd-deployment.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/arcadia.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/demo-engine-ide.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/surreal-roguelike.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/demo-engine.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/metal-shader-explorer.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/shooter-in-space.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/fist-to-flame.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/hackweek15-spherez.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/hackweek14-project-alien.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/hackweek12-zleaderboard.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/custom-hardware-embedded.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/design-visual-systems.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/music-production.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/custom-audio-tools.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/school-scheduler.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/live-scheduler.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/cronos-ws.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/shop-order-system.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/voice-config.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/sports-afield.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/caseaware.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/washu-k12.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/accent-international.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/project-starfish.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/rss-button-oss.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/devops-modernization.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/cms-migrations.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/enterprise-network-systems.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/att-network.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/wyotech.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/everest.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/heald.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/aspiring-firefighters.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/parsons-blewett.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/acapulco-screen-printing.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/prime-fabrication.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/umsl-sports.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/jcrc.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/humane-society.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/camp-for-all-kids.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/long-meadow-rescue-ranch.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/cam-stl.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/camp-lakewood.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/desire-street-ministries.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/coro.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/boys-hope-girls-hope.jpeg"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<img[39m
+        [33malt[39m=[32m""[39m
+        [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+        [33mloading[39m=[32m"lazy"[39m
+        [33msrc[39m=[32m"public/images/projects/golden-rule.jpeg"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"space-y-10 animate-fade-in"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"flex flex-col md:flex-row md:items-center justify-between gap-6"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<h1[39m
+                [33mclass[39m=[32m"text-4xl md:text-5xl font-bold mb-2"[39m
+              [36m>[39m
+                [0mSelected Works[0m
+              [36m</h1>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"text-white/60"[39m
+              [36m>[39m
+                [0mArchitectural feats and product launches.[0m
+              [36m</p>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"space-y-16"[39m
+          [36m>[39m
+            [36m<section[39m
+              [33mclass[39m=[32m"space-y-8"[39m
+            [36m>[39m
+              [36m<h2[39m
+                [33mclass[39m=[32m"text-2xl font-bold text-white/90 border-b border-white/10 pb-4"[39m
+              [36m>[39m
+                [0mCurrent & Executive[0m
+              [36m</h2>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"[39m
+              [36m>[39m
+                [36m<a[39m
+                  [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+                  [33mdata-discover[39m=[32m"true"[39m
+                  [33mhref[39m=[32m"/projects/new-western-tech"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"relative overflow-hidden bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-lg transition-all duration-300 text-left w-full hover:bg-white/10 hover:border-white/20 hover:scale-[1.01] hover:shadow-2xl h-full flex flex-col group"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33maria-hidden[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"absolute inset-0 opacity-[0.03] pointer-events-none mix-blend-overlay"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"relative z-10 p-6 sm:p-8"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"mb-4 overflow-hidden rounded-lg relative aspect-video"[39m
+                      [36m>[39m
+                        [36m<img[39m
+                          [33malt[39m=[32m""[39m
+                          [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+                          [33mloading[39m=[32m"lazy"[39m
+                          [33msrc[39m=[32m"public/images/projects/nw-tech-platform.jpeg"[39m
+                        [36m/>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"absolute inset-0 bg-brand-dark/20 group-hover:bg-brand-dark/0 transition-colors"[39m
+                        [36m/>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"flex-grow"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"flex justify-between items-start mb-2"[39m
+                        [36m>[39m
+                          [36m<span[39m
+                            [33mclass[39m=[32m"text-xs font-mono text-brand-teal"[39m
+                          [36m>[39m
+                            [0mPresent[0m
+                          [36m</span>[39m
+                        [36m</div>[39m
+                        [36m<h3[39m
+                          [33mclass[39m=[32m"text-2xl font-bold mb-3 group-hover:text-brand-teal transition-colors"[39m
+                        [36m>[39m
+                          [0mNew Western Technology Platform[0m
+                        [36m</h3>[39m
+                        [36m<p[39m
+                          [33mclass[39m=[32m"text-white/60 text-sm leading-relaxed mb-4"[39m
+                        [36m>[39m
+                          [0mExecutive leadership for the nation’s largest private real estate marketplace ($17B+ Volume).[0m
+                        [36m</p>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"flex flex-wrap gap-2 mt-4 pt-4 border-t border-white/5"[39m
+                      [36m>[39m
+                        [36m<span[39m
+                          [33mclass[39m=[32m"text-xs text-white/40 bg-white/5 px-2 py-1 rounded"[39m
+                        [36m>[39m
+                          [0mExecutive[0m
+                        [36m</span>[39m
+                        [36m<span[39m
+                          [33mclass[39m=[32m"text-xs text-white/40 bg-white/5 px-2 py-1 rounded"[39m
+                        [36m>[39m
+                          [0mPlatform[0m
+                        [36m</span>[39m
+                        [36m<span[39m
+                          [33mclass[39m=[32m"text-xs text-white/40 bg-white/5 px-2 py-1 rounded"[39m
+                        [36m>[39m
+                          [0mReal Estate[0m
+                        [36m</span>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</a>[39m
+                [36m<a[39m
+                  [33mclass[39m=[32m"block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint rounded-2xl"[39m
+                  [33mdata-discover[39m=[32m"true"[39m
+                  [33mhref[39m=[32m"/projects/anywhere-global-core"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"relative overflow-hidden bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-lg transition-all duration-300 text-left w-full hover:bg-white/10 hover:border-white/20 hover:scale-[1.01] hover:shadow-2xl h-full flex flex-col group"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33maria-hidden[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"absolute inset-0 opacity-[0.03] pointer-events-none mix-blend-overlay"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"relative z-10 p-6 sm:p-8"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"mb-4 overflow-hidden rounded-lg relative aspect-video"[39m
+                      [36m>[39m
+                        [36m<img[39m
+                          [33malt[39m=[32m""[39m
+                          [33mclass[39m=[32m"w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"[39m
+                          [33mloading[39m=[32m"lazy"[39m
+                          [33msrc[39m=[32m"public/images/projects/global-core-services.jpeg"[39m
+                        [36m/>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"absolute inset-0 bg-brand-dark/20 group-hover:bg...
+
+      18 |
+      19 |         // Find a filter button that isn't 'All'
+    > 20 |         const filterButton = screen.getByRole('button', { name: /Executive/i });
+         |                                     ^
+      21 |         expect(filterButton).toBeInTheDocument();
+      22 |
+      23 |         // Default state: All projects shown (approx check)
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+      at Object.<anonymous> (src/pages/Projects.test.tsx:20:37)
+
+------------------------------|---------|----------|---------|---------|-------------------
+File                          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+------------------------------|---------|----------|---------|---------|-------------------
+All files                     |    9.53 |    14.56 |    5.97 |    10.3 |                   
+ src                          |       0 |        0 |       0 |       0 |                   
+  App.tsx                     |       0 |      100 |       0 |       0 | 1-133             
+  config.ts                   |       0 |        0 |     100 |       0 | 1                 
+ src/components               |       0 |      100 |       0 |       0 |                   
+  WorkingStyleRadarChart.tsx  |       0 |      100 |       0 |       0 | 1-89              
+ src/components/Layout        |       0 |        0 |       0 |       0 |                   
+  Layout.tsx                  |       0 |      100 |       0 |       0 | 1-51              
+  Navbar.tsx                  |       0 |        0 |       0 |       0 | 1-126             
+ src/components/SEO           |     100 |    78.57 |     100 |     100 |                   
+  SEO.tsx                     |     100 |    78.57 |     100 |     100 | 33                
+ src/components/UI            |      36 |    22.22 |      25 |      36 |                   
+  GlassCard.tsx               |      90 |    28.57 |     100 |      90 | 45                
+  LoadingScreen.tsx           |       0 |      100 |       0 |       0 | 1-22              
+  RouteAnnouncer.tsx          |       0 |        0 |       0 |       0 | 1-35              
+ src/components/Utils         |       0 |      100 |       0 |       0 |                   
+  ScrollToTop.tsx             |       0 |      100 |       0 |       0 | 1-20              
+ src/pages                    |    6.56 |     3.27 |    9.19 |    6.38 |                   
+  About.tsx                   |       0 |        0 |       0 |       0 | 1-269             
+  BetterMorale.tsx            |       0 |      100 |       0 |       0 | 1-84              
+  Blog.tsx                    |       0 |      100 |       0 |       0 | 1-75              
+  BlogDetail.tsx              |       0 |        0 |       0 |       0 | 1-135             
+  CDCPipelines.tsx            |       0 |      100 |       0 |       0 | 1-88              
+  CloudArchitecture.tsx       |       0 |      100 |       0 |       0 | 1-126             
+  ComponentLibrary.tsx        |       0 |      100 |       0 |       0 | 1-88              
+  Contact.tsx                 |       0 |        0 |       0 |       0 | 1-121             
+  CultureOfMastery.tsx        |       0 |      100 |       0 |       0 | 1-105             
+  DORAmetrics.tsx             |       0 |      100 |       0 |       0 | 1-98              
+  DataDrivenUX.tsx            |       0 |      100 |       0 |       0 | 1-99              
+  DataEngineering.tsx         |       0 |      100 |       0 |       0 | 1-107             
+  DataMesh.tsx                |       0 |      100 |       0 |       0 | 1-92              
+  DeepWork.tsx                |       0 |      100 |       0 |       0 | 1-75              
+  DesignSystems.tsx           |       0 |      100 |       0 |       0 | 1-117             
+  DesignTokens.tsx            |       0 |      100 |       0 |       0 | 1-91              
+  EmpoweredTeams.tsx          |       0 |      100 |       0 |       0 | 1-107             
+  EventSourcing.tsx           |       0 |      100 |       0 |       0 | 1-88              
+  FasterDiscovery.tsx         |       0 |      100 |       0 |       0 | 1-92              
+  Home.tsx                    |       0 |      100 |       0 |       0 | 1-112             
+  ImmutableInfrastructure.tsx |       0 |      100 |       0 |       0 | 1-88              
+  LogicOverEmotion.tsx        |       0 |      100 |       0 |       0 | 1-62              
+  ModernFrontend.tsx          |       0 |      100 |       0 |       0 | 1-98              
+  Observability.tsx           |       0 |      100 |       0 |       0 | 1-88              
+  PlatformArchitecture.tsx    |       0 |      100 |       0 |       0 | 1-153             
+  PolicyAsCode.tsx            |       0 |      100 |       0 |       0 | 1-88              
+  ProductEngineering.tsx      |       0 |      100 |       0 |       0 | 1-136             
+  ProductTrios.tsx            |       0 |      100 |       0 |       0 | 1-103             
+  ProjectDetail.tsx           |       0 |        0 |       0 |       0 | 1-262             
+  Projects.tsx                |   96.15 |       50 |     100 |     100 | 31,71             
+  SharedUnderstanding.tsx     |       0 |      100 |       0 |       0 | 1-88              
+  StrategicLeadership.tsx     |       0 |      100 |       0 |       0 | 1-134             
+  SystemDocumentation.tsx     |       0 |      100 |       0 |       0 | 1-88              
+  SystemsInfrastructure.tsx   |       0 |      100 |       0 |       0 | 1-88              
+  TechnicalRFCs.tsx           |       0 |      100 |       0 |       0 | 1-92              
+  WorkingStyle.tsx            |       0 |      100 |       0 |       0 | 1-116             
+  WrittenCulture.tsx          |       0 |      100 |       0 |       0 | 1-64              
+  ZeroTrust.tsx               |       0 |      100 |       0 |       0 | 1-91              
+ src/store                    |    90.9 |      100 |      50 |    90.9 |                   
+  contentSlice.ts             |    90.9 |      100 |      50 |    90.9 | 2574              
+------------------------------|---------|----------|---------|---------|-------------------
+Jest: "global" coverage threshold for statements (90%) not met: 9.53%
+Jest: "global" coverage threshold for branches (90%) not met: 14.56%
+Jest: "global" coverage threshold for lines (90%) not met: 10.3%
+Jest: "global" coverage threshold for functions (90%) not met: 5.97%
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 2 total
+Snapshots:   0 total
+Time:        3.423 s
+Ran all test suites matching /src\/pages\/Projects.test.tsx/i.

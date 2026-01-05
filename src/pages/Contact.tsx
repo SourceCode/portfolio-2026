@@ -1,9 +1,9 @@
+import { config } from '@/config';
 import React, { useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 
 import SEO from '../components/SEO/SEO';
 import GlassCard from '../components/UI/GlassCard';
-import { config } from '@/config';
 
 /**
  * Contact Page

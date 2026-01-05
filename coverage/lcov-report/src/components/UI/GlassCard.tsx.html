@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">90% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>9/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">57.14% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>7/7</span>
+                <span class='fraction'>4/7</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">90% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>9/10</span>
             </div>
         
             
@@ -126,7 +126,7 @@
 <a name='L61'></a><a href='#L61'>61</a>
 <a name='L62'></a><a href='#L62'>62</a>
 <a name='L63'></a><a href='#L63'>63</a>
-<a name='L64'></a><a href='#L64'>64</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">8x</span>
+<a name='L64'></a><a href='#L64'>64</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -148,16 +148,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">191x</span>
-<span class="cline-any cline-yes">191x</span>
-<span class="cline-any cline-yes">191x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">94x</span>
+<span class="cline-any cline-yes">94x</span>
+<span class="cline-any cline-yes">94x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">191x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">94x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -169,8 +166,11 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">191x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">94x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -181,14 +181,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">190x</span>
+<span class="cline-any cline-yes">94x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
 &nbsp;
 interface GlassCardProps {
@@ -211,10 +211,10 @@ interface GlassCardProps {
  * - If `onClick` is provided, it renders as a `&lt;button&gt;` tag to ensure native keyboard focus and interaction.
  * - Otherwise, renders as a standard `&lt;div&gt;`.
  */
-const GlassCard: React.FC&lt;GlassCardProps&gt; = ({ children, className = '', hoverEffect = false, onClick }) =&gt; {
+const GlassCard: React.FC&lt;GlassCardProps&gt; = ({ children, className = <span class="branch-0 cbranch-no" title="branch not covered" >'',</span> hoverEffect = false, onClick }) =&gt; {
   const baseClasses = 'relative overflow-hidden bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-lg transition-all duration-300 text-left w-full';
   const hoverClasses = hoverEffect ? 'hover:bg-white/10 hover:border-white/20 hover:scale-[1.01] hover:shadow-2xl' : '';
-  const interactiveClasses = onClick ? 'cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint' : '';
+  const interactiveClasses = onClick ? <span class="branch-0 cbranch-no" title="branch not covered" >'cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-mint' </span>: '';
 &nbsp;
   const content = (
     &lt;&gt;
@@ -232,8 +232,8 @@ const GlassCard: React.FC&lt;GlassCardProps&gt; = ({ children, className = '', h
     &lt;/&gt;
   );
 &nbsp;
-  if (onClick) {
-    return (
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (onClick) {
+<span class="cstat-no" title="statement not covered" >    return (</span>
       &lt;button 
         className={`${baseClasses} ${hoverClasses} ${interactiveClasses} ${className}`} 
         onClick={onClick}
@@ -259,7 +259,7 @@ export default React.memo(GlassCard);
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-01-02T02:39:21.774Z
+                at 2026-01-05T18:05:48.299Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

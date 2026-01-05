@@ -1,52 +1,52 @@
 
 export const setupIntersectionObserverMock = () => {
     class IntersectionObserver {
+        disconnect = jest.fn();
         observe = jest.fn();
         unobserve = jest.fn();
-        disconnect = jest.fn();
     }
     Object.defineProperty(window, 'IntersectionObserver', {
-        writable: true,
         configurable: true,
         value: IntersectionObserver,
+        writable: true,
     });
     Object.defineProperty(global, 'IntersectionObserver', {
-        writable: true,
         configurable: true,
         value: IntersectionObserver,
+        writable: true,
     });
 };
 
 export const setupResizeObserverMock = () => {
     class ResizeObserver {
+        disconnect = jest.fn();
         observe = jest.fn();
         unobserve = jest.fn();
-        disconnect = jest.fn();
     }
     Object.defineProperty(window, 'ResizeObserver', {
-        writable: true,
         configurable: true,
         value: ResizeObserver,
+        writable: true,
     });
     Object.defineProperty(global, 'ResizeObserver', {
-        writable: true,
         configurable: true,
         value: ResizeObserver,
+        writable: true,
     });
 };
 
 export const setupMatchMediaMock = () => {
     Object.defineProperty(window, 'matchMedia', {
-        writable: true,
         value: jest.fn().mockImplementation(query => ({
+            addEventListener: jest.fn(),
+            addListener: jest.fn(), // deprecated
+            dispatchEvent: jest.fn(),
             matches: false,
             media: query,
             onchange: null,
-            addListener: jest.fn(), // deprecated
-            removeListener: jest.fn(), // deprecated
-            addEventListener: jest.fn(),
             removeEventListener: jest.fn(),
-            dispatchEvent: jest.fn(),
+            removeListener: jest.fn(), // deprecated
         })),
+        writable: true,
     });
 };

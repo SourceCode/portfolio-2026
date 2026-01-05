@@ -6,7 +6,30 @@
 /**
  * Represents a single portfolio project.
  */
+/**
+ * Links to external project resources.
+ */
+export interface ProjectLinks {
+  github?: string;
+  linkedin?: string;
+  web?: string;
+  youtube?: string;
+}
+
+export interface ProjectMetrics {
+  ambition: number;
+  creativity: number;
+  curiosity: number;
+  entrepreneurship: number;
+  learning: number;
+}
+
+/**
+ * Represents a single portfolio project.
+ */
 export interface Project {
+  /** Broad category for grouping (e.g. "Creative & Innovation") */
+  category: string;
   /** Full detailed description of the project, including architecture and outcome */
   description: string;
   /** Whether this project should be highlighted on the home page */
@@ -15,6 +38,10 @@ export interface Project {
   id: string;
   /** URL to the thumbnail or hero image */
   imageUrl: string;
+  /** Optional external links */
+  links?: ProjectLinks;
+  /** Optional radar chart metrics */
+  metrics?: ProjectMetrics;
   /** URL-friendly identifier used in routes */
   slug: string;
   /** Short one-liner summary displayed on cards */
@@ -73,9 +100,12 @@ export interface AboutPageContent {
   functionalExpertise: {
     category: string;
     items: string[];
+    relatedTags?: string[];
   }[];
   leadershipStrengths: {
     description: string;
+    link?: string;
+    relatedTags?: string[];
     title: string;
   }[];
   philosophy: string;

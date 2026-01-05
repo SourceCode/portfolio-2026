@@ -34,6 +34,9 @@
       "@/apis/*": [
         "src/apis/*"
       ],
+      "@/config": [
+        "src/config.ts"
+      ],
       "@/app/*": [
         "src/app/*"
       ],
