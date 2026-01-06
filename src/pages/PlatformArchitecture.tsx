@@ -29,10 +29,10 @@ const PlatformArchitecture: React.FC = () => {
                     <div>
                         <h2 className="text-2xl font-bold mb-4 text-brand-teal">Resilience at Scale</h2>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            Architecture is the art of trade-offs. My philosophy circles around "Evolutionary Architecture"—building systems that are robust enough to handle today's load but flexible enough to adapt to tomorrow's unknown requirements. I prioritize decoupled services, event-driven communication, and rigorous observability.
+                            Architecture is the art of trade-offs. My philosophy circles around Evolutionary Architecture - building systems that are robust enough to handle today's load but flexible enough to adapt to tomorrow's unknown requirements. I prioritize decoupled services, event-driven communication, and rigorous observability.
                         </p>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            Whether transitioning legacy monoliths to serverless microservices or designing greenfield event meshes, I enforce standards that reduce cognitive load for developers and eliminate "hero culture" in operations.
+                            Whether transitioning legacy monoliths to serverless microservices or designing greenfield event driven systems, I enforce standards that reduce cognitive load for developers and eliminate hero culture in operations.
                         </p>
                     </div>
                     <GlassCard className="p-8 flex flex-col justify-center border-l-4 border-l-brand-mint">
@@ -40,7 +40,7 @@ const PlatformArchitecture: React.FC = () => {
                         <ul className="space-y-3">
                             <li className="flex items-start">
                                 <span className="text-brand-teal mr-3">●</span>
-                                <span className="text-white/80">Security & Compliance (SOC2 / NIST)</span>
+                                <span className="text-white/80">Security & Compliance (NIST / SOC2)</span>
                             </li>
                             <li className="flex items-start">
                                 <span className="text-brand-teal mr-3">●</span>
@@ -48,7 +48,7 @@ const PlatformArchitecture: React.FC = () => {
                             </li>
                             <li className="flex items-start">
                                 <span className="text-brand-teal mr-3">●</span>
-                                <span className="text-white/80">Infrastructure as Code (Terraform)</span>
+                                <span className="text-white/80">Infrastructure as Code (IaC)</span>
                             </li>
                             <li className="flex items-start">
                                 <span className="text-brand-teal mr-3">●</span>
@@ -67,7 +67,7 @@ const PlatformArchitecture: React.FC = () => {
                                 <h3 className="text-2xl font-bold text-white mb-2">Premiere Agent Platform</h3>
                                 <p className="text-brand-mint font-medium mb-4">Zillow Group</p>
                                 <p className="text-white/70 leading-relaxed">
-                                    Designed and optimized the microservices architecture powering the $760M/year Premiere Agent business. Key initiatives included the "Concierge" lead qualification system—a real-time orchestration engine connecting homebuyers with agents via voice and SMS (Twilio) within seconds of inquiry.
+                                    Designed and optimized the microservices architecture powering the $760M/year Premiere Agent business. Key initiatives included the "Concierge" lead qualification system - a real-time orchestration engine connecting homebuyers with agents via voice and SMS (Twilio) within seconds of inquiry.
                                 </p>
                             </div>
                         </div>
@@ -96,7 +96,7 @@ const PlatformArchitecture: React.FC = () => {
                         <Link to="/expertise/cloud-architecture" className="block h-full group">
                             <GlassCard className="p-6 h-full border-transparent group-hover:border-brand-teal/30 hover:bg-white/10 transition-all flex flex-col items-center text-center">
                                 <h4 className="font-bold text-lg text-brand-teal mb-3 group-hover:text-white transition-colors">Cloud</h4>
-                                <p className="text-xs text-white/60 mb-4 flex-grow">AWS (Lambda, ECS, DynamoDB), GCP</p>
+                                <p className="text-xs text-white/60 mb-4 flex-grow">AWS, GCP, Azure</p>
                                 <div className="text-brand-teal opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all">
                                     <svg className="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                                 </div>
@@ -107,7 +107,7 @@ const PlatformArchitecture: React.FC = () => {
                         <Link to="/expertise/systems-infrastructure" className="block h-full group">
                             <GlassCard className="p-6 h-full border-transparent group-hover:border-brand-teal/30 hover:bg-white/10 transition-all flex flex-col items-center text-center">
                                 <h4 className="font-bold text-lg text-brand-teal mb-3 group-hover:text-white transition-colors">Systems</h4>
-                                <p className="text-xs text-white/60 mb-4 flex-grow">Kubernetes, Terraform, Vault</p>
+                                <p className="text-xs text-white/60 mb-4 flex-grow">ECS, CDK, OpenSearch</p>
                                 <div className="text-brand-teal opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all">
                                     <svg className="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                                 </div>
@@ -118,7 +118,7 @@ const PlatformArchitecture: React.FC = () => {
                         <Link to="/expertise/data-engineering" className="block h-full group">
                             <GlassCard className="p-6 h-full border-transparent group-hover:border-brand-teal/30 hover:bg-white/10 transition-all flex flex-col items-center text-center">
                                 <h4 className="font-bold text-lg text-brand-teal mb-3 group-hover:text-white transition-colors">Data</h4>
-                                <p className="text-xs text-white/60 mb-4 flex-grow">Postgres, Redis, ElasticSearch, Kafka</p>
+                                <p className="text-xs text-white/60 mb-4 flex-grow">Snowflake, Elasticsearch, Postgres, DynamoDB, Redis</p>
                                 <div className="text-brand-teal opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all">
                                     <svg className="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                                 </div>
@@ -129,7 +129,7 @@ const PlatformArchitecture: React.FC = () => {
                         <Link to="/expertise/observability" className="block h-full group">
                             <GlassCard className="p-6 h-full border-transparent group-hover:border-brand-teal/30 hover:bg-white/10 transition-all flex flex-col items-center text-center">
                                 <h4 className="font-bold text-lg text-brand-teal mb-3 group-hover:text-white transition-colors">Observability</h4>
-                                <p className="text-xs text-white/60 mb-4 flex-grow">DataDog, OpenTelemetry, Splunk</p>
+                                <p className="text-xs text-white/60 mb-4 flex-grow">DataDog, OpenTelemetry, Splunk, ELK Stack</p>
                                 <div className="text-brand-teal opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all">
                                     <svg className="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                                 </div>

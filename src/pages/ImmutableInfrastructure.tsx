@@ -29,10 +29,10 @@ const ImmutableInfrastructure: React.FC = () => {
                     <div>
                         <h2 className="text-2xl font-bold mb-4 text-brand-blue">Eradicating Drift</h2>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            In traditional ops, servers ("Pets") were manually nursed back to health when they had issues. Over time, "configuration drift" made them unique snowflakes—impossible to replicate and terrifying to reboot.
+                            In traditional ops, servers ("Pets") were manually nursed back to health when they had issues. Over time, configuration drift made them unique snowflakes - impossible to replicate and terrifying to reboot.
                         </p>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            **Immutable Infrastructure** prevents this. Once an artifact (AMI, Container Image) is built, it is never modified. If a configuration change is needed, we update the code, build a new image, and replace the old running instances entirely.
+                            Immutable Infrastructure prevents this. Once an artifact (AMI, Container Image) is built, it is never modified. If a configuration change is needed, we update the code, build a new image, and replace the old running instances entirely.
                         </p>
                     </div>
                     <GlassCard className="p-8 flex flex-col justify-center border-l-4 border-l-brand-blue">
@@ -67,7 +67,7 @@ const ImmutableInfrastructure: React.FC = () => {
                             <p className="text-sm text-white/70">The ultimate immutable unit. The `Dockerfile` is the source of truth. Container orchestration (K8s/ECS) handles the lifecycle of replacement.</p>
                         </GlassCard>
                         <GlassCard className="p-6">
-                            <h3 className="text-lg font-bold text-brand-blue mb-3">Terraform</h3>
+                            <h3 className="text-lg font-bold text-brand-blue mb-3">Terraform / CDK</h3>
                             <p className="text-sm text-white/70">Infrastructure as Code orchestrates the deployment. It treats the infrastructure itself as versioned, immutable definitions.</p>
                         </GlassCard>
                     </div>

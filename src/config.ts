@@ -10,8 +10,8 @@ export const config = {
   },
   siteUrl: 'https://rentfro.net',
   social: {
-    github: 'https://github.com/ryanrentfro',
+    github: 'https://github.com/SourceCode',
     linkedin: 'https://linkedin.com/in/ryanrentfro',
-    youtube: 'https://youtube.com/@RyanRentfro', // Placeholder
+    youtube: 'https://youtube.com/@LowTideNinja', // Placeholder
   },
 };

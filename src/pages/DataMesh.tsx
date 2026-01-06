@@ -20,7 +20,7 @@ const DataMesh: React.FC = () => {
                     <div className="absolute top-0 left-0 w-32 h-1 bg-brand-blue rounded-full mb-8"></div>
                     <h1 className="text-4xl md:text-5xl font-bold mb-6 pt-8">Data Mesh</h1>
                     <p className="text-xl md:text-2xl text-white/80 font-light leading-relaxed max-w-4xl">
-                        Moving beyond the monolithic Data Lake. Treating data as a first-class product owned by domain teams.
+                        Moving beyond the Data Lake. Treating data as a first-class product owned by domain teams.
                     </p>
                 </section>
 
@@ -29,10 +29,10 @@ const DataMesh: React.FC = () => {
                     <div>
                         <h2 className="text-2xl font-bold mb-4 text-brand-blue">Domain Ownership</h2>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            Scalability isn't just about disk space; it's about organizational throughput. A centralized "Data Team" eventually becomes a bottleneck. They don't understand the domain context of the data they are ingesting.
+                            Scalability isn't just about disk space; it's about organizational throughput. A centralized team eventually becomes a bottleneck. They eventually lose domain context of the data they are ingesting.
                         </p>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            **Data Mesh** shifts ownership to the left. The Checkout Team owns the `Checkout` data product. They are responsible for its quality, its schema, and its uptime.
+                            Data Mesh shifts ownership to the left. The Checkout Team owns the `Checkout` data product. They are responsible for its quality, its schema, and its uptime.
                         </p>
                     </div>
                     <GlassCard className="p-8 flex flex-col justify-center border-l-4 border-l-brand-blue">
@@ -64,7 +64,7 @@ const DataMesh: React.FC = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <GlassCard className="p-6">
                             <h3 className="text-lg font-bold text-brand-blue mb-3">Schema Enforcement</h3>
-                            <p className="text-sm text-white/70">Protobuf or Avro schemas act as the contract. Breaking changes are caught at compile time, not in production pipelines.</p>
+                            <p className="text-sm text-white/70">Schemas act as the contract. Breaking changes are caught at compile time, not in production pipelines.</p>
                         </GlassCard>
                         <GlassCard className="p-6">
                             <h3 className="text-lg font-bold text-brand-blue mb-3">Quality SLAs</h3>
@@ -72,7 +72,7 @@ const DataMesh: React.FC = () => {
                         </GlassCard>
                         <GlassCard className="p-6">
                             <h3 className="text-lg font-bold text-brand-blue mb-3">Discoverability</h3>
-                            <p className="text-sm text-white/70">A centralized Data Catalog (like Amundsen or DataHub) allows anyone in the company to find and request access to data products.</p>
+                            <p className="text-sm text-white/70">A centralized Data Catalog allows anyone in the company to find and request access to data products.</p>
                         </GlassCard>
                     </div>
                 </section>

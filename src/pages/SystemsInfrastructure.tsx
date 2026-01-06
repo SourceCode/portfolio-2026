@@ -20,7 +20,7 @@ const SystemsInfrastructure: React.FC = () => {
                     <div className="absolute top-0 left-0 w-32 h-1 bg-brand-teal rounded-full mb-8"></div>
                     <h1 className="text-4xl md:text-5xl font-bold mb-6 pt-8">Systems & Infrastructure</h1>
                     <p className="text-xl md:text-2xl text-white/80 font-light leading-relaxed max-w-4xl">
-                        Managing complexity with Kubernetes, Terraform, and Vault. My core tenets are Infrastructure as Code (IaC), Security as Code, and Immutable Infrastructure.
+                        My core tenets are Infrastructure as Code (IaC), Security as Code, and Immutable Infrastructure.
                     </p>
                 </section>
 
@@ -29,17 +29,17 @@ const SystemsInfrastructure: React.FC = () => {
                     <div>
                         <h2 className="text-2xl font-bold mb-4 text-white">Infrastructure as Software</h2>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            Gone are the days of manually SSH-ing into servers to install packages. I treat infrastructure provisioning with the same rigor as application code: it must be versioned, reviewed, tested, and reproducible.
+                            Gone are the days of manually SSHing into servers to install packages. I treat infrastructure provisioning with the same rigor as application code: it must be versioned, reviewed, tested, and reproducible.
                         </p>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            Tools like Terraform allow us to define our entire stack declaratively. This eliminates "configuration drift" and enables us to spin up identical environments (Dev, Stage, Prod) in minutes, not weeks.
+                            Tools like Terraform and CDK allow us to define our entire stack declaratively. This eliminates configuration drift and enables us to spin up identical environments (Dev, Test, Stage, Prod) in minutes, not weeks.
                         </p>
                     </div>
                     <GlassCard className="p-8 flex flex-col justify-center border-l-4 border-l-brand-teal">
                         <h3 className="text-xl font-bold text-white mb-4">The Toolchain</h3>
                         <ul className="space-y-4">
                             <li>
-                                <div className="font-bold text-brand-teal mb-1">Terraform</div>
+                                <div className="font-bold text-brand-teal mb-1">Terraform / CDK</div>
                                 <div className="text-sm text-white/80">The standard for IaC. Managing state, modules, and multi-cloud providers.</div>
                             </li>
                             <li>
@@ -47,7 +47,7 @@ const SystemsInfrastructure: React.FC = () => {
                                 <div className="text-sm text-white/80">Orchestrating containerized workloads at scale. Helm charts for package management.</div>
                             </li>
                             <li>
-                                <div className="font-bold text-brand-teal mb-1">HashiCorp Vault</div>
+                                <div className="font-bold text-brand-teal mb-1">Secrets Manager</div>
                                 <div className="text-sm text-white/80">Centralized secrets management. Dynamic secrets and encryption-as-a-service.</div>
                             </li>
                         </ul>

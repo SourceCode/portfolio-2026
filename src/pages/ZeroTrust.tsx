@@ -20,7 +20,7 @@ const ZeroTrust: React.FC = () => {
                     <div className="absolute top-0 left-0 w-32 h-1 bg-brand-violet rounded-full mb-8"></div>
                     <h1 className="text-4xl md:text-5xl font-bold mb-6 pt-8">Zero Trust</h1>
                     <p className="text-xl md:text-2xl text-white/80 font-light leading-relaxed max-w-4xl">
-                        "Never trust, always verify." Moving security from the network perimeter to the identity of every workload and user.
+                        Never trust, always verify. Moving security from the network perimeter to the identity of every workload and user.
                     </p>
                 </section>
 
@@ -29,16 +29,16 @@ const ZeroTrust: React.FC = () => {
                     <div>
                         <h2 className="text-2xl font-bold mb-4 text-brand-violet">Identity is the New Perimeter</h2>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            Traditional security relied on a "castle and moat" strategy: once you were inside the VPN, you were trusted. In a cloud-native world with remote employees and distributed microservices, the perimeter has dissolved.
+                            Traditional security relied on a castle and moat strategy: once you were inside the VPN, you were trusted. In a cloud-native world with remote employees and distributed microservices, the perimeter has dissolved.
                         </p>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            My approach to Zero Trust ensures that every request—whether from a user or a service—is authenticated, authorized, and encrypted. We assume the network is hostile.
+                            My approach to Zero Trust ensures that every request whether from a user or a service is authenticated, authorized, and encrypted. We assume the network is hostile.
                         </p>
                     </div>
                     <GlassCard className="p-8 flex flex-col justify-center border-l-4 border-l-brand-violet">
                         <h3 className="text-xl font-bold text-white mb-4">Service Mesh Implementation</h3>
                         <p className="text-white/70 mb-4">
-                            Implementing a Service Mesh (like Istio or Linkerd) is the most effective way to enforce Zero Trust in a microservices architecture.
+                            Implementing a Service Mesh is the most effective way to enforce Zero Trust in a microservices architecture.
                         </p>
                         <ul className="space-y-4">
                             <li className="flex items-start">
@@ -47,7 +47,7 @@ const ZeroTrust: React.FC = () => {
                             </li>
                             <li className="flex items-start">
                                 <span className="text-brand-violet mr-3">●</span>
-                                <div className="text-white/80"><strong>Traffic Control:</strong> Fine-grained allow/deny rules (e.g., "The frontend can call the Product API, but cannot call the Billing API directly").</div>
+                                <div className="text-white/80"><strong>Traffic Control:</strong> Fine-grained allow/deny rules ("The frontend can call the Product API, but cannot call the Billing API directly").</div>
                             </li>
                             <li className="flex items-start">
                                 <span className="text-brand-violet mr-3">●</span>
@@ -63,7 +63,7 @@ const ZeroTrust: React.FC = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <GlassCard className="p-6">
                             <h3 className="text-lg font-bold text-brand-violet mb-3">User Identity</h3>
-                            <p className="text-sm text-white/70">Context-aware access via IDPs (Okta/Auth0). MFA is mandatory. Access depends on device health and location.</p>
+                            <p className="text-sm text-white/70">Context-aware access via IDPs. MFA is mandatory. Access depends on device health and location.</p>
                         </GlassCard>
                         <GlassCard className="p-6">
                             <h3 className="text-lg font-bold text-brand-violet mb-3">Least Privilege</h3>
@@ -71,7 +71,7 @@ const ZeroTrust: React.FC = () => {
                         </GlassCard>
                         <GlassCard className="p-6">
                             <h3 className="text-lg font-bold text-brand-violet mb-3">Secrets Management</h3>
-                            <p className="text-sm text-white/70">No hardcoded credentials. Secrets are injected at runtime via Vault or AWS Secrets Manager and rotated automatically.</p>
+                            <p className="text-sm text-white/70">No hardcoded credentials. Secrets are injected at runtime and rotated automatically.</p>
                         </GlassCard>
                     </div>
                 </section>

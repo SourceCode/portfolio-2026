@@ -32,7 +32,7 @@ const DataDrivenUX: React.FC = () => {
                             Intuition starts the conversation; data finishes it. I believe in embedding instrumentation deep into the product engineering workflow. Every feature should have a defined success metric before a single line of code is written.
                         </p>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            By integrating tools like Optimizely, Amplitude, or Google Optimize alongside standard observability (DataDog/New Relic), we create a complete picture of how technical changes impact user behavior. This closes the loop between engineering output and business outcome.
+                            By integrating ux tools alongside standard observability, we create a complete picture of how technical changes impact user behavior. This closes the loop between engineering output and business outcome.
                         </p>
                     </div>
                     <GlassCard className="p-8 flex flex-col justify-center border-l-4 border-l-brand-mint">
@@ -56,7 +56,7 @@ const DataDrivenUX: React.FC = () => {
                                 <span className="font-bold text-brand-mint">3.</span>
                                 <div>
                                     <h4 className="font-bold text-white text-sm">Analyze & Iterate</h4>
-                                    <p className="text-xs text-white/50">Review quantitative data and qualitative feedback to pivot or persevere.</p>
+                                    <p className="text-xs text-white/50">Review quantitative data and qualitative feedback to pivot or iterate.</p>
                                 </div>
                             </li>
                         </ol>

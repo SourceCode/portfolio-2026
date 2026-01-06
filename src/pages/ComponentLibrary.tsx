@@ -20,7 +20,7 @@ const ComponentLibrary: React.FC = () => {
                     <div className="absolute top-0 left-0 w-32 h-1 bg-brand-violet rounded-full mb-8"></div>
                     <h1 className="text-4xl md:text-5xl font-bold mb-6 pt-8">Component Library</h1>
                     <p className="text-xl md:text-2xl text-white/80 font-light leading-relaxed max-w-4xl">
-                        The LEGO® bricks of your digital product. Accessible, consistent, and strongly-typed to accelerate specialized feature development.
+                        The LEGO bricks of your digital product. Accessible, consistent, and strongly-typed to accelerate specialized feature development.
                     </p>
                 </section>
 
@@ -29,10 +29,10 @@ const ComponentLibrary: React.FC = () => {
                     <div>
                         <h2 className="text-2xl font-bold mb-4 text-brand-violet">Composition vs. Configuration</h2>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            I avoid creating "God Components"—a single `Button` with 50 props (`isBig`, `isRed`, `hasIcon`). This leads to unmaintainable spaghetti code.
+                            I avoid creating God Components -  single `Button` with 50 props (`isBig`, `isRed`, `hasIcon`). This leads to unmaintainable spaghetti code.
                         </p>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            Instead, I favor **Composition**. By exposing sub-components (like `Card.Header`, `Card.Body`, `Card.Footer`), we give developers the flexibility to construct unique layouts while still adhering to the strict styling rules of the individual parts.
+                            Instead, I favor composition. By exposing sub-components (like `Card.Header`, `Card.Body`, `Card.Footer`), we give developers the flexibility to construct unique layouts while still adhering to the strict styling rules of the individual parts.
                         </p>
                     </div>
                     <GlassCard className="p-8 flex flex-col justify-center border-l-4 border-l-brand-violet">
@@ -63,12 +63,12 @@ const ComponentLibrary: React.FC = () => {
                             <p className="text-sm text-white/70">The industry standard for building declarative, type-safe UI.</p>
                         </GlassCard>
                         <GlassCard className="p-6">
-                            <h3 className="text-lg font-bold text-brand-violet mb-3">Headless UI / Radix</h3>
-                            <p className="text-sm text-white/70">Using unstyled, accessible primitives for complex interactions (Modals, Popovers) and applying our own Design Tokens on top.</p>
+                            <h3 className="text-lg font-bold text-brand-violet mb-3">Headless UI</h3>
+                            <p className="text-sm text-white/70">Using unstyled, accessible primitives for complex interactions and applying our own Design Tokens on top.</p>
                         </GlassCard>
                         <GlassCard className="p-6">
                             <h3 className="text-lg font-bold text-brand-violet mb-3">Testing</h3>
-                            <p className="text-sm text-white/70">Unit tests (Vitest) for logic and Interaction tests (Storybook) for visual states.</p>
+                            <p className="text-sm text-white/70">Unit tests for logic and Interaction tests  for visual states.</p>
                         </GlassCard>
                     </div>
                 </section>

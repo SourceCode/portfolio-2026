@@ -20,7 +20,7 @@ const EventSourcing: React.FC = () => {
                     <div className="absolute top-0 left-0 w-32 h-1 bg-brand-mint rounded-full mb-8"></div>
                     <h1 className="text-4xl md:text-5xl font-bold mb-6 pt-8">Event Sourcing</h1>
                     <p className="text-xl md:text-2xl text-white/80 font-light leading-relaxed max-w-4xl">
-                        Don't just store the current state. Store the *story* of how you got there.
+                        Don't just store the current state. Store the story of how you got there.
                     </p>
                 </section>
 
@@ -29,10 +29,10 @@ const EventSourcing: React.FC = () => {
                     <div>
                         <h2 className="text-2xl font-bold mb-4 text-brand-mint">The Source of Truth</h2>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            In a traditional CRUD database, when you update a user's address, the old address is lost forever. You only know the *now*.
+                            In a traditional CRUD database, when you update a user's address, the old address is lost forever. You only know the now.
                         </p>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            With **Event Sourcing**, we persist every state change as an immutable event (e.g., `UserMovedAddress`, `OrderPlaced`, `ItemRemovedFromCart`). The current state is simply a derived view (a "left fold") of all past events.
+                            With Event Sourcing, we persist every state change as an immutable event (e.g., `UserMovedAddress`, `OrderPlaced`, `ItemRemovedFromCart`). The current state is simply a derived view of all past events.
                         </p>
                     </div>
                     <GlassCard className="p-8 flex flex-col justify-center border-l-4 border-l-brand-teal">
@@ -40,11 +40,11 @@ const EventSourcing: React.FC = () => {
                         <ul className="space-y-4">
                             <li className="flex items-start">
                                 <span className="text-brand-mint mr-3">●</span>
-                                <div className="text-white/80"><strong>Auditability:</strong> Perfect for finance and healthcare. You can prove exactly *who* did *what* and *when*.</div>
+                                <div className="text-white/80"><strong>Auditability:</strong> Perfect for finance and long term records. You can prove exactly who did what and when.</div>
                             </li>
                             <li className="flex items-start">
                                 <span className="text-brand-mint mr-3">●</span>
-                                <div className="text-white/80"><strong>Temporal Queries:</strong> "What did the cart look like last Tuesday at 2 PM?" Just replay events up to that timestamp.</div>
+                                <div className="text-white/80"><strong>Time Based:</strong> "What did the cart look like last Tuesday at 2 PM?" Just replay events up to that timestamp.</div>
                             </li>
                             <li className="flex items-start">
                                 <span className="text-brand-mint mr-3">●</span>
@@ -64,11 +64,11 @@ const EventSourcing: React.FC = () => {
                         </GlassCard>
                         <GlassCard className="p-6">
                             <h3 className="text-lg font-bold text-brand-mint mb-3">The Projector</h3>
-                            <p className="text-sm text-white/70">An async worker that listens to new events and updates specialized Read Models (e.g., a SQL table, a Redis cache).</p>
+                            <p className="text-sm text-white/70">An async worker that listens to new events and updates specialized Read Models (SQL table, Redis cache).</p>
                         </GlassCard>
                         <GlassCard className="p-6">
                             <h3 className="text-lg font-bold text-brand-mint mb-3">The Read Side</h3>
-                            <p className="text-sm text-white/70">Optimized for query speed. Can be denormalized and tailored to specific UI views.</p>
+                            <p className="text-sm text-white/70">Optimized for query speed. Can be denormalized and tailored to specific views.</p>
                         </GlassCard>
                     </div>
                 </section>

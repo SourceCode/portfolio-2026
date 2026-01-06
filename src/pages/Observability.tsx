@@ -20,7 +20,7 @@ const Observability: React.FC = () => {
                     <div className="absolute top-0 left-0 w-32 h-1 bg-brand-teal rounded-full mb-8"></div>
                     <h1 className="text-4xl md:text-5xl font-bold mb-6 pt-8">Observability</h1>
                     <p className="text-xl md:text-2xl text-white/80 font-light leading-relaxed max-w-4xl">
-                        Using DataDog, OpenTelemetry, and Splunk to answer the question: "Why is the system behaving this way?" Moving beyond simple monitoring to true understanding.
+                        Using DataDog, OpenTelemetry, and Splunk to answer the question: Why is the system behaving this way? Moving beyond basic monitoring to true understanding.
                     </p>
                 </section>
 
@@ -32,7 +32,7 @@ const Observability: React.FC = () => {
                             In a distributed microservices environment, you cannot debug with `ssh` and `grep`. You need a holistic view of a request's journey across the entire stack. Observability is not just about alerting when things break; it's about understanding the internal state of the system based on its external outputs.
                         </p>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            I implement the "Three Pillars of Observability" (Metrics, Logs, Traces) correlated together. This allows us to jump from a spike in error rate (Metric) to the specific requests failing (Trace) and the detailed error messages (Logs) in seconds.
+                            I implement the Three Pillars of Observability (Metrics, Logs, Traces) correlated together. This allows us to jump from a spike in error rate (Metric) to the specific requests failing (Trace) and the detailed error messages (Logs) in seconds.
                         </p>
                     </div>
                     <GlassCard className="p-8 flex flex-col justify-center border-l-4 border-l-brand-teal">
@@ -68,7 +68,7 @@ const Observability: React.FC = () => {
                         </GlassCard>
                         <GlassCard className="p-6">
                             <h3 className="text-lg font-bold text-brand-mint mb-3">High-Cardinality Metrics</h3>
-                            <p className="text-sm text-white/70">Ability to slice and dice metrics by unlimited tags (e.g., latency by `customer_id` or `build_version`).</p>
+                            <p className="text-sm text-white/70">Ability to slice and dice metrics by tags.</p>
                         </GlassCard>
                     </div>
                 </section>

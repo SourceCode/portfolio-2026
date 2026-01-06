@@ -20,7 +20,7 @@ const SharedUnderstanding: React.FC = () => {
                     <div className="absolute top-0 left-0 w-32 h-1 bg-brand-mint rounded-full mb-8"></div>
                     <h1 className="text-4xl md:text-5xl font-bold mb-6 pt-8">Shared Understanding</h1>
                     <p className="text-xl md:text-2xl text-white/80 font-light leading-relaxed max-w-4xl">
-                        No more "lost in translation." When Engineering, Product, and Design explore the problem space together, everyone understands the why behind the feature.
+                        No more lost in translation. When Engineering, Product, and Design explore the problem space together, everyone understands the why behind the feature.
                     </p>
                 </section>
 
@@ -48,7 +48,7 @@ const SharedUnderstanding: React.FC = () => {
                             </li>
                             <li className="flex items-start">
                                 <span className="text-brand-mint mr-3">●</span>
-                                <div className="text-white/80"><strong>Empathy for the User:</strong> Engineers who watch user sessions build better, more resilient products than those who just read tickets.</div>
+                                <div className="text-white/80"><strong>Empathy for the User:</strong> Engineers who observe user sessions build better, more resilient products than those who just read tickets.</div>
                             </li>
                         </ul>
                     </GlassCard>

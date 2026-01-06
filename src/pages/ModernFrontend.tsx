@@ -20,7 +20,7 @@ const ModernFrontend: React.FC = () => {
                     <div className="absolute top-0 left-0 w-32 h-1 bg-brand-mint rounded-full mb-8"></div>
                     <h1 className="text-4xl md:text-5xl font-bold mb-6 pt-8">Modern Frontend Architecture</h1>
                     <p className="text-xl md:text-2xl text-white/80 font-light leading-relaxed max-w-4xl">
-                        Expertise in Next.js, React, TypeScript, and TailwindCSS to build interfaces that are performant, responsive, and maintainable.
+                        Expertise in React, TypeScript, and TailwindCSS to build interfaces that are performant, responsive, and maintainable.
                     </p>
                 </section>
 
@@ -52,7 +52,7 @@ const ModernFrontend: React.FC = () => {
                             </div>
                             <div className="space-y-2">
                                 <div className="font-bold text-brand-mint">State Management</div>
-                                <div className="text-sm text-white/70">Redux / Context / Query</div>
+                                <div className="text-sm text-white/70">Redux</div>
                             </div>
                         </div>
                     </GlassCard>

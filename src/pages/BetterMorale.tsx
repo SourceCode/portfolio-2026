@@ -10,7 +10,7 @@ const BetterMorale: React.FC = () => {
         <>
             <SEO
                 title="Better Morale | Ryan Rentfro"
-                description="Transforming engineers from 'ticket-takers' into empowered problem solvers to drive engagement, retention, and innovation."
+                description="Transforming engineers from ticket-takers into empowered problem solvers to drive engagement, retention, and innovation."
                 canonical="https://rentfro.net/expertise/better-morale"
             />
             <article className="animate-fade-in space-y-16">
@@ -29,14 +29,14 @@ const BetterMorale: React.FC = () => {
                     <div>
                         <h2 className="text-2xl font-bold mb-4 text-brand-blue">Autonomy, Mastery, Purpose</h2>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            Daniel Pink's research on motivation applies directly to engineering. The easiest way to burn out a high-performing engineer is to turn them into a widget in a feature factory—micromanaged, disconnected from the user, and focused only on velocity.
+                            The easiest way to burn out a high-performing engineer is to turn them into a widget in a feature factory—micromanaged, disconnected from the user, and focused only on velocity.
                         </p>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            By involving engineers in the product trio, we tap into **Purpose**. They see the human impact of their work. They understand *who* they are building for, not just *what* they are coding. This connection fuels the intrinsic motivation to do their best work.
+                            By involving engineers in the product trio, we tap into purpose. They see the human impact of their work. They understand who they are building for, not just what they are coding. This connection fuels the intrinsic motivation to do their best work.
                         </p>
                     </div>
                     <GlassCard className="p-8 flex flex-col justify-center border-l-4 border-l-brand-blue">
-                        <h3 className="text-xl font-bold text-white mb-4">From "Mercenaries" to "Missionaries"</h3>
+                        <h3 className="text-xl font-bold text-white mb-4">From Mercenaries to Missionaries</h3>
                         <ul className="space-y-4">
                             <li className="flex items-start">
                                 <span className="text-brand-blue mr-3">●</span>

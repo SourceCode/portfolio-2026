@@ -27,12 +27,12 @@ const ProductEngineering: React.FC = () => {
                 {/* Core Philosophy */}
                 <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
-                        <h2 className="text-2xl font-bold mb-4 text-white">The User is the North Star</h2>
+                        <h2 className="text-2xl font-bold mb-4 text-white">The User is our North Star</h2>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            Great product engineering isn't just about clean code—it's about empathy. It requires engineers to understand the user's journey, the designer's intent, and the business's goals. I foster a culture where engineers are encouraged to ask "Why?" before discussing "How."
+                            Great product engineering isn't just about clean code—it's about user empathy. It requires engineers to understand the user's journey, the designer's intent, and the business's goals. I foster a culture where engineers participate in user research and are encouraged to ask "Why?" before discussing "How."
                         </p>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            My background as a multidisciplinary creator (Design, Music, Code) helps me bridge the often-siloed worlds of creative and technical teams. I speak the language of pixels and the language of pointers.
+                            My background as a multidisciplinary creator (Code, Music, Design) helps me bridge the often-siloed worlds of creative and technical teams. I speak the language of pixels, phasing, and pointers.
                         </p>
                     </div>
                     <GlassCard className="p-8 flex flex-col justify-center border-l-4 border-l-white">
@@ -52,7 +52,7 @@ const ProductEngineering: React.FC = () => {
                             </li>
                             <li className="flex items-start">
                                 <span className="text-white/50 mr-3">●</span>
-                                <span className="text-white/80">Accessibility (A11y) Leadership</span>
+                                <span className="text-white/80">Accessibility Leadership</span>
                             </li>
                         </ul>
                     </GlassCard>
@@ -106,7 +106,7 @@ const ProductEngineering: React.FC = () => {
                                 <h3 className="text-lg font-bold text-brand-mint group-hover:text-white transition-colors">Modern Frontend</h3>
                                 <svg className="w-4 h-4 text-brand-mint opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                             </div>
-                            <p className="text-sm text-white/70">Expertise in Next.js, React, TypeScript, and TailwindCSS to build interfaces that are performant, responsive, and maintainable.</p>
+                            <p className="text-sm text-white/70">Expertise in React, TypeScript, and TailwindCSS to build interfaces that are performant, responsive, and maintainable.</p>
                         </GlassCard>
                     </Link>
 

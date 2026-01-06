@@ -32,7 +32,7 @@ const DesignTokens: React.FC = () => {
                             Hardcoded hex values (e.g., `#00FF00`) are technical debt. When a rebranding happens, "Find and Replace" is a nightmare.
                         </p>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            **Design Tokens** introduce a layer of semantic meaning. Instead of `color: #EF4444`, we use `color: var(--color-critical-action)`. This allows us to change the visual implementation (e.g., Dark Mode, High Contrast Mode, or a complete rebrand) without touching a single line of component code.
+                            Design Tokens introduce a layer of semantic meaning. Instead of `color: #EF4444`, we use `color: var(--color-critical-action)`. This allows us to change the visual implementation (Dark Mode, High Contrast Mode, or a complete rebrand) without touching a single line of component code.
                         </p>
                     </div>
                     <GlassCard className="p-8 flex flex-col justify-center border-l-4 border-l-brand-teal">
@@ -54,30 +54,9 @@ const DesignTokens: React.FC = () => {
                     </GlassCard>
                 </section>
 
-                {/* Cross-Platform Strategy */}
-                <section>
-                    <h2 className="text-3xl font-bold mb-8">One Source, Many Platforms</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <GlassCard className="p-6">
-                            <h3 className="text-lg font-bold text-brand-mint mb-3">Web (CSS/SCSS)</h3>
-                            <p className="text-sm text-white/70">Tokens are transformed into CSS Variables (Custom Properties) for dynamic runtime theming.</p>
-                        </GlassCard>
-                        <GlassCard className="p-6">
-                            <h3 className="text-lg font-bold text-brand-mint mb-3">iOS (Swift)</h3>
-                            <p className="text-sm text-white/70">JSON tokens are converted into a Swift `Color` struct or asset catalog.</p>
-                        </GlassCard>
-                        <GlassCard className="p-6">
-                            <h3 className="text-lg font-bold text-brand-mint mb-3">Android (XML/Compose)</h3>
-                            <p className="text-sm text-white/70">Tokens become `colors.xml` or Kotlin objects for Jetpack Compose.</p>
-                        </GlassCard>
-                    </div>
-                    <p className="mt-6 text-sm text-white/50 italic">
-                        * Tools like Style Dictionary automate this transformation pipeline.
-                    </p>
-                </section>
 
                 {/* Related Projects */}
-                <RelatedProjects tags={['Design', 'UI', 'Frontend', 'System']} />
+                <RelatedProjects tags={['Design', 'UI', 'Frontend']} />
 
                 {/* Back Link */}
                 <div className="pt-8 border-t border-white/10">

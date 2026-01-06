@@ -20,7 +20,7 @@ const FasterDiscovery: React.FC = () => {
                     <div className="absolute top-0 left-0 w-32 h-1 bg-brand-violet rounded-full mb-8"></div>
                     <h1 className="text-4xl md:text-5xl font-bold mb-6 pt-8">Faster Discovery</h1>
                     <p className="text-xl md:text-2xl text-white/80 font-light leading-relaxed max-w-4xl">
-                        Engineers can often suggest technical shortcuts that achieve 80% of the value with 20% of the effort—but only if they are in the room when the problem is defined.
+                        Engineers can often suggest technical shortcuts that achieve 80% of the value with 20% of the effort if they are in the room when the problem is defined.
                     </p>
                 </section>
 
@@ -29,10 +29,10 @@ const FasterDiscovery: React.FC = () => {
                     <div>
                         <h2 className="text-2xl font-bold mb-4 text-brand-violet">The Feasibility Feedback Loop</h2>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            Discovery is about answering four risks: Value (will they buy it?), Usability (can they use it?), Viability (does it work for our business?), and **Feasibility** (can we build it?).
+                            Discovery is about answering four risks: Value (will they buy it?), Usability (can they use it?), Viability (does it work for our business?), and Feasibility (can we build it?).
                         </p>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            When engineers are excluded from discovery, feasibility is assessed last. This leads to "beautiful but impossible" designs or months-long scope creep. By bringing Engineering upstream, we can vet feasibility in real-time. Often, a slight tweak to the requirements can reduce implementation time from months to weeks.
+                            When engineers are excluded from discovery, feasibility is assessed last. This leads to "beautiful but impossible" designs or months-long scope creep. By bringing engineering upstream, we can vet feasibility in real-time. Often, a slight tweak to the requirements can reduce implementation time from months to weeks.
                         </p>
                     </div>
                     <GlassCard className="p-8 flex flex-col justify-center border-l-4 border-l-brand-violet">

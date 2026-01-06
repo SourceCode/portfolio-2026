@@ -10,7 +10,7 @@ const CultureOfMastery: React.FC = () => {
         <>
             <SEO
                 title="Culture of Mastery | Ryan Rentfro"
-                description="Implementing career ladders, mentorship circles, and 'Gold Standard' architectural review boards to foster continuous growth."
+                description="Implementing career paths, mentorship opportunities, and architectural review teams to foster continuous growth."
                 canonical="https://rentfro.net/expertise/culture-of-mastery"
             />
             <article className="animate-fade-in space-y-16">
@@ -20,7 +20,7 @@ const CultureOfMastery: React.FC = () => {
                     <div className="absolute top-0 left-0 w-32 h-1 bg-brand-mint rounded-full mb-8"></div>
                     <h1 className="text-4xl md:text-5xl font-bold mb-6 pt-8">Culture of Mastery</h1>
                     <p className="text-xl md:text-2xl text-white/80 font-light leading-relaxed max-w-4xl">
-                        Implementing career ladders, mentorship circles, and "Gold Standard" architectural review boards to foster continuous growth.
+                        Implementing career ladders, mentorship opportunities, and architectural review teams to foster continuous growth.
                     </p>
                 </section>
 
@@ -29,10 +29,10 @@ const CultureOfMastery: React.FC = () => {
                     <div>
                         <h2 className="text-2xl font-bold mb-4 text-brand-mint">Growth as a Keystone Habit</h2>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            A Culture of Mastery isn't about knowing everything—it's about the relentless pursuit of improvement. I believe that retention is driven by growth. If your engineers are not learning, they are leaving. My organization design is centered on explicit pathways for advancement, not just for managers, but for individual contributors (ICs).
+                            A Culture of Mastery isn't about knowing everything — it's about the relentless pursuit of improvement. I believe that retention is driven by growth. If your engineers are not learning, they are leaving. My organization design is centered on explicit pathways for advancement, not just for managers, but for individual contributors (ICs).
                         </p>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            By establishing the "Staff Engineer" track, I ensure that technical excellence is rewarded with the same prestige and compensation as people management, keeping our best architects building our critical systems.
+                            By establishing the Principal Engineer track, I ensure that technical excellence is rewarded with the same prestige and compensation as people management, keeping our best architects building our critical systems.
                         </p>
                     </div>
                     <GlassCard className="p-8 flex flex-col justify-center border-l-4 border-l-brand-mint">
@@ -44,11 +44,11 @@ const CultureOfMastery: React.FC = () => {
                             </li>
                             <li className="flex items-start">
                                 <span className="text-brand-mint mr-3">●</span>
-                                <span className="text-white/80"><strong>Gold Standard ARB:</strong> Architectural Review Boards that teach, not justgate.</span>
+                                <span className="text-white/80"><strong>Standard ART:</strong> Architectural Review Teams that teach, not justgate.</span>
                             </li>
                             <li className="flex items-start">
                                 <span className="text-brand-mint mr-3">●</span>
-                                <span className="text-white/80"><strong>Mentorship Circles:</strong> Structured peer-to-peer and leader-to-peer coaching.</span>
+                                <span className="text-white/80"><strong>Mentorship:</strong> Structured peer-to-peer and leader-to-peer coaching.</span>
                             </li>
                             <li className="flex items-start">
                                 <span className="text-brand-mint mr-3">●</span>
@@ -66,28 +66,9 @@ const CultureOfMastery: React.FC = () => {
                             In my teams, we detach our ego from our code. I value tough, accurate, unrelenting critique because it is the fastest path to quality.
                         </p>
                         <p className="text-white/70 leading-relaxed">
-                            I model this behavior by inviting feedback on my own architectural decisions. When a junior engineer points out a flaw in my design, they are celebrated. This psychological safety allows us to focus entirely on the *work*, not the *politics*.
+                            I model this behavior by inviting feedback on my own architectural decisions. When a junior engineer points out a flaw in my design, they are celebrated. This psychological safety allows us to focus entirely on the work, not the politics.
                         </p>
                     </GlassCard>
-                </section>
-
-                {/* Mechanisms for Mastery */}
-                <section>
-                    <h2 className="text-3xl font-bold mb-8">Systems of Excellence</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <GlassCard className="p-6">
-                            <h3 className="text-lg font-bold text-brand-teal mb-3">Architectural Review Board</h3>
-                            <p className="text-sm text-white/70">A rotating body of senior engineers that reviews major design decisions. The goal is to ensure consistency and spread knowledge, transforming "tribal knowledge" into institutional documentation.</p>
-                        </GlassCard>
-                        <GlassCard className="p-6">
-                            <h3 className="text-lg font-bold text-brand-teal mb-3">Internal Tech Radar</h3>
-                            <p className="text-sm text-white/70">Maintaining a "ThoughtWorks-style" Tech Radar to explicitly categorize technologies into Adopt, Trial, Assess, and Hold rings, removing ambiguity about the "right tool for the job."</p>
-                        </GlassCard>
-                        <GlassCard className="p-6">
-                            <h3 className="text-lg font-bold text-brand-teal mb-3">Hackathons & R&D</h3>
-                            <p className="text-sm text-white/70">Dedicated time for "Permissionless Innovation." Some of our best features started as Hackathon projects. It gives teams the space to fail safely and experiment wildly.</p>
-                        </GlassCard>
-                    </div>
                 </section>
 
                 {/* Related Projects */}

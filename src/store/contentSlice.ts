@@ -2489,7 +2489,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     },
     slug: 'wyotech',
     summary: 'Enterprise web architecture for multi-campus technical institution.',
-    tags: ['Web Dev', 'Design', 'Education', 'Enterprise'],
+    tags: ['Web Dev', 'Education', 'Enterprise'],
     title: 'WyoTech',
     year: 'Legacy'
   },

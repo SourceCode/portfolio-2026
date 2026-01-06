@@ -29,10 +29,10 @@ const SystemDocumentation: React.FC = () => {
                     <div>
                         <h2 className="text-2xl font-bold mb-4 text-brand-blue">Interactive Playgrounds</h2>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            Static documentation goes stale the moment it's written. I believe in **Living Documentation** generated directly from the code.
+                            Static documentation goes stale the moment it's written. I believe in Living Documentation generated directly from the code.
                         </p>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            Tools like Storybook allow developers and designers to interact with components in isolation. They can toggle props, test edge cases (e.g., extremely long text), and copy-paste code snippets directly into their features. This reduces "How do I use this?" questions to near zero.
+                            Tools like Storybook allow developers and designers to interact with components in isolation. They can toggle props, test edge cases, and copy-paste code snippets directly into their features. This reduces How do I use this? questions to near zero.
                         </p>
                     </div>
                     <GlassCard className="p-8 flex flex-col justify-center border-l-4 border-l-brand-blue">
@@ -68,7 +68,7 @@ const SystemDocumentation: React.FC = () => {
                         </GlassCard>
                         <GlassCard className="p-6">
                             <h3 className="text-lg font-bold text-brand-blue mb-3">Design Principles</h3>
-                            <p className="text-sm text-white/70">The "Why" behind the system. Our spacing scale, color theory, and accessibility standards explained.</p>
+                            <p className="text-sm text-white/70">The Why behind the system. Our spacing scale, color theory, and accessibility standards explained.</p>
                         </GlassCard>
                     </div>
                 </section>

@@ -35,7 +35,8 @@ const Contact: React.FC = () => {
       <div className="max-w-2xl mx-auto animate-fade-in">
         <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Get in Touch</h1>
 
-        <GlassCard className="p-8 md:p-12">
+        <GlassCard className="p-2 md:p-12">
+          {/*
           <form className="space-y-6" aria-label="Contact Form">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
@@ -70,7 +71,7 @@ const Contact: React.FC = () => {
               />
             </div>
 
-            {/* Conditional ReCAPTCHA Render */}
+      
             {config.features.enableCaptcha && (
               <div className="flex justify-center pt-2">
                 <ReCAPTCHA
@@ -88,7 +89,7 @@ const Contact: React.FC = () => {
             >
               Send Message
             </button>
-          </form>
+          </form>*/}
 
           <nav aria-label="Social Links" className="mt-12 flex justify-center space-x-10 text-white/50">
             {/* LinkedIn */}

@@ -20,7 +20,7 @@ const CloudArchitecture: React.FC = () => {
                     <div className="absolute top-0 left-0 w-32 h-1 bg-brand-teal rounded-full mb-8"></div>
                     <h1 className="text-4xl md:text-5xl font-bold mb-6 pt-8">Cloud Architecture</h1>
                     <p className="text-xl md:text-2xl text-white/80 font-light leading-relaxed max-w-4xl">
-                        Expertise in AWS (Lambda, ECS, DynamoDB) and GCP. My philosophy is "Right tool for the right job," prioritizing Serverless-first architectures to minimize operational overhead.
+                        Expertise in Cloud Technologies. My philosophy is "Right tool for the right job," prioritizing Serverless-first architectures to minimize operational overhead.
                     </p>
                 </section>
 
@@ -29,10 +29,10 @@ const CloudArchitecture: React.FC = () => {
                     <div>
                         <h2 className="text-2xl font-bold mb-4 text-white">The Serverless Mindset</h2>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            I advocate for a "Serverless First" approach not because it's trendy, but because it radically shifts engineering focus from *maintenance* to *innovation*. By leveraging managed services like AWS Lambda and DynamoDB, we decouple our teams from patching OS kernels and scaling clusters, allowing them to focus entirely on business logic.
+                            I advocate for a serverless first approach not because it's trendy, but because it radically shifts engineering focus from maintenance to continual innovation. By leveraging managed services like AWS Lambda and DynamoDB, we decouple our teams from patching OS kernels and scaling clusters, allowing them to focus entirely on business logic.
                         </p>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            However, serverless isn't a silver bullet. For long-running compute or specialized workloads, I utilize containerized solutions (ECS/Fargate/GKE) to balance cost and performance.
+                            However, serverless isn't a silver bullet. For long-running compute or specialized workloads, I utilize containerized solutions (ECS/Fargate) to balance cost and performance.
                         </p>
                     </div>
                     <GlassCard className="p-8 flex flex-col justify-center border-l-4 border-l-brand-teal">
@@ -72,7 +72,7 @@ const CloudArchitecture: React.FC = () => {
                         </GlassCard>
                         <GlassCard className="p-6">
                             <h3 className="text-lg font-bold text-brand-mint mb-3">Strangler Fig</h3>
-                            <p className="text-sm text-white/70">Iteratively migrating legacy monoliths to cloud-native services without "big bang" rewrites.</p>
+                            <p className="text-sm text-white/70">Iteratively migrating legacy monoliths to cloud-native services without big bang rewrites.</p>
                         </GlassCard>
                     </div>
                 </section>

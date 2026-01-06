@@ -20,7 +20,7 @@ const DORAmetrics: React.FC = () => {
                     <div className="absolute top-0 left-0 w-32 h-1 bg-brand-mint rounded-full mb-8"></div>
                     <h1 className="text-4xl md:text-5xl font-bold mb-6 pt-8">DORA Metrics</h1>
                     <p className="text-xl md:text-2xl text-white/80 font-light leading-relaxed max-w-4xl">
-                        Focusing on Elite DevOps metrics (Deployment Frequency, Lead Time for Changes) to measure the health of the delivery pipeline, not just individual code output.
+                        Focusing on DevOps metrics (Deployment Frequency, Lead Time for Changes) to measure the health of the delivery pipeline, not just individual code output.
                     </p>
                 </section>
 
@@ -60,7 +60,7 @@ const DORAmetrics: React.FC = () => {
 
                 {/* Elite Performance Scale */}
                 <section>
-                    <h2 className="text-3xl font-bold mb-8">Targeting "Elite" Performance</h2>
+                    <h2 className="text-3xl font-bold mb-8">Targeting Elite Performance</h2>
                     <GlassCard className="p-8">
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                             <div className="text-center">

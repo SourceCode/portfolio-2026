@@ -20,7 +20,7 @@ const TechnicalRFCs: React.FC = () => {
                     <div className="absolute top-0 left-0 w-32 h-1 bg-brand-mint rounded-full mb-8"></div>
                     <h1 className="text-4xl md:text-5xl font-bold mb-6 pt-8">Technical RFCs</h1>
                     <p className="text-xl md:text-2xl text-white/80 font-light leading-relaxed max-w-4xl">
-                        Democratizing architectural decisions through "Request for Comments." Any engineer can propose a change, fostering rigorous debate and collective ownership of the system design.
+                        Democratizing architectural decisions through Request for Comments (RFCs). Any engineer can propose a change, fostering rigorous debate and collective ownership of the system design.
                     </p>
                 </section>
 
@@ -29,10 +29,10 @@ const TechnicalRFCs: React.FC = () => {
                     <div>
                         <h2 className="text-2xl font-bold mb-4 text-white">Writing is Thinking</h2>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            Architecture should not be handed down from an "Ivory Tower." The best systems emerge when decisions are debated openly, with context and trade-offs clearly articulated in writing.
+                            Architecture should not be handed down from an Ivory Tower. The best systems emerge when decisions are debated openly, with context and trade-offs clearly articulated in writing.
                         </p>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            I implement a structured RFC (Request for Comments) process where any engineer—junior or senior—can propose a significant change. This forces clarity of thought, creates an asynchronous decision trail, and ensures that we build the *right* thing, not just the *easy* thing.
+                            I implement a structured RFC in the form of engineering roundtables and close pairings of engineers and architects where any engineer, junior or senior - can propose a significant change. This forces clarity of thought, creates an asynchronous decision trail, and ensures that we build the right thing, not just the easy thing.
                         </p>
                     </div>
                     <GlassCard className="p-8 flex flex-col justify-center border-l-4 border-l-brand-mint">
@@ -44,15 +44,15 @@ const TechnicalRFCs: React.FC = () => {
                             </li>
                             <li className="flex items-start">
                                 <span className="text-brand-mint mr-3">2.</span>
-                                <span className="text-white/80"><strong>Comment:</strong> Team reviews asynchronously (Google Docs/Notion/GitHub)./</span>
+                                <span className="text-white/80"><strong>Comment:</strong> Team reviews asynchronously./</span>
                             </li>
                             <li className="flex items-start">
                                 <span className="text-brand-mint mr-3">3.</span>
-                                <span className="text-white/80"><strong>Review:</strong> Targeted discussion to resolve contention (if needed).</span>
+                                <span className="text-white/80"><strong>Review:</strong> Roundtable discussion to resolve discussions and plans.</span>
                             </li>
                             <li className="flex items-start">
                                 <span className="text-brand-mint mr-3">4.</span>
-                                <span className="text-white/80"><strong>Decision:</strong> Adopted, Rejected, or Deferred with reasoning recorded.</span>
+                                <span className="text-white/80"><strong>Decision:</strong> Adopted, Rejected, or Deferred.</span>
                             </li>
                         </ul>
                     </GlassCard>
