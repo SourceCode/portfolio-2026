@@ -9,7 +9,7 @@ const WorkingStyle: React.FC = () => {
         <>
             <SEO
                 title="Working Style | Ryan Rentfro"
-                description="An in-depth look at my 'Reforming Observer' working style: analytical, systematic, and quality-driven."
+                description="An in-depth look at my Reforming Observer working style: analytical, systematic, and quality-driven."
                 canonical="https://rentfro.net/about/working-style"
             />
             <article className="animate-fade-in space-y-16">
@@ -19,7 +19,7 @@ const WorkingStyle: React.FC = () => {
                     <div className="absolute top-0 left-0 w-32 h-1 bg-brand-mint rounded-full mb-8"></div>
                     <h1 className="text-4xl md:text-5xl font-bold mb-6 pt-8">My Working Style</h1>
                     <p className="text-xl md:text-2xl text-white/80 font-light leading-relaxed max-w-4xl">
-                        I am a "Reforming Observer." I bring a quiet, analytical intensity to engineering leadership, valuing precision, logic, and structural integrity above all else.
+                        I am a Reforming Observer. I bring a quiet, analytical intensity to engineering leadership, valuing precision, logic, and structural integrity above all else.
                     </p>
                 </section>
 
@@ -31,7 +31,7 @@ const WorkingStyle: React.FC = () => {
                             My natural mode is observation and analysis. I don't rush to the whiteboard to draw the first box; I listen, I gather data, and I look for the underlying patterns.
                         </p>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            I thrive in complexity. When others see chaos, I see a system that needs to be organized. I am not satisfied with "it works"; I need to know *why* it works and how it will break. This makes me a stabilizing force in high-pressure environments—I don't panic, I plan.
+                            I thrive in complexity. When others see chaos, I see a system that requires order. I am not satisfied with "it works"; I need to know why it works and how it will break. This makes me a stabilizing force in high-pressure environments—I don't panic, I plan.
                         </p>
                     </div>
                     <GlassCard className="p-8 flex flex-col justify-center border-l-4 border-l-brand-teal">
@@ -43,11 +43,11 @@ const WorkingStyle: React.FC = () => {
                             </li>
                             <li className="flex items-start">
                                 <span className="text-brand-mint mr-3">●</span>
-                                <div className="text-white/80"><strong>Objectivity:</strong> I detach my ego from the code. I welcome a "brutal" code review because it leads to a better product.</div>
+                                <div className="text-white/80"><strong>Objectivity:</strong> I detach my ego from the code. I welcome a brutal code review because it leads to a better product.</div>
                             </li>
                             <li className="flex items-start">
                                 <span className="text-brand-mint mr-3">●</span>
-                                <div className="text-white/80"><strong>Reliability:</strong> My word is my bond. If I commit to a deadline or a deliverable, I will move mountains to hit it.</div>
+                                <div className="text-white/80"><strong>Reliability:</strong> My word is my bond. Delivery isn't about if - it's about when.</div>
                             </li>
                         </ul>
                     </GlassCard>
@@ -72,7 +72,7 @@ const WorkingStyle: React.FC = () => {
                         <Link to="/about/working-style/deep-work" className="block group">
                             <GlassCard className="p-6 h-full hover:bg-white/5 transition-colors border-transparent group-hover:border-brand-mint/30">
                                 <h3 className="text-lg font-bold text-brand-mint mb-3 group-hover:underline">Deep Work</h3>
-                                <p className="text-sm text-white/70">I respect the "Maker's Schedule." I protect my team (and myself) from fragmentation so we can solve hard problems.</p>
+                                <p className="text-sm text-white/70">I respect the Maker's Schedule. I protect my team (and myself) from fragmentation so we can solve hard problems.</p>
                             </GlassCard>
                         </Link>
                     </div>
@@ -94,7 +94,7 @@ const WorkingStyle: React.FC = () => {
                         <ul className="space-y-3 text-white/70 text-sm">
                             <li className="flex items-start"><span className="text-red-400 mr-2">✕</span> Chaotic, unstructured meetings.</li>
                             <li className="flex items-start"><span className="text-red-400 mr-2">✕</span> Emotional arguments or office politics.</li>
-                            <li className="flex items-start"><span className="text-red-400 mr-2">✕</span> Rushing to a "quick fix" without understanding the root cause.</li>
+                            <li className="flex items-start"><span className="text-red-400 mr-2">✕</span> Rushing to a quick fix without understanding the root cause.</li>
                             <li className="flex items-start"><span className="text-red-400 mr-2">✕</span> Disregard for agreed-upon standards.</li>
                         </ul>
                     </GlassCard>

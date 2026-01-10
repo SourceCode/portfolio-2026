@@ -31,10 +31,10 @@ const LogicOverEmotion: React.FC = () => {
                     <div>
                         <h2 className="text-2xl font-bold text-white mb-6">The Anti-Pattern: "It Feels Right"</h2>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            In software engineering, "gut feeling" is often a mask for unexamined bias or lack of rigor. I have seen too many architectures fail because they were built on hype ("resume-driven development") or personal preference rather than objective requirements.
+                            In software engineering, gut feelings are often a mask for unexamined bias or lack of rigor. I have seen too many architectures fail because they were built on hype ("resume-driven development") or personal preference rather than objective requirements.
                         </p>
                         <p className="text-white/70 leading-relaxed">
-                            I challenge my teams to show their work. Why this database? Why this framework? What are the trade-offs? If we can't articulate the *why* with logic and data, we aren't ready to build it.
+                            I challenge my teams to show their work. Why this database? Why this framework? What are the trade-offs? If we can't articulate the why with logic and data, we aren't ready to build it.
                         </p>
                     </div>
                     <GlassCard className="p-8 border-l-4 border-l-brand-mint">

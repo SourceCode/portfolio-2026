@@ -13,7 +13,7 @@ const initialProjects: Project[] = [
   // --- 1. CURRENT & EXECUTIVE (FEATURED) ---
   {
     category: 'Current & Executive',
-    description: 'As CTO of the nation’s largest private real estate marketplace, I lead the technology strategy and execution powering over $17 billion in cumulative sales. I oversee a platform ecosystem facilitating a transaction every 13 minutes and serving over 250,000 investors. My mandate includes the modernization of core transactional systems, the introduction of data-driven property matching algorithms, and the scaling of a digital marketplace that added 68,000 new investors in 2023 alone. I lead the organization through a digital transformation, shifting from legacy processes to a tech-enabled operating model that expands US housing inventory by nearly 7,000 units annually.',
+    description: 'As CTO of the nation’s largest private real estate marketplace, I lead the technology strategy and execution. I oversee a platform ecosystem facilitating a transaction every 13 minutes and serving over 250,000 investors. My mandate includes the modernization of core systems and the scaling of a digital marketplace. I have led the organization through a digital transformation, shifting from legacy processes to a tech-enabled operating model that expands US housing inventory by nearly 8,000+ units annually.',
     featured: true,
     id: 'nw-1',
     imageUrl: 'public/images/projects/nw-tech-platform.jpeg',
@@ -25,7 +25,7 @@ const initialProjects: Project[] = [
       learning: 9
     },
     slug: 'new-western-tech',
-    summary: 'Executive leadership for the nation’s largest private real estate marketplace ($17B+ Volume).',
+    summary: 'Executive leadership for the nation’s largest private real estate marketplace.',
     tags: ['Executive', 'Platform', 'Real Estate', 'Transformation'],
     title: 'New Western Technology Platform',
     year: 'Present'
@@ -33,9 +33,9 @@ const initialProjects: Project[] = [
 
   {
     category: 'Current & Executive',
-    description: `I led the global engineering strategy for the world’s largest residential real estate franchisor, operating across 119 countries, 17,800 offices, and more than 311,000 independent agents. This role required balancing extreme scale, regulatory diversity, brand autonomy, and operational reliability while modernizing a highly fragmented technology landscape.
+    description: `I led the global engineering strategy for the world’s largest residential real estate franchisor, operating across 119 countries, 17,800 offices, and more than 311,000 independent agents. This role required balancing extreme scale, national/international regulations, brand autonomy, and operational reliability while modernizing a highly fragmented technology landscape.
 
-At the center of this effort, I architected and delivered the Global Core Platform—a distributed, cloud-native system of record designed to serve multiple iconic brands, including Century 21®, Coldwell Banker®, and Sotheby’s International Realty®. The platform functioned as the authoritative backbone for agent identity, transactions, listings, offices, and brokerage relationships, while exposing these capabilities through secure, extensible APIs for regional and brand-specific applications.
+At the center of this effort, I architected and delivered the Global Core Platform which is a distributed, cloud-native system of record designed to serve multiple iconic brands, including Century 21®, Coldwell Banker®, and Sotheby’s International Realty®. The platform functioned as the authoritative backbone for agent identity, transactions, listings, offices, and brokerage relationships, while exposing these capabilities through secure, extensible APIs for regional and brand-specific applications.
 
 Platform Architecture & System Design
 The Global Core platform was built using a domain-driven, service-oriented architecture, optimized for global scale and brand-level extensibility:
@@ -84,8 +84,8 @@ Operating across dozens of jurisdictions required a privacy-by-design and securi
 
 These controls were embedded directly into platform services rather than treated as external processes, ensuring consistent enforcement across all brands and regions.
 
-“One Platform” Vision & Organizational Impact
-Beyond technology, I established the “One Platform” vision—a unifying strategy to consolidate historically siloed brand systems into a shared, extensible ecosystem.
+Vision & Organizational Impact
+Beyond technology, I provided the unifying strategy to consolidate historically siloed brand systems into a shared, extensible ecosystem.
 
 This initiative:
 • Replaced redundant brand-specific platforms with shared core services
@@ -519,17 +519,17 @@ By combining event-driven ingestion with a purpose-built search architecture, th
 
 I defined the technical strategy and led end-to-end execution for Everprep’s EdTech product portfolio, establishing both the core learning platform architecture and the engineering operating model from inception. This role combined hands-on system design with organizational leadership, ensuring the platform was secure, scalable, and compliant from day one while enabling rapid product iteration.
 
-Learner Record Store (LRS) Architecture
+Learner Record Store Architecture
 
-At the center of the platform, I architected and built the Learner Record Store (LRS)—the system of record responsible for tracking student learning activity, progress, and regulatory compliance data across courses and programs.
+At the center of the platform, I architected and built the Learner Record Store the system of record responsible for tracking student learning activity, progress, and regulatory compliance data across courses and programs.
 
-Key characteristics of the LRS included:
+Key characteristics of the system included:
 • Secure ingestion of learning events from web and mobile experiences
-• Canonical learner data models supporting enrollments, assessments, completions, and certifications
+• Canonical learner data models supporting spaced repetition, adaptive learning, and personalized learning paths
 • Fine-grained access controls to protect student data and comply with educational privacy requirements
 • Auditability and historical tracking to support compliance and reporting needs
 
-The LRS was designed as an API-first service, enabling seamless integration with learning content, assessment engines, and reporting tools.
+The system was designed as an mobile-first service, enabling seamless integration with learning content, assessment models, and reporting tools.
 
 Security, Privacy & Compliance by Design
 
@@ -543,7 +543,7 @@ These controls ensured trust with institutional partners and learners alike.
 
 Engineering Team Formation & Operating Model
 
-In parallel with platform delivery, I recruited and mentored the founding engineering team, setting a strong technical and cultural foundation for scale.
+In parallel with platform delivery, I recruited and mentored the founding engineering team, setting a strong technical and cultural foundation.
 
 Key initiatives included:
 • Hiring and onboarding full-stack and platform engineers aligned to product goals
@@ -576,7 +576,7 @@ By combining platform architecture with early engineering leadership, Everprep l
     summary: 'Technical strategy and platform architecture for EdTech startup.',
     tags: ['Startup', 'EdTech', 'Strategy', 'Zero-to-One'],
     title: 'Everprep - EdTech Platform',
-    year: '2020-Present'
+    year: '2020-2023'
   },
   {
     category: 'Platform & Product',
@@ -1078,7 +1078,7 @@ By combining declarative workflows, extensible runners, and a modern control pla
     summary: 'Full-featured automation platform orchestrating workflows across files, Docker, and systems with a React UI.',
     tags: ['TypeScript', 'Node.js', 'React', 'Docker', 'Redis', 'Automation'],
     title: 'Tachikoma Automation Platform',
-    year: '2025'
+    year: '2021-2025'
   },
   {
     category: 'Engineering Foundations & Tooling',
@@ -1565,7 +1565,7 @@ Technology Stack
     summary: 'Professional real-time graphics framework for macOS production, broadcast, and VJ performance.',
     tags: ['C++20', 'Metal 3', 'OpenGL', 'macOS', 'Graphics Framework', 'Broadcasting'],
     title: 'Demo Engine',
-    year: '2024'
+    year: '2025'
   },
   {
     category: 'Creative & Innovation',
@@ -1646,7 +1646,7 @@ Technology Stack
     summary: 'Native macOS Real-Time Procedural Shader Playground (Metal + C++20).',
     tags: ['C++20', 'Metal', 'Shaders', 'Procedural Generation', 'macOS', 'Creative Coding'],
     title: 'Metal Shader Explorer',
-    year: '2024'
+    year: '2025'
   },
   {
     category: 'Creative & Innovation',
@@ -2818,8 +2818,8 @@ Great systems are built on feedback loops.In engineering, this looks like observ
 ## Principles over Patches
 
 I have found that the most durable platforms emerge when we define clear operating principles early on. 
-- ** Consistency vs.Availability:** CAP theorem isn't just for databases; it applies to organizational communication too.
-  - ** Loose Coupling:** Just as we decouple services to prevent cascading failures, we should decouple teams to prevent decision paralysis.
+- Consistency vs.Availability: CAP theorem isn't just for databases; it applies to organizational communication too.
+  - Loose Coupling: Just as we decouple services to prevent cascading failures, we should decouple teams to prevent decision paralysis.
 
 ## Conclusion
 

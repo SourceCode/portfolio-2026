@@ -46,13 +46,13 @@ const WrittenCulture: React.FC = () => {
                         <GlassCard className="p-6 border-l-4 border-l-blue-400">
                             <h3 className="text-lg font-bold text-white mb-2">RFCs (Request for Comments)</h3>
                             <p className="text-sm text-white/70">
-                                Before we build a major feature, we write an RFC. It details the problem, the proposed solution, and the alternatives considered. The team reviews it *before* a single line of code is written.
+                                Before we build a major feature, we write an RFC. It details the problem, the proposed solution, and the alternatives considered. The team reviews it before a single line of code is written.
                             </p>
                         </GlassCard>
                         <GlassCard className="p-6 border-l-4 border-l-purple-400">
                             <h3 className="text-lg font-bold text-white mb-2">ADRs (Architectural Decision Records)</h3>
                             <p className="text-sm text-white/70">
-                                When we make a significant technical choice (e.g., "Use Postgres instead of Mongo"), we document it. This creates a history of *why* decisions were made, preventing endless re-litigation.
+                                When we make a significant technical choice we document it. This creates a history of why decisions were made, preventing endless re-litigation.
                             </p>
                         </GlassCard>
                     </div>

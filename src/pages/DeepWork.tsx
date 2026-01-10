@@ -22,7 +22,7 @@ const DeepWork: React.FC = () => {
                     </Link>
                     <h1 className="text-4xl md:text-5xl font-bold mb-6">Deep Work</h1>
                     <p className="text-xl text-white/80 font-light leading-relaxed max-w-4xl">
-                        "The cost of a context switch is not zero."
+                        The cost of a context switch is not zero.
                     </p>
                 </section>
 
@@ -31,7 +31,7 @@ const DeepWork: React.FC = () => {
                     <div>
                         <h2 className="text-2xl font-bold text-white mb-6">Protecting the Maker's Schedule</h2>
                         <p className="text-white/70 leading-relaxed mb-6">
-                            Paul Graham's distinction between the "Maker's Schedule" and the "Manager's Schedule" is a cornerstone of my leadership philosophy. Engineers need long, uninterrupted blocks of time to load complex mental models into working memory.
+                            Paul Graham's distinction between the Maker's Schedule and the Manager's Schedule is a cornerstone of my leadership philosophy. Engineers need long, uninterrupted blocks of time to load complex mental models into working memory.
                         </p>
                         <p className="text-white/70 leading-relaxed mb-6">
                             A single 30-minute meeting in the middle of the afternoon can destroy an entire half-day of productivity. I strive to shield my teams from this fragmentation.

@@ -123,7 +123,7 @@ const ProjectDetail: React.FC = () => {
               </span>
             ))}
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-brand-teal/50">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-brand-teal/50 pb-2">
             {project.title}
           </h1>
           <p className="text-xl md:text-2xl text-white/60 max-w-3xl leading-relaxed">

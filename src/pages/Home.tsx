@@ -39,7 +39,7 @@ const Home: React.FC = () => {
             <h2 className="text-brand-mint font-medium tracking-wider mb-4 uppercase text-sm drop-shadow-[0_0_5px_rgba(0,255,163,0.5)]">
               Executive Technology Leader
             </h2>
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-brand-mint to-brand-teal">
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-brand-mint to-brand-teal pb-2">
               Ryan Rentfro
             </h1>
             <p className="text-xl md:text-2xl text-white font-light mb-8 max-w-2xl leading-relaxed">
