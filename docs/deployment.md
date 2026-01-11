@@ -44,14 +44,14 @@ We use **Pattern A: Static Site Hosting** for high performance and low maintenan
         ```
     *   **Permissions**: Attach `AdministratorAccess` (easiest for CDK) or a scoped policy covering CloudFormation, S3, CloudFront, Route53, ACM, and IAM (pass role).
 3.  **Bootstrap CDK** (First time only per region):
-    *   Run locally: `npx cdk bootstrap aws://YOUR_ACCOUNT_ID/us-east-1 --profile your-profile`
+    *   Run locally: `npx cdk bootstrap aws://YOUR_ACCOUNT_ID/us-west-2 --profile your-profile`
     *   Or let the pipeline do it (requires appropriate permissions).
 
 ### B. GitLab Setup
 1.  Go to **Settings > CI/CD > Variables**.
 2.  Add the following variables (Protected, Masked):
     *   `AWS_ROLE_ARN`: The ARN of the role created above (e.g., `arn:aws:iam::123456789012:role/GitLabRunnerRole`).
-    *   `AWS_REGION`: `us-east-1`
+    *   `AWS_REGION`: `us-west-2`
 
 ### C. Domain Setup
 1.  Ensure you have a **Hosted Zone** in Route 53 for `ryanrentfro.com`.

@@ -48,7 +48,7 @@ export class PortfolioStack extends cdk.Stack {
         });
 
         // 3. TLS Certificate
-        // CloudFront requires certificates in us-east-1
+        // CloudFront requires certificates in us-west-2
         const certificate = new acm.Certificate(this, 'SiteCertificate', {
             domainName: domainName,
             validation: acm.CertificateValidation.fromDns(zone),
