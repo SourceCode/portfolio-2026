@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux';
 import { Link, Navigate, useParams } from 'react-router-dom';
 
 import ProjectRadarChart from '../components/ProjectRadarChart';
-import RelatedProjects from '../components/RelatedProjects';
 import SEO from '../components/SEO/SEO';
 import GlassCard from '../components/UI/GlassCard';
 import { RootState } from '../store/store';

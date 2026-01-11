@@ -27,7 +27,7 @@ const ProjectRadarChart: React.FC<ProjectRadarChartProps> = ({ metrics }) => {
     return (
         <div className="w-full h-[290px] sm:h-[290px] lg:h-[290px]">
             <ResponsiveContainer width="100%" height="100%">
-                <RadarChart cx="50%" cy="50%" outerRadius="60%" data={data} margin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
+                <RadarChart cx="50%" cy="50%" outerRadius="60%" data={data} margin={{ bottom: 0, left: 0, right: 0, top: 0 }}>
                     <PolarGrid stroke="rgba(255, 255, 255, 0.1)" />
                     <PolarAngleAxis
                         dataKey="subject"

@@ -1,6 +1,5 @@
 import { config } from '@/config';
-import React, { useState } from 'react';
-import ReCAPTCHA from 'react-google-recaptcha';
+import React from 'react';
 
 import SEO from '../components/SEO/SEO';
 import GlassCard from '../components/UI/GlassCard';
@@ -9,11 +8,6 @@ import GlassCard from '../components/UI/GlassCard';
  * Contact Page
  */
 const Contact: React.FC = () => {
-  const [captchaToken, setCaptchaToken] = useState<null | string>(null);
-
-  const handleCaptchaChange = (token: null | string) => {
-    setCaptchaToken(token);
-  };
 
   return (
     <>

@@ -27,7 +27,7 @@ install_deps:
     # Install infra deps
     - cd infra && npm ci
   artifacts:
-    path:
+    paths:
       - node_modules/
       - infra/node_modules/
     expire_in: 1 hour
@@ -65,6 +65,14 @@ build_app:
 # Helper script to setups AWS profile via OIDC
 .aws_oidc_setup: &aws_oidc_setup
   - echo "Configuring AWS Credentials via OIDC..."
+  - |
+    if [ -z "$AWS_ROLE_ARN" ]; then
+      echo "Error: AWS_ROLE_ARN variable is not set."
+      echo "Please configure it in GitLab > Settings > CI/CD > Variables."
+      echo "Or uncomment it in .gitlab-ci.yml for testing."
+      exit 1
+    fi
+  - apt-get update && apt-get install -y awscli
   - mkdir -p ~/.aws
   - echo "[default]" > ~/.aws/config
   - echo "region = ${AWS_REGION}" >> ~/.aws/config
@@ -74,7 +82,7 @@ build_app:
     aws sts assume-role-with-web-identity
     --role-arn ${AWS_ROLE_ARN}
     --role-session-name "GitLabRunner-${CI_COMMIT_SHORT_SHA}"
-    --web-identity-token ${CI_JOB_JWT_V2}
+    --web-identity-token ${GITLAB_OIDC_TOKEN}
     > /tmp/aws_creds
   - export AWS_ACCESS_KEY_ID=$(cat /tmp/aws_creds | grep AccessKeyId | cut -d'"' -f4)
   - export AWS_SECRET_ACCESS_KEY=$(cat /tmp/aws_creds | grep SecretAccessKey | cut -d'"' -f4)
@@ -89,24 +97,22 @@ deploy_staging:
   dependencies:
     - install_deps
     - build_app
+  id_tokens:
+    GITLAB_OIDC_TOKEN:
+      aud: https://gitlab.com
+
   script:
     - *aws_oidc_setup
+    - export AWS_REGION=us-east-1  # Force region to match CDK/CloudFront requirement
     - cd infra
     # Deploy the Infrastructure
     - npx cdk deploy StagingStack --require-approval never
-    # Sync the built assets (separate step for control/speed, though CDK can do it via S3Deploy)
-    # We used S3Bucket in CDK, so let's use AWS CLI to sync or CDK S3Deploy. 
-    # For this pattern, it is cleanest to use s3 sync if the bucket name is known, 
-    # OR let CDK handle asset deployment if we add s3-deployment construct. 
-    # In the stack code provided, I did NOT add s3-deployment to keep it simple and safe.
-    # Let's simple sync using the output bucket name.
-    - BUCKET_NAME=$(npx cdk trigger StagingStack | grep -A1 "BucketName" | tail -n1 | tr -d ' ')
-    # Actually, simpler to just query the stack output
-    - BUCKET_NAME=$(aws cloudformation describe-stacks --stack-name portfolio-2026-staging --query "Stacks[0].Outputs[?OutputKey=='BucketName'].OutputValue" --output text)
+    # Sync the built assets
+    - BUCKET_NAME=$(aws cloudformation describe-stacks --stack-name portfolio-2026-staging --region us-east-1 --query "Stacks[0].Outputs[?OutputKey=='BucketName'].OutputValue" --output text)
     - echo "Deploying to Bucket $BUCKET_NAME"
     - aws s3 sync ../dist s3://$BUCKET_NAME --delete
     # Invalidate CloudFront
-    - DIST_ID=$(aws cloudformation describe-stacks --stack-name portfolio-2026-staging --query "Stacks[0].Outputs[?OutputKey=='DistributionId'].OutputValue" --output text)
+    - DIST_ID=$(aws cloudformation describe-stacks --stack-name portfolio-2026-staging --region us-east-1 --query "Stacks[0].Outputs[?OutputKey=='DistributionId'].OutputValue" --output text)
     - aws cloudfront create-invalidation --distribution-id $DIST_ID --paths "/*"
   rules:
     - if: $CI_COMMIT_BRANCH == "development"
@@ -119,14 +125,18 @@ deploy_prod:
   dependencies:
     - install_deps
     - build_app
+  id_tokens:
+    GITLAB_OIDC_TOKEN:
+      aud: https://gitlab.com
   script:
     - *aws_oidc_setup
+    - export AWS_REGION=us-east-1  # Force region to match CDK/CloudFront requirement
     - cd infra
     - npx cdk deploy ProdStack --require-approval never
-    - BUCKET_NAME=$(aws cloudformation describe-stacks --stack-name portfolio-2026-prod --query "Stacks[0].Outputs[?OutputKey=='BucketName'].OutputValue" --output text)
+    - BUCKET_NAME=$(aws cloudformation describe-stacks --stack-name portfolio-2026-prod --region us-east-1 --query "Stacks[0].Outputs[?OutputKey=='BucketName'].OutputValue" --output text)
     - echo "Deploying to Bucket $BUCKET_NAME"
     - aws s3 sync ../dist s3://$BUCKET_NAME --delete
-    - DIST_ID=$(aws cloudformation describe-stacks --stack-name portfolio-2026-prod --query "Stacks[0].Outputs[?OutputKey=='DistributionId'].OutputValue" --output text)
+    - DIST_ID=$(aws cloudformation describe-stacks --stack-name portfolio-2026-prod --region us-east-1 --query "Stacks[0].Outputs[?OutputKey=='DistributionId'].OutputValue" --output text)
     - aws cloudfront create-invalidation --distribution-id $DIST_ID --paths "/*"
   rules:
     - if: $CI_COMMIT_BRANCH == "main"

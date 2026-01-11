@@ -16,7 +16,7 @@ const initialProjects: Project[] = [
     description: 'As CTO of the nation’s largest private real estate marketplace, I lead the technology strategy and execution. I oversee a platform ecosystem facilitating a transaction every 13 minutes and serving over 250,000 investors. My mandate includes the modernization of core systems and the scaling of a digital marketplace. I have led the organization through a digital transformation, shifting from legacy processes to a tech-enabled operating model that expands US housing inventory by nearly 8,000+ units annually.',
     featured: true,
     id: 'nw-1',
-    imageUrl: 'public/images/projects/nw-tech-platform.jpeg',
+    imageUrl: '/images/projects/nw-tech-platform.jpeg',
     metrics: {
       ambition: 9,
       creativity: 8,
@@ -96,7 +96,7 @@ This initiative:
 The result was a platform that empowered global partners to innovate locally while benefiting from centralized scale, security, and reliability.`,
     featured: true,
     id: 'anywhere-1',
-    imageUrl: 'public/images/projects/global-core-services.jpeg',
+    imageUrl: '/images/projects/global-core-services.jpeg',
     metrics: {
       ambition: 10,
       creativity: 8,
@@ -163,7 +163,7 @@ This architecture:
 
 By treating privacy as a first-class platform capability, the organization achieved regulatory confidence while continuing to operate data-driven, global marketing and customer engagement programs at scale.`,
     id: 'exec-compliance',
-    imageUrl: 'public/images/projects/enterprise-compliance-systems.jpeg',
+    imageUrl: '/images/projects/enterprise-compliance-systems.jpeg',
     metrics: {
       ambition: 8,
       creativity: 6,
@@ -227,7 +227,7 @@ The observability platform delivered tangible and sustained outcomes:
 
 By embedding observability directly into the platform architecture, engineering teams gained deep operational insight, enabling faster iteration, safer releases, and highly resilient systems.`,
     id: 'exec-observability',
-    imageUrl: 'public/images/projects/core-platform-observability.jpeg',
+    imageUrl: '/images/projects/core-platform-observability.jpeg',
     metrics: {
       ambition: 8,
       creativity: 7,
@@ -291,7 +291,7 @@ The governance framework enabled:
 
 As a result, integration lead time was reduced from weeks to days, accelerating partner enablement and internal feature delivery while maintaining platform stability.`,
     id: 'arch-api-standards',
-    imageUrl: 'public/images/projects/core-api-integration.jpeg',
+    imageUrl: '/images/projects/core-api-integration.jpeg',
     metrics: {
       ambition: 9,
       creativity: 7,
@@ -357,7 +357,7 @@ The serverless transformation delivered:
 
 By combining modern cloud architecture with a new operating model, the organization unlocked scalable growth with dramatically lower operational complexity.`,
     id: 'arch-serverless',
-    imageUrl: 'public/images/projects/serverless-low-ops.jpeg',
+    imageUrl: '/images/projects/serverless-low-ops.jpeg',
     metrics: {
       ambition: 9,
       creativity: 9,
@@ -424,7 +424,7 @@ This architecture delivered:
 
 By combining intelligent caching with policy-driven extensibility, the platform achieved both global-scale performance and brand-level flexibility—a critical capability for a multi-brand real estate ecosystem.`,
     id: 'arch-caching',
-    imageUrl: 'public/images/projects/distributed-caching.jpeg',
+    imageUrl: '/images/projects/distributed-caching.jpeg',
     metrics: {
       ambition: 9,
       creativity: 8,
@@ -499,7 +499,7 @@ This architecture:
 
 By combining event-driven ingestion with a purpose-built search architecture, the platform delivered real-time intelligence at global scale, becoming a critical differentiator in the company’s digital ecosystem.`,
     id: 'anywhere-2',
-    imageUrl: 'public/images/projects/real-time-search-and-indexing.jpeg',
+    imageUrl: '/images/projects/real-time-search-and-indexing.jpeg',
     metrics: {
       ambition: 7,
       creativity: 6,
@@ -564,7 +564,7 @@ This work resulted in:
 By combining platform architecture with early engineering leadership, Everprep launched with a strong technical backbone and a team capable of sustained innovation.`,
     featured: true,
     id: 'everprep-1',
-    imageUrl: 'public/images/projects/everprep.jpeg',
+    imageUrl: '/images/projects/everprep.jpeg',
     metrics: {
       ambition: 6,
       creativity: 5,
@@ -641,7 +641,7 @@ The Spacwatch platform delivered:
 By combining secure integrations, event-driven data pipelines, and market-focused analytics, Spacwatch provided actionable financial intelligence in a fast-moving investment domain.`,
     featured: true,
     id: 'spacwatch-1',
-    imageUrl: 'public/images/projects/spacwatch.jpeg',
+    imageUrl: '/images/projects/spacwatch.jpeg',
     metrics: {
       ambition: 7,
       creativity: 6,
@@ -717,7 +717,7 @@ This work:
 
 By combining high-scale platform engineering, search relevance, and SEO-first architecture, the Audience Journey team delivered a durable growth engine for Leafly’s marketplace ecosystem.`,
     id: 'leafly-1',
-    imageUrl: 'public/images/projects/audience-journey-team.jpeg',
+    imageUrl: '/images/projects/audience-journey-team.jpeg',
     metrics: {
       ambition: 6,
       creativity: 6,
@@ -783,7 +783,7 @@ This work delivered:
 
 By combining distributed systems engineering with deep business alignment, this role contributed directly to the sustained growth and monetization of Zillow’s flagship platform.`,
     id: 'zillow-1',
-    imageUrl: 'public/images/projects/premiere-agent.jpeg',
+    imageUrl: '/images/projects/premiere-agent.jpeg',
     metrics: {
       ambition: 8,
       creativity: 7,
@@ -847,7 +847,7 @@ This analytics platform:
 
 By combining high-volume data pipelines with real-time analytics and intelligent feedback loops, the system became a critical component of Zillow’s agent success and revenue optimization strategy.`,
     id: 'data-agent-analytics',
-    imageUrl: 'public/images/projects/agent-analytics-and-bi.jpeg',
+    imageUrl: '/images/projects/agent-analytics-and-bi.jpeg',
     metrics: {
       ambition: 8,
       creativity: 6,
@@ -919,7 +919,7 @@ The Connection Engine:
 
 By combining real-time communications, intelligent routing, and operational reliability, the platform successfully turned online demand into high-quality offline conversations at scale.`,
     id: 'data-realtime-comms',
-    imageUrl: 'public/images/projects/real-time-communications.jpeg',
+    imageUrl: '/images/projects/real-time-communications.jpeg',
     metrics: {
       ambition: 9,
       creativity: 8,
@@ -1066,7 +1066,7 @@ Tachikoma demonstrates how automation tooling can evolve into a platform:
 By combining declarative workflows, extensible runners, and a modern control plane, Tachikoma provides a scalable foundation for automation across development, operations, and infrastructure domains.`,
     featured: false,
     id: 'tachikoma-automation',
-    imageUrl: 'public/images/projects/tachikoma.jpeg',
+    imageUrl: '/images/projects/tachikoma.jpeg',
     metrics: {
       ambition: 9,
       creativity: 9,
@@ -1133,7 +1133,7 @@ This initiative:
 
 By treating internal tooling as a product, the Paved Road platform aligned developer experience with security, reliability, and architectural consistency.`,
     id: 'eng-templates',
-    imageUrl: 'public/images/projects/core-service-templates.jpeg',
+    imageUrl: '/images/projects/core-service-templates.jpeg',
     metrics: {
       ambition: 8,
       creativity: 6,
@@ -1196,7 +1196,7 @@ These pipelines delivered:
 
 By combining policy-driven CI/CD pipelines with GitOps-based infrastructure management, the organization achieved high deployment velocity with strong operational control.`,
     id: 'eng-cicd',
-    imageUrl: 'public/images/projects/ci-cd-deployment.jpeg',
+    imageUrl: '/images/projects/ci-cd-deployment.jpeg',
     metrics: {
       ambition: 7,
       creativity: 6,
@@ -1232,7 +1232,7 @@ Impact
 • Reduced frontend boilerplate code and styling overhead
 • Simplifed maintenance through a centralized asset strategy`,
     id: 'arcadia-ui',
-    imageUrl: 'public/images/projects/arcadia.jpeg',
+    imageUrl: '/images/projects/arcadia.jpeg',
     metrics: {
       ambition: 6,
       creativity: 7,
@@ -1365,7 +1365,7 @@ Demo Engine demonstrates the ability to:
 It sits at the intersection of graphics engineering, audio systems, tooling design, and creative technology, representing a rare blend of deep technical rigor and expressive software craftsmanship.`,
     featured: true,
     id: 'demo-engine-ide',
-    imageUrl: 'public/images/projects/demo-engine-ide.jpeg',
+    imageUrl: '/images/projects/demo-engine-ide.jpeg',
     metrics: {
       ambition: 9,
       creativity: 10,
@@ -1470,7 +1470,7 @@ Stack
 • Optional: Weaviate`,
     featured: false,
     id: 'surreal-roguelike',
-    imageUrl: 'public/images/projects/surreal-roguelike.jpeg',
+    imageUrl: '/images/projects/surreal-roguelike.jpeg',
     metrics: {
       ambition: 9,
       creativity: 9,
@@ -1553,7 +1553,7 @@ Technology Stack
 • Testing: GoogleTest, shell/Python build/test workflows`,
     featured: false,
     id: 'demo-engine',
-    imageUrl: 'public/images/projects/demo-engine.jpeg',
+    imageUrl: '/images/projects/demo-engine.jpeg',
     metrics: {
       ambition: 7,
       creativity: 6,
@@ -1634,7 +1634,7 @@ Technology Stack
 • Testing: GoogleTest, XCTest`,
     featured: false,
     id: 'metal-shader-explorer',
-    imageUrl: 'public/images/projects/metal-shader-explorer.jpeg',
+    imageUrl: '/images/projects/metal-shader-explorer.jpeg',
     metrics: {
       ambition: 9,
       creativity: 8,
@@ -1667,7 +1667,7 @@ Features
 Stack: Unity 2021.3 (URP), C#, TextMesh Pro, Unity UI, 2D Tilemap.`,
     featured: false,
     id: 'shooter-in-space',
-    imageUrl: 'public/images/projects/shooter-in-space.jpeg',
+    imageUrl: '/images/projects/shooter-in-space.jpeg',
     metrics: {
       ambition: 7,
       creativity: 8,
@@ -1695,7 +1695,7 @@ Combat is stat-driven, supporting normal attacks, special abilities, and a buff/
 
 Stack: Unity 2021.3, C#, UGUI, TextMesh Pro, MagicaVoxel, Timeline, Test Framework.`,
     id: 'fist-to-flame',
-    imageUrl: 'public/images/projects/fist-to-flame.jpeg',
+    imageUrl: '/images/projects/fist-to-flame.jpeg',
     metrics: {
       ambition: 8,
       creativity: 8,
@@ -1762,7 +1762,7 @@ Spherez demonstrated:
 The project’s success—culminating in Judges’ Choice recognition—highlighted the ability to move from concept to working hardware / software system in days, not weeks.`,
     featured: true,
     id: 'hw-spherez',
-    imageUrl: 'public/images/projects/hackweek15-spherez.jpeg',
+    imageUrl: '/images/projects/hackweek15-spherez.jpeg',
     metrics: {
       ambition: 6,
       creativity: 9,
@@ -1826,7 +1826,7 @@ Beyond the technical execution, the arcade cabinet became:
 The project earned first place at Hackweek 14, recognized for its technical depth, craftsmanship, and impact on company culture.`,
     featured: true,
     id: 'hw-alien',
-    imageUrl: 'public/images/projects/hackweek14-project-alien.jpeg',
+    imageUrl: '/images/projects/hackweek14-project-alien.jpeg',
     slug: 'hackweek-project-alien',
     summary: 'Custom-fabricated organizational arcade cabinet winning 1st Place at Hackweek 14.',
     tags: ['Innovation', 'Hardware', 'Arduino', 'Creative', 'Culture'],
@@ -1893,7 +1893,7 @@ ZLeaderboard:
 The project earned Judges’ Choice at Hackweek 12, recognized for its technical execution, product thinking, and cultural impact.`,
     featured: true,
     id: 'hw-zleaderboard',
-    imageUrl: 'public/images/projects/hackweek12-zleaderboard.jpeg',
+    imageUrl: '/images/projects/hackweek12-zleaderboard.jpeg',
     metrics: {
       ambition: 7,
       creativity: 8,
@@ -1954,7 +1954,7 @@ The lab:
 
 By blending embedded systems, software engineering, and design, the lab explored how technology can communicate information more intuitively through the physical world.`,
     id: 'creative-hardware',
-    imageUrl: 'public/images/projects/custom-hardware-embedded.jpeg',
+    imageUrl: '/images/projects/custom-hardware-embedded.jpeg',
     metrics: {
       ambition: 8,
       creativity: 10,
@@ -2020,7 +2020,7 @@ This multidisciplinary approach:
 By integrating design excellence with technical fluency, the practice enables technology to be understood, trusted, and embraced by a wide range of users.`,
     featured: true,
     id: 'creative-1',
-    imageUrl: 'public/images/projects/design-visual-systems.jpeg',
+    imageUrl: '/images/projects/design-visual-systems.jpeg',
     slug: 'design-visual-systems',
     summary: 'Professional UI/UX, 3D motion graphics, and brand identity systems.',
     tags: ['Design', 'UI/UX', 'Branding', 'Creative', '3D'],
@@ -2078,7 +2078,7 @@ This work:
 
 By combining custom - built tools, genre - fluid composition, and live performance, the project exists at the crossroads of music, technology, and subcultural expression.`,
     id: 'creative-2',
-    imageUrl: 'public/images/projects/music-production.jpeg',
+    imageUrl: '/images/projects/music-production.jpeg',
     slug: 'music-production',
     summary: 'Algorithmic electronic music production and audio engineering.',
     tags: ['Creative', 'Music', 'Audio', 'Production', 'DSP'],
@@ -2146,7 +2146,7 @@ This practice:
 
 By designing my own instruments and workflows, I maintain complete creative and technical ownership of the sound—from synthesis to stage.`,
     id: 'creative-audio-tools',
-    imageUrl: 'public/images/projects/custom-audio-tools.jpeg',
+    imageUrl: '/images/projects/custom-audio-tools.jpeg',
     slug: 'custom-audio-tools',
     summary: 'Synthesizers, sound design tools, and production workflows.',
     tags: ['Creative', 'Audio', 'Tooling', 'Music', 'Production'],
@@ -2164,7 +2164,7 @@ The architecture includes a GraphQL API layer (using webonyx/graphql-php) to sup
 Stack: PHP 7.4+, Composer, Twig, Propel ORM, GraphQL, Node.js, Grunt, AWS SDK/SES/SNS, Twilio, Stripe, Docker.`,
     featured: false,
     id: 'school-scheduler',
-    imageUrl: 'public/images/projects/school-scheduler.jpeg', // Assuming image convention
+    imageUrl: '/images/projects/school-scheduler.jpeg', // Assuming image convention
     metrics: {
       ambition: 7,
       creativity: 6,
@@ -2189,7 +2189,7 @@ Real-time or near-real-time syncing is implied by heartbeat calls and socket cli
 Stack: React 18, Redux, Semantic UI, Cypress, Node.js, Socket.io, React DnD.`,
     featured: false,
     id: 'live-scheduler',
-    imageUrl: 'public/images/projects/live-scheduler.jpeg',
+    imageUrl: '/images/projects/live-scheduler.jpeg',
     metrics: {
       ambition: 8,
       creativity: 8,
@@ -2214,7 +2214,7 @@ Security is enforced via API key validation and request signature verification. 
 Stack: Node.js, Express, Socket.IO, MySQL, Axios, Docker Compose, Jest.`,
     featured: false,
     id: 'cronos-ws',
-    imageUrl: 'public/images/projects/cronos-ws.jpeg',
+    imageUrl: '/images/projects/cronos-ws.jpeg',
     metrics: {
       ambition: 8,
       creativity: 6,
@@ -2243,7 +2243,7 @@ The frontend is built using a component-based architecture with Bootstrap, jQuer
 Stack: PHP 7.4+, Propel ORM, Twig, Redis, Docker, Node.js, Grunt, Bootstrap.`,
     featured: false,
     id: 'shop-order-system',
-    imageUrl: 'public/images/projects/shop-order-system.jpeg',
+    imageUrl: '/images/projects/shop-order-system.jpeg',
     metrics: {
       ambition: 9,
       creativity: 7,
@@ -2268,7 +2268,7 @@ Skills are assembled into JSON templates and validated through utility modules l
 Project Stack: React 16, Redux, React Router, Axios, Semantic UI (React/CSS), Recharts, Node/Yarn.`,
     featured: false,
     id: 'voice-config-alexa',
-    imageUrl: 'public/images/projects/voice-config.jpeg',
+    imageUrl: '/images/projects/voice-config.jpeg',
     metrics: {
       ambition: 6,
       creativity: 6,
@@ -2295,7 +2295,7 @@ Development operations are supported by a suite of Bash scripts for database mig
 Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`,
     featured: false,
     id: 'sports-afield-trophy-properties',
-    imageUrl: 'public/images/projects/sports-afield.jpeg', // Assuming image convention
+    imageUrl: '/images/projects/sports-afield.jpeg', // Assuming image convention
     metrics: {
       ambition: 6,
       creativity: 7,
@@ -2313,7 +2313,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Web Applications, OSS & Foundational',
     description: 'Architected critical integration components for "CaseAware", a specialized legal case management platform serving major law firms, banks, and government agencies. Developed robust XML/SOAP interfaces and COM+ components to bridge legacy legal mainframes with modern web clients, ensuring strict data validity and regulatory compliance.',
     id: 'app-caseaware',
-    imageUrl: 'public/images/projects/caseaware.jpeg',
+    imageUrl: '/images/projects/caseaware.jpeg',
     metrics: {
       ambition: 7,
       creativity: 5,
@@ -2331,7 +2331,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Web Applications, OSS & Foundational',
     description: 'Designed and deployed a secure, FERPA-compliant educational web application for Washington Universitys K-12 outreach initiatives. The system managed student enrollment, tracking, and reporting, featuring role-based access control (RBAC) to ensure data privacy for minors and administrators.',
     id: 'app-washu',
-    imageUrl: 'public/images/projects/washu-k12.jpeg',
+    imageUrl: '/images/projects/washu-k12.jpeg',
     metrics: {
       ambition: 5,
       creativity: 4,
@@ -2349,7 +2349,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Web Applications, OSS & Foundational',
     description: 'Built a B2B partner extranet for Accent International to streamline supply chain communications. The platform replaced manual email/fax workflows with a centralized digital dashboard, allowing real-time order tracking and document exchange for international logistics partners.',
     id: 'app-accent',
-    imageUrl: 'public/images/projects/accent-international.jpeg',
+    imageUrl: '/images/projects/accent-international.jpeg',
     metrics: {
       ambition: 6,
       creativity: 4,
@@ -2367,7 +2367,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Web Applications, OSS & Foundational',
     description: 'Architected "Project Starfish", a custom Object-Oriented PHP MVC framework designed to accelerate rapid application development before the ubiquity of Laravel/Symfony. Features included a custom ORM, event-driven architecture, and modular plugin system, powering dozens of production applications for agency clients.',
     id: 'oss-starfish',
-    imageUrl: 'public/images/projects/project-starfish.jpeg',
+    imageUrl: '/images/projects/project-starfish.jpeg',
     metrics: {
       ambition: 8,
       creativity: 8,
@@ -2385,7 +2385,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Web Applications, OSS & Foundational',
     description: 'Developed a widely distributed open-source RSS syndication utility hosted on Planet Source Code. This tool simplified the creation of XML feeds for non-technical webmasters, receiving high community ratings and thousands of downloads during the "Web 2.0" content syndication boom.',
     id: 'oss-rss',
-    imageUrl: 'public/images/projects/rss-button-oss.jpeg',
+    imageUrl: '/images/projects/rss-button-oss.jpeg',
     metrics: {
       ambition: 4,
       creativity: 5,
@@ -2405,7 +2405,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Early Career & Systems Work',
     description: 'As Lead Programmer at The GDR Group, I spearheaded the modernization of development operations (DevOps) for enterprise clients. I introduced Git-based source control, automated testing frameworks, and continuous integration pipelines, moving the organization away from fragile FTP-based deployments to robust Agile engineering practices.',
     id: 'early-gdr',
-    imageUrl: 'public/images/projects/devops-modernization.jpeg',
+    imageUrl: '/images/projects/devops-modernization.jpeg',
     metrics: {
       ambition: 7,
       creativity: 5,
@@ -2423,7 +2423,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Early Career & Systems Work',
     description: 'Executed complete platform migrations for commercial agencies, refactoring spaghetti-code legacy applications into modern Object-Oriented PHP architectures. These migrations significantly improved application security, reduced page load times by 50%+, and enabled future scalability.',
     id: 'early-cms',
-    imageUrl: 'public/images/projects/cms-migrations.jpeg',
+    imageUrl: '/images/projects/cms-migrations.jpeg',
     metrics: {
       ambition: 6,
       creativity: 5,
@@ -2441,7 +2441,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Early Career & Systems Work',
     description: 'Managed mission-critical IT infrastructure for Design Systems Inc., ensuring 99.9% uptime for enterprise workstations and internal networks. Implemented ISO 9001-compliant documentation and systems management protocols, supporting a multi-location engineering workforce.',
     id: 'early-infra',
-    imageUrl: 'public/images/projects/enterprise-network-systems.jpeg',
+    imageUrl: '/images/projects/enterprise-network-systems.jpeg',
     metrics: {
       ambition: 5,
       creativity: 3,
@@ -2459,7 +2459,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Early Career & Systems Work',
     description: 'Supported the massive-scale migration of @Home network nodes to the AT&T Broadband infrastructure. Developed internal tooling scripts to automate node provisioning and monitoring, working directly with high-speed optical routing equipment in a carrier-grade environment.',
     id: 'early-2',
-    imageUrl: 'public/images/projects/att-network.jpeg',
+    imageUrl: '/images/projects/att-network.jpeg',
     metrics: {
       ambition: 7,
       creativity: 3,
@@ -2479,7 +2479,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Past Web Development & Design',
     description: 'Led the digital presence overhaul for WyoTech, a premier technical trade school. Designed and developed an information-rich web architecture that improved prospective student engagement and streamlined the enrollment inquiry process across multiple campus locations.',
     id: 'web-wyotech',
-    imageUrl: 'public/images/projects/wyotech.jpeg',
+    imageUrl: '/images/projects/wyotech.jpeg',
     metrics: {
       ambition: 6,
       creativity: 5,
@@ -2497,7 +2497,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Past Web Development & Design',
     description: 'Standardized the digital brand identity for Everest College across its North American network. Developed responsive, compliant web templates that ensured brand consistency while allowing for localized content management at scale.',
     id: 'web-everest',
-    imageUrl: 'public/images/projects/everest.jpeg',
+    imageUrl: '/images/projects/everest.jpeg',
     metrics: {
       ambition: 6,
       creativity: 5,
@@ -2515,7 +2515,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Past Web Development & Design',
     description: 'Executed an end-to-end redesign of the Heald College web ecosystem. Focused on modernizing the user interface (UI) and user experience (UX) to compete in the digital education market, resulting in increased online lead generation.',
     id: 'web-heald',
-    imageUrl: 'public/images/projects/heald.jpeg',
+    imageUrl: '/images/projects/heald.jpeg',
     metrics: {
       ambition: 6,
       creativity: 6,
@@ -2533,7 +2533,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Past Web Development & Design',
     description: 'Developed a dual-portal web platform for Fire Division Chief Paul Lepore, serving as a comprehensive career development resource for aspiring firefighters. Features included content management, secure member areas, and e-commerce integration for training materials.',
     id: 'web-firefighters',
-    imageUrl: 'public/images/projects/aspiring-firefighters.jpeg',
+    imageUrl: '/images/projects/aspiring-firefighters.jpeg',
     metrics: {
       ambition: 6,
       creativity: 5,
@@ -2551,7 +2551,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Past Web Development & Design',
     description: 'Designed an immersive, visually-rich website for the Parsons Blewett Memorial Fund, a significant cultural institution in St. Louis. The site highlighted their historic philanthropy through curated galleries and interactive timelines.',
     id: 'web-parsons',
-    imageUrl: 'public/images/projects/parsons-blewett.jpeg',
+    imageUrl: '/images/projects/parsons-blewett.jpeg',
     metrics: {
       ambition: 5,
       creativity: 7,
@@ -2569,7 +2569,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Past Web Development & Design',
     description: 'Delivered a professional digital portfolio for Acapulco Screen Printing, a local manufacturing business. The site featured high-resolution service catalogs and quote request workflows to drive local sales.',
     id: 'web-acapulco',
-    imageUrl: 'public/images/projects/acapulco-screen-printing.jpeg',
+    imageUrl: '/images/projects/acapulco-screen-printing.jpeg',
     metrics: {
       ambition: 5,
       creativity: 5,
@@ -2587,7 +2587,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Past Web Development & Design',
     description: 'Established the online brand for Prime Fabrication, highlighting their industrial capabilities through a clean, industrial-grade design. Facilitated customer inquiry routing and portfolio display.',
     id: 'web-prime',
-    imageUrl: 'public/images/projects/prime-fabrication.jpeg',
+    imageUrl: '/images/projects/prime-fabrication.jpeg',
     metrics: {
       ambition: 5,
       creativity: 5,
@@ -2605,7 +2605,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Past Web Development & Design',
     description: 'Developed the official athletics portal for UMSL (University of Missouri-St. Louis). System integrated real-time game schedules, player roster databases, and multimedia galleries to engage the student body and alumni network.',
     id: 'web-umsl',
-    imageUrl: 'public/images/projects/umsl-sports.jpeg',
+    imageUrl: '/images/projects/umsl-sports.jpeg',
     metrics: {
       ambition: 5,
       creativity: 4,
@@ -2623,7 +2623,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Past Web Development & Design',
     description: 'Built a resource-rich community portal for JCRC (Jewish Community Relations Council), providing access to advocacy tools, event calendars, and governance documentation for civic leadership.',
     id: 'web-jcrc',
-    imageUrl: 'public/images/projects/jcrc.jpeg',
+    imageUrl: '/images/projects/jcrc.jpeg',
     metrics: {
       ambition: 5,
       creativity: 4,
@@ -2641,7 +2641,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Past Web Development & Design',
     description: 'Architected the donor and volunteer engagement platform for the Humane Society of Missouri. The site facilitated secure donations, animal adoption browsing, and volunteer scheduling.',
     id: 'web-humane',
-    imageUrl: 'public/images/projects/humane-society.jpeg',
+    imageUrl: '/images/projects/humane-society.jpeg',
     metrics: {
       ambition: 6,
       creativity: 4,
@@ -2659,7 +2659,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Past Web Development & Design',
     description: 'Developed an interactive camp directory and registration information portal for "Camp for All Kids", a diversity-focused youth outreach organization.',
     id: 'web-camp',
-    imageUrl: 'public/images/projects/camp-for-all-kids.jpeg',
+    imageUrl: '/images/projects/camp-for-all-kids.jpeg',
     metrics: {
       ambition: 5,
       creativity: 5,
@@ -2678,7 +2678,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Past Web Development & Design',
     description: 'Designed the online home for Longmeadow Rescue Ranch, focusing on visual storytelling to drive fundraising and awareness for equine and farm animal rehabilitation.',
     id: 'web-longmeadow',
-    imageUrl: 'public/images/projects/long-meadow-rescue-ranch.jpeg',
+    imageUrl: '/images/projects/long-meadow-rescue-ranch.jpeg',
     metrics: {
       ambition: 5,
       creativity: 5,
@@ -2696,7 +2696,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Past Web Development & Design',
     description: 'Developed the exhibition and event site for CAM (Contemporary Art Museum) St. Louis. The minimalist design philosophy prioritized the art itself, serving as a digital gallery extension.',
     id: 'web-cam',
-    imageUrl: 'public/images/projects/cam-stl.jpeg',
+    imageUrl: '/images/projects/cam-stl.jpeg',
     metrics: {
       ambition: 5,
       creativity: 7,
@@ -2714,7 +2714,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Past Web Development & Design',
     description: 'Built the recreational portal for Camp Lakewood (YMCA), integrating facility maps, activity guides, and parent resources to streamline the camper experience.',
     id: 'web-lakewood',
-    imageUrl: 'public/images/projects/camp-lakewood.jpeg',
+    imageUrl: '/images/projects/camp-lakewood.jpeg',
     metrics: {
       ambition: 5,
       creativity: 5,
@@ -2732,7 +2732,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Past Web Development & Design',
     description: 'Designed the outreach platform for Desire Street Ministries, supporting their mission of revitalizing urban neighborhoods through faith-based community development.',
     id: 'web-desire',
-    imageUrl: 'public/images/projects/desire-street-ministries.jpeg',
+    imageUrl: '/images/projects/desire-street-ministries.jpeg',
     metrics: {
       ambition: 5,
       creativity: 5,
@@ -2750,7 +2750,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Past Web Development & Design',
     description: 'Developed the member portal and resource library for CORO, a non-profit dedicated to training civic leaders. The site served as a hub for alumni networking and leadership materials.',
     id: 'web-coro',
-    imageUrl: 'public/images/projects/coro.jpeg',
+    imageUrl: '/images/projects/coro.jpeg',
     metrics: {
       ambition: 5,
       creativity: 4,
@@ -2768,7 +2768,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Past Web Development & Design',
     description: 'Built the scholarship application and mentorship portal for "Boys Hope Girls Hope". The platform facilitated the application process for residential scholar programs.',
     id: 'web-boyshope',
-    imageUrl: 'public/images/projects/boys-hope-girls-hope.jpeg',
+    imageUrl: '/images/projects/boys-hope-girls-hope.jpeg',
     metrics: {
       ambition: 5,
       creativity: 4,
@@ -2786,7 +2786,7 @@ Stack: PHP 5.4+, Composer, Twig, Propel ORM, MySQL, Grunt, Node.js, Custom MVC.`
     category: 'Past Web Development & Design',
     description: 'Developed the association website for the International Order of the Golden Rule (OGR), a professional trade organization. Features included member directories, conference registration, and private resource areas.',
     id: 'web-ogr',
-    imageUrl: 'public/images/projects/golden-rule.jpeg',
+    imageUrl: '/images/projects/golden-rule.jpeg',
     metrics: {
       ambition: 5,
       creativity: 4,

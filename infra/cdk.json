@@ -30,7 +30,6 @@
         "@aws-cdk/aws-s3:createDefaultLoggingPolicy": true,
         "@aws-cdk/aws-sns-subscriptions:restrictSqsActions": true,
         "@aws-cdk/aws-apigateway:disableCloudWatchRole": true,
-        "@aws-cdk/core:enableStackNameDuplicates": "true",
         "@aws-cdk/core:stackRelativeExports": "true",
         "@aws-cdk/aws-ecr-assets:dockerIgnoreSupport": true,
         "@aws-cdk/aws-secretsmanager:parseOwnedSecretName": true,
@@ -39,7 +38,7 @@
         "@aws-cdk/aws-efs:defaultEncryptionAtRest": true,
         "@aws-cdk/aws-lambda:serializeInlineCode": true,
         "@aws-cdk/aws-cloudfront:defaultSecurityPolicyTLSv1.2_2021": true,
-        "user_email": "ryan@ryanrentfro.com",
+        "user_email": "rrentfro@gmail.com",
         "project_name": "portfolio-2026",
         "staging_domain": "staging.ryanrentfro.com",
         "prod_domain": "ryanrentfro.com"
