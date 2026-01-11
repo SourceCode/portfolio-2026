@@ -12,7 +12,7 @@ const prodDomain = app.node.tryGetContext('prod_domain') || 'ryanrentfro.com';
 // AWS Account/Region
 const env: cdk.Environment = {
     account: process.env.CDK_DEFAULT_ACCOUNT,
-    region: 'us-east-1'
+    region: process.env.CDK_DEFAULT_REGION || 'us-east-1'
 };
 
 // Staging Stack
