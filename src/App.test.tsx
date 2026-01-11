@@ -1,4 +1,4 @@
-import { act, render, screen, waitFor } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import { Provider } from 'react-redux';
@@ -100,9 +100,7 @@ describe('App Integration', () => {
         renderApp('/tags/Platform');
         await waitFor(() => {
             // Should show projects tagged with Platform
-            // (Assuming 'Platform' tag exists in the real store or default data, 
-            // otherwise it might show "No projects found" which also validates the route loaded)
-            expect(screen.getByRole('heading', { name: /Platform/i })).toBeInTheDocument();
+            expect(screen.getByRole('heading', { name: /Tag: Platform/i, level: 1 })).toBeInTheDocument();
         });
     });
 });
