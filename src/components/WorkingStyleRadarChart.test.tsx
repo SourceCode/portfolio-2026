@@ -6,20 +6,20 @@ import WorkingStyleRadarChart from './WorkingStyleRadarChart';
 
 // Mock Recharts fully
 jest.mock('recharts', () => ({
-    ResponsiveContainer: ({ children }: { children: React.ReactNode }) => (
-        <div data-testid="responsive-container" style={{ width: 500, height: 300 }}>
-            {children}
-        </div>
-    ),
+    Legend: () => <div data-testid="legend" />,
+    PolarAngleAxis: () => <div data-testid="polar-angle-axis" />,
+    PolarGrid: () => <div data-testid="polar-grid" />,
+    PolarRadiusAxis: () => <div data-testid="polar-radius-axis" />,
+    Radar: () => <div data-testid="radar-slice" />,
     RadarChart: ({ children }: { children: React.ReactNode }) => (
         <div data-testid="radar-chart">{children}</div>
     ),
-    PolarGrid: () => <div data-testid="polar-grid" />,
-    PolarAngleAxis: () => <div data-testid="polar-angle-axis" />,
-    PolarRadiusAxis: () => <div data-testid="polar-radius-axis" />,
-    Radar: () => <div data-testid="radar-slice" />,
+    ResponsiveContainer: ({ children }: { children: React.ReactNode }) => (
+        <div data-testid="responsive-container" style={{ height: 600, width: 600 }}>
+            {children}
+        </div>
+    ),
     Tooltip: () => <div data-testid="tooltip" />,
-    Legend: () => <div data-testid="legend" />,
 }));
 
 describe('WorkingStyleRadarChart', () => {

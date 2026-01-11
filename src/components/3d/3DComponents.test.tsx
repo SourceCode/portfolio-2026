@@ -1,4 +1,4 @@
-import { render, act } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import React from 'react';
 import * as THREE from 'three';
 
@@ -9,18 +9,18 @@ import LiquidMetatronCube from './LiquidMetatronCube';
 import ReflectiveSphereRings from './ReflectiveSphereRings';
 
 // Mock THREE.js WebGL and addons to prevent JSDOM crashes
+// Mock THREE.js WebGL and addons to prevent JSDOM crashes
 jest.mock('three', () => {
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const THREE = jest.requireActual('three');
+    const THREE_LIB = jest.requireActual('three');
     return {
-        ...THREE,
+        ...THREE_LIB,
         WebGLRenderer: class {
             domElement = document.createElement('canvas');
-            setSize() { }
-            setPixelRatio() { }
-            setClearColor() { }
-            render() { }
             dispose() { }
+            render() { }
+            setClearColor() { }
+            setPixelRatio() { }
+            setSize() { }
         },
         WebGLRenderTarget: class {
             dispose() { }
@@ -33,23 +33,23 @@ jest.mock('three', () => {
 // Mock OrbitControls addon
 jest.mock('three/addons/controls/OrbitControls.js', () => ({
     OrbitControls: class {
-        update() { }
         dispose() { }
+        update() { }
     }
 }));
 
 // Mock MarchingCubes
 jest.mock('three/addons/objects/MarchingCubes.js', () => ({
     MarchingCubes: class {
-        position = { set: jest.fn() };
-        scale = { set: jest.fn() };
-        rotation = { x: 0, y: 0, z: 0 };
-        field = new Float32Array(100000); // Mock field
-        enableUvs = false;
-        enableColors = false;
-        isolation = 0.5;
-        update = jest.fn();
         dispose = jest.fn(); // sometimes called
+        enableColors = false;
+        enableUvs = false;
+        field = new Float32Array(100000); // Mock field
+        isolation = 0.5;
+        position = { set: jest.fn() };
+        rotation = { x: 0, y: 0, z: 0 };
+        scale = { set: jest.fn() };
+        update = jest.fn();
     }
 }));
 
@@ -57,9 +57,9 @@ jest.mock('three/addons/objects/MarchingCubes.js', () => ({
 jest.mock('three/addons/postprocessing/EffectComposer.js', () => ({
     EffectComposer: class {
         addPass() { }
-        setSize() { }
-        render() { }
         dispose() { }
+        render() { }
+        setSize() { }
     }
 }));
 

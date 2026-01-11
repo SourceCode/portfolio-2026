@@ -1,6 +1,6 @@
-import { screen, waitFor } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import React from 'react';
-import { Route, Routes, useParams, Navigate } from 'react-router-dom';
+import { Route, Routes, useParams } from 'react-router-dom';
 
 import { renderWithProviders } from '../test/utils';
 import InsightsDetail from './InsightsDetail';

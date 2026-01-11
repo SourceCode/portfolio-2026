@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import React, { useEffect } from 'react';
-import { MemoryRouter, useLocation, useNavigate } from 'react-router-dom';
+import { MemoryRouter, useNavigate } from 'react-router-dom';
 
 import ScrollToTop from './ScrollToTop';
 
