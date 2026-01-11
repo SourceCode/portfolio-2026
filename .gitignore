@@ -26,3 +26,7 @@ dist-ssr
 
 coverage/
 cdk.out/
+infra/bin/*.js
+infra/lib/*.js
+
+coverage/*

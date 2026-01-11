@@ -1,4 +1,4 @@
-import { act, render, screen, waitFor } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import { Provider } from 'react-redux';
@@ -93,6 +93,14 @@ describe('App Integration', () => {
         await waitFor(() => {
             // Wait for the blog post content.
             expect(screen.getByText(/The Art of Systems Thinking/i)).toBeInTheDocument();
+        });
+    });
+
+    it('renders Tag Detail page', async () => {
+        renderApp('/tags/Platform');
+        await waitFor(() => {
+            // Should show projects tagged with Platform
+            expect(screen.getByRole('heading', { level: 1, name: /Tag: Platform/i })).toBeInTheDocument();
         });
     });
 });

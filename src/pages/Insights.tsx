@@ -17,58 +17,58 @@ const Insights: React.FC = () => {
   // Define Expertise Areas for display
   const expertiseAreas = useMemo(() => [
     {
-      category: "Strategic Leadership",
+      category: 'Strategic Leadership',
       items: [
-        { title: "Strategic Leadership", path: "/expertise/strategic-leadership" },
-        { title: "Empowered Teams", path: "/expertise/empowered-teams" },
-        { title: "Shared Understanding", path: "/expertise/shared-understanding" },
-        { title: "Better Morale", path: "/expertise/better-morale" },
-        { title: "Culture of Mastery", path: "/expertise/culture-of-mastery" },
+        { path: '/expertise/strategic-leadership', title: 'Strategic Leadership' },
+        { path: '/expertise/empowered-teams', title: 'Empowered Teams' },
+        { path: '/expertise/shared-understanding', title: 'Shared Understanding' },
+        { path: '/expertise/better-morale', title: 'Better Morale' },
+        { path: '/expertise/culture-of-mastery', title: 'Culture of Mastery' },
       ]
     },
     {
-      category: "Platform & Architecture",
+      category: 'Platform & Architecture',
       items: [
-        { title: "Platform Architecture", path: "/expertise/platform-architecture" },
-        { title: "Cloud Architecture", path: "/expertise/cloud-architecture" },
-        { title: "Immutable Infrastructure", path: "/expertise/immutable-infrastructure" },
-        { title: "Systems Infrastructure", path: "/expertise/systems-infrastructure" },
-        { title: "Event Sourcing", path: "/expertise/event-sourcing" },
-        { title: "CDC Pipelines", path: "/expertise/cdc-pipelines" },
-        { title: "Data Mesh", path: "/expertise/data-mesh" },
-        { title: "Observability", path: "/expertise/observability" },
+        { path: '/expertise/platform-architecture', title: 'Platform Architecture' },
+        { path: '/expertise/cloud-architecture', title: 'Cloud Architecture' },
+        { path: '/expertise/immutable-infrastructure', title: 'Immutable Infrastructure' },
+        { path: '/expertise/systems-infrastructure', title: 'Systems Infrastructure' },
+        { path: '/expertise/event-sourcing', title: 'Event Sourcing' },
+        { path: '/expertise/cdc-pipelines', title: 'CDC Pipelines' },
+        { path: '/expertise/data-mesh', title: 'Data Mesh' },
+        { path: '/expertise/observability', title: 'Observability' },
       ]
     },
     {
-      category: "Security & Governance",
+      category: 'Security & Governance',
       items: [
-        { title: "Zero Trust", path: "/expertise/zero-trust" },
-        { title: "Policy As Code", path: "/expertise/policy-as-code" },
-        { title: "System Documentation", path: "/expertise/system-documentation" },
-        { title: "Technical RFCs", path: "/expertise/technical-rfcs" },
+        { path: '/expertise/zero-trust', title: 'Zero Trust' },
+        { path: '/expertise/policy-as-code', title: 'Policy As Code' },
+        { path: '/expertise/system-documentation', title: 'System Documentation' },
+        { path: '/expertise/technical-rfcs', title: 'Technical RFCs' },
       ]
     },
     {
-      category: "Product & Engineering",
+      category: 'Product & Engineering',
       items: [
-        { title: "Product Engineering", path: "/expertise/product-engineering" },
-        { title: "Modern Simple Frontend", path: "/expertise/modern-frontend" },
-        { title: "Design Systems", path: "/expertise/design-systems" },
-        { title: "Design Tokens", path: "/expertise/design-tokens" },
-        { title: "Component Library", path: "/expertise/component-library" },
-        { title: "Data-Driven UX", path: "/expertise/data-driven-ux" },
-        { title: "Product Trios", path: "/expertise/product-trios" },
-        { title: "Faster Discovery", path: "/expertise/faster-discovery" },
-        { title: "DORA Metrics", path: "/expertise/dora-metrics" },
+        { path: '/expertise/product-engineering', title: 'Product Engineering' },
+        { path: '/expertise/modern-frontend', title: 'Modern Simple Frontend' },
+        { path: '/expertise/design-systems', title: 'Design Systems' },
+        { path: '/expertise/design-tokens', title: 'Design Tokens' },
+        { path: '/expertise/component-library', title: 'Component Library' },
+        { path: '/expertise/data-driven-ux', title: 'Data-Driven UX' },
+        { path: '/expertise/product-trios', title: 'Product Trios' },
+        { path: '/expertise/faster-discovery', title: 'Faster Discovery' },
+        { path: '/expertise/dora-metrics', title: 'DORA Metrics' },
       ]
     }
   ], []);
 
   const workingStyleLinks = [
-    { title: "My Working Style", path: "/about/working-style", desc: "How I operate (INTJ Architect)." },
-    { title: "Logic Over Emotion", path: "/about/working-style/logic-over-emotion", desc: "Rational decision making in engineering." },
-    { title: "Written Culture", path: "/about/working-style/written-culture", desc: "Why writing things down scales leadership." },
-    { title: "Deep Work", path: "/about/working-style/deep-work", desc: "Protecting focus for complex problem solving." },
+    { desc: 'How I operate (INTJ Architect).', path: '/about/working-style', title: 'My Working Style' },
+    { desc: 'Rational decision making in engineering.', path: '/about/working-style/logic-over-emotion', title: 'Logic Over Emotion' },
+    { desc: 'Why writing things down scales leadership.', path: '/about/working-style/written-culture', title: 'Written Culture' },
+    { desc: 'Protecting focus for complex problem solving.', path: '/about/working-style/deep-work', title: 'Deep Work' },
   ];
 
 

@@ -17,9 +17,14 @@ describe('Contact Page', () => {
         renderWithProviders(<Contact />);
 
         expect(screen.getByRole('heading', { name: /Get in Touch/i })).toBeInTheDocument();
-        expect(screen.getByLabelText(/Name/i)).toBeInTheDocument();
-        expect(screen.getByLabelText(/Email/i)).toBeInTheDocument();
-        expect(screen.getByLabelText(/Message/i)).toBeInTheDocument();
-        expect(screen.getByTestId('recaptcha')).toBeInTheDocument();
+
+        // Form is currently disabled/commented out
+        // expect(screen.getByLabelText(/Name/i)).toBeInTheDocument();
+        // expect(screen.getByLabelText(/Email/i)).toBeInTheDocument();
+        // expect(screen.getByLabelText(/Message/i)).toBeInTheDocument();
+
+        // Verify social links exist
+        expect(screen.getByLabelText(/Visit Ryan's LinkedIn Profile/i)).toBeInTheDocument();
+        expect(screen.getByLabelText(/Visit Ryan's GitHub Profile/i)).toBeInTheDocument();
     });
 });
