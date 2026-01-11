@@ -100,7 +100,7 @@ describe('App Integration', () => {
         renderApp('/tags/Platform');
         await waitFor(() => {
             // Should show projects tagged with Platform
-            expect(screen.getByRole('heading', { name: /Tag: Platform/i, level: 1 })).toBeInTheDocument();
+            expect(screen.getByRole('heading', { level: 1, name: /Tag: Platform/i })).toBeInTheDocument();
         });
     });
 });
